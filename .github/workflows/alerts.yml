@@ -1,0 +1,57 @@
+name: Polymarket US Discord Alerts
+
+on:
+  schedule:
+    # Every five minutes, offset from the top of the hour.
+    - cron: '2-59/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: polymarket-alerts
+  cancel-in-progress: false
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Get bot files
+        uses: actions/checkout@v4
+
+      - name: Check Python bot is uploaded
+        run: |
+          test -f market_alerts.py || { echo 'ERROR: Upload market_alerts.py to the repository root'; exit 1; }
+
+      - name: Check Discord secret exists
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo 'ERROR: Add DISCORD_WEBHOOK_URL under Settings > Secrets and variables > Actions'
+            exit 1
+          fi
+
+      - name: Send Discord test (manual runs only)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python3 market_alerts.py --test-discord
+
+      - name: Scan markets (no trades)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python3 market_alerts.py --max-pages 2 --max-bbo 6
+
+      - name: Remember previous prices and avoid duplicate alerts
+        run: |
+          test -f state.json || { echo 'ERROR: Scanner did not save state.json'; exit 1; }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save Polymarket alert state [skip ci]'
+            git push
+          fi
