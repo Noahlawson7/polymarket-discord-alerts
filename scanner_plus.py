@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Polymarket US Scanner V3.2.1: diagnostic backfill + conservatively calibrated probabilities.
+"""Polymarket US Scanner V3.2.2: diagnostic backfill + conservatively calibrated probabilities.
 
 Drop-in replacement for scanner_plus.py, called by the existing GitHub Action.
 Extends market_alerts.py WITHOUT changing its trained model, its strict holdout
@@ -341,6 +341,7 @@ def historical_point_with_reason(payload, m):
     any_complete = False
     any_early = False
     any_early_valid = False
+    early_failure_reasons = Counter()
     rows = []
     latest_ts = 0
     latest_early = min(start + 7 * 86400, end - 2 * 86400)
@@ -359,7 +360,19 @@ def historical_point_with_reason(payload, m):
             continue
         any_early = True
         b = 1.0 - short_ask
-        if not (0.02 <= b <= a <= 0.98 and a - b <= .10):
+        # Keep V3.2's historical quality gate; explain exactly which
+        # condition failed rather than broad 'invalid_or_wide'.
+        if not (0 < a <= .98):
+            early_failure_reasons['early_ask_out_of_range'] += 1
+            continue
+        if not (0.02 <= b):
+            early_failure_reasons['early_bid_below_2c'] += 1
+            continue
+        if b > a:
+            early_failure_reasons['early_crossed_prices'] += 1
+            continue
+        if a - b > .10:
+            early_failure_reasons['early_spread_above_10c'] += 1
             continue
         any_early_valid = True
         rows.append((ts,b,a))
@@ -368,7 +381,11 @@ def historical_point_with_reason(payload, m):
     if not any_early:
         return None, 'no_quote_in_early_window'
     if not any_early_valid:
-        return None, 'early_quote_invalid_or_wide'
+        # Each failed contract contributes one reason, preserving the meaning
+        # of 'attempted' and preventing repeated snapshots inflating counts.
+        leading_reason = (early_failure_reasons.most_common(1)[0][0]
+                          if early_failure_reasons else 'early_quote_invalid_or_wide')
+        return None, leading_reason
     ts,b,a = min(rows, key=lambda r:r[0])
     if latest_ts - ts < 86400:
         return None, 'insufficient_later_history'
@@ -411,6 +428,23 @@ def backfill_historical(state, *, now, items_per_run=None):
                 del skipped[slug]
                 stats['legacy_requeued'] += 1
         state['v321_legacy_recheck_done'] = True
+    # V3.2.2 migration: previously rejected early prices were combined into
+    # one reason. Re-evaluate up to 20 once, with metadata refresh, solely to
+    # determine which original quality gate rejects them. No gate is relaxed.
+    if not state.get('v322_diagnostic_recheck_done', False):
+        queued_slugs = {item.get('slug') for item in queue if isinstance(item, dict)}
+        for slug, why in list(skipped.items()):
+            if stats['v322_requeued'] >= 20 or len(queue) >= V32_MAX_QUEUE:
+                break
+            if (why in ('no_safe_early_quote:early_quote_invalid_or_wide',
+                        'no_safe_early_quote')
+                    and isinstance(slug, str) and slug
+                    and slug not in archive and slug not in queued_slugs):
+                queue.insert(0, {'slug': slug, 'needs_metadata': True, 'attempts': 0})
+                queued_slugs.add(slug)
+                del skipped[slug]
+                stats['v322_requeued'] += 1
+        state['v322_diagnostic_recheck_done'] = True
     # Remove malformed/duplicate queue records without losing valid entries.
     known = set(archive) | set(skipped)
     safe_queue = []
@@ -527,7 +561,7 @@ def backfill_historical(state, *, now, items_per_run=None):
                 m['retry_after'] = now + wait
                 queue.append(m)
                 stats['deferred_retry'] += 1
-            print(f'V3.2.1 backfill error {slug[:45]}: {type(exc).__name__}: '
+            print(f'V3.2.2 backfill error {slug[:45]}: {type(exc).__name__}: '
                   f'{str(exc)[:90]}', flush=True)
             if status in (429, 500, 502, 503, 504) or isinstance(exc, (URLError, OSError)):
                 state['v32_backoff_until'] = now + min(300, 30 * (2 ** min(attempts, 3)))
@@ -870,7 +904,7 @@ def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=No
     pending = sum(isinstance(s, dict) and s.get("result") is None for s in samples.values())
     top = digest_picks(ranked, quoted, limit=5)
     header = [
-        f"**POLYMARKET US · V3.2.1 STATISTICAL RESEARCH** ({timestamp})",
+        f"**POLYMARKET US · V3.2.2 STATISTICAL RESEARCH** ({timestamp})",
         f"Live quotes {len(quoted)}/{_session['candidates']} | unique samples "
         f"{len(samples)} ({settled} settled, {pending} pending) | long-term records {history_count}",
         f"Validated categories {len(models)} | incomplete quotes {diagnostics.get('missing',0)} "
@@ -997,7 +1031,7 @@ def scan_once(args):
 
     v31_stats = backfill_historical(state, now=base.now_ts())
     v31_models, v31_coverage = historical_models(state.get('v31_archive', {}))
-    print('V3.2.1 backfill: ' + str(v31_stats) + '; coverage=' + str(v31_coverage)
+    print('V3.2.2 backfill: ' + str(v31_stats) + '; coverage=' + str(v31_coverage)
           + '; validated categories=' + str(sorted(v31_models)),flush=True)
     samples = state.setdefault("training_samples", {})
     observations = state.setdefault("observations", {})
@@ -1171,3 +1205,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+
