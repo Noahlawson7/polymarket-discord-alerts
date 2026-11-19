@@ -110,25 +110,9 @@ def enrich_market(m):
 
 
 def fetch_bbo(slug):
-    """Fetch real BBO, open interest and depth WITHOUT manufacturing values."""
-    payload = base.request_json("/v1/markets/" + quote(slug, safe="") + "/bbo")
-    data = payload.get("marketData") if isinstance(payload, dict) else None
-    if not isinstance(data, dict) or data.get("state") not in (None, "", "MARKET_STATE_OPEN"):
-        return None
-    bid = base.price(data.get("bestBid"))
-    ask = base.price(data.get("bestAsk"))
-    if bid is None or ask is None or not (0 < ask < 1 and 0 <= bid <= ask):
-        return None
-    return {
-        "bid": bid,
-        "ask": ask,
-        "spread": round(ask - bid, 6),
-        "open_interest": maybe_nonnegative(data.get("openInterest")),
-        "ask_shares": maybe_nonnegative(data.get("askShares")),
-        "bid_shares": maybe_nonnegative(data.get("bidShares")),
-        "ask_depth": maybe_nonnegative(data.get("askDepth")),
-        "bid_depth": maybe_nonnegative(data.get("bidDepth")),
-    }
+    """Backward-compatible API for tests and call sites."""
+    q, reason = quote_with_reason(slug)
+    return q
 
 
 def fetch_book_metrics(slug, target_shares=10):
@@ -259,6 +243,360 @@ def rotating_candidates(markets, *, min_volume=0, max_spread=0.08, limit=30):
     return chosen
 
 
+# ---------------- V3.1: VERIFIED HISTORICAL CALIBRATION ----------------
+# Public US API supplies confirmed settlement and book-derived price history.
+# One immutable pre-event quote per resolved contract, NOT every price tick.
+from datetime import datetime, timezone
+from collections import Counter
+from urllib.parse import urlencode, urlparse
+
+V31_MAX_ARCHIVE = 3000
+V31_MIN_TRAIN = 100
+V31_MIN_HOLDOUT = 40
+V31_MIN_BIN_TRAIN = 25
+V31_MIN_BIN_HOLDOUT = 12
+V31_PRIOR_STRENGTH = 35.0
+V31_HOLDOUT_GAIN = .003
+V31_BIN_GAIN = .002
+
+
+def iso_epoch(s):
+    if not isinstance(s, str) or not s.strip():
+        return None
+    try:
+        d = datetime.fromisoformat(s.replace('Z', '+00:00'))
+        if d.tzinfo is None:
+            return None
+        return d.timestamp()
+    except (ValueError, OverflowError):
+        return None
+
+
+def resolved_yes(payload):
+    # Contract payout is authoritative; no inference from a price of $0.99.
+    if not isinstance(payload, dict):
+        return None
+    p = maybe_nonnegative(payload.get('settlement'))
+    if p is None:
+        return None
+    if abs(p - 1.0) < 1e-8:
+        return 1
+    if abs(p) < 1e-8:
+        return 0
+    # Voided, half-paid and nonbinary settlements excluded.
+    return None
+
+
+def is_resolved(m):
+    return isinstance(m, dict) and m.get('status') == 'MARKET_STATUS_RESOLVED'
+
+
+def event_group(m):
+    for k in ('eventId', 'eventSlug'):
+        v = m.get(k)
+        if isinstance(v, (int, str)) and str(v).strip():
+            return f'{k}:{v}'
+    name = clean_text(m.get('question') or m.get('title'), 180).casefold()
+    end = clean_text(m.get('endDate'), 10)
+    # Treat alternatives sharing the same event question/deadline as ONE event.
+    return 'q:' + (name or str(m.get('slug'))) + ':' + end
+
+
+def historical_point(payload, m):
+    """Safely choose an EARLY, historic book quote with documented provenance.
+
+    End date is not guaranteed to equal actual resolution time; first quote
+    close to listing start is deliberately used. If early-quote provenance is
+    missing, skip instead of manufacturing look-ahead-free training data.
+    """
+    if not isinstance(payload, dict) or not isinstance(payload.get('history'), list):
+        return None
+    start = iso_epoch(m.get('startDate') or m.get('createdAt'))
+    end = iso_epoch(m.get('endDate'))
+    if start is None or end is None or end - start < 3 * 86400:
+        return None
+    rows = []
+    raw_history = payload['history']
+    for pt in raw_history:
+        if not isinstance(pt, dict):
+            continue
+        ts = maybe_nonnegative(pt.get('timestamp'))
+        a = maybe_nonnegative(pt.get('longPrice'))
+        short_ask = maybe_nonnegative(pt.get('shortPrice'))
+        if ts is None or a is None or short_ask is None:
+            continue
+        b = 1.0 - short_ask
+        if (start - 3600 <= ts <= min(start + 7 * 86400, end - 2 * 86400)
+                and 0.02 <= b <= a <= 0.98 and a - b <= .10):
+            rows.append((ts, b, a))
+    if not rows:
+        return None
+    # Reject series with no history after the proposed snapshot: may be
+    # snapshots taken AFTER early resolution despite a future 'endDate'.
+    max_ts = max((maybe_nonnegative(x.get('timestamp')) or 0)
+                 for x in raw_history if isinstance(x, dict))
+    ts, b, a = min(rows, key=lambda r: r[0])
+    if max_ts - ts < 86400:
+        return None
+    return {'t': int(ts), 'bid': round(b, 6), 'ask': round(a, 6),
+            'p': round((a + b) / 2.0, 6), 'spread': round(a - b, 6)}
+
+
+def backfill_historical(state, *, now, items_per_run=3):
+    """Incremental API backfill. Bounded requests/state for GitHub Actions."""
+    archive = state.setdefault('v31_archive', {})
+    queue = state.setdefault('v31_queue', [])
+    skipped = state.setdefault('v31_failed', {})
+    stats = Counter()
+    # Query ONE page every hour, not on every 5-minute scheduled scan.
+    if now - base.number(state.get('v31_last_list'), 0) >= 3600:
+        offset = int(base.number(state.get('v31_offset'), 0))
+        try:
+            path = '/v1/markets?' + urlencode({'closed': 'true', 'limit': 100, 'offset': offset})
+            body = base.request_json(path)
+            listing = body.get('markets') if isinstance(body, dict) else None
+            if not isinstance(listing, list):
+                raise ValueError('Malformed closed market listing')
+            stats['listed'] = len(listing)
+            for m in listing:
+                if not is_resolved(m):
+                    continue
+                slug = m.get('slug')
+                if not isinstance(slug, str) or not slug:
+                    continue
+                if slug in archive or slug in skipped or any(x.get('slug') == slug for x in queue):
+                    continue
+                queue.append({'slug': slug, 'category': base.category_of(m),
+                              'event': event_group(m),
+                              'startDate': m.get('startDate') or m.get('createdAt'),
+                              'endDate': m.get('endDate'),
+                              'question': clean_text(m.get('question'), 120)})
+                stats['queued'] += 1
+            state['v31_offset'] = offset + len(listing) if listing else 0
+            state['v31_last_list'] = now
+        except (HTTPError, URLError, OSError, RuntimeError, ValueError, TypeError) as exc:
+            stats['listing_errors'] += 1
+            print(f'V3.1 historic listing error: {type(exc).__name__}: {str(exc)[:100]}', flush=True)
+
+    processed = 0
+    # Don't let excessive stale queue make state.json huge.
+    queue[:] = queue[:400]
+    while queue and processed < items_per_run:
+        m = queue.pop(0)
+        slug = m['slug']
+        processed += 1
+        try:
+            settle = base.request_json('/v1/markets/' + quote(slug, safe='') + '/settlement')
+            result = resolved_yes(settle)
+            if result is None:
+                stats['nonbinary_or_pending'] += 1
+                skipped[slug] = 'not_binary_settled'
+                continue
+            history_url = '/v1/price-history?' + urlencode({'symbol': slug,
+                                    'fixedInterval': 'INTERVAL_ALL', 'fidelity': 180})
+            history = base.request_json(history_url)
+            point = historical_point(history, m)
+            if point is None:
+                stats['no_safe_history'] += 1
+                skipped[slug] = 'no_safe_early_quote'
+                continue
+            archive[slug] = {'category': m['category'], 'event': m['event'],
+                             'p': point['p'], 'ask': point['ask'],
+                             'bid': point['bid'], 'y': result,
+                             't': point['t'], 'end': iso_epoch(m['endDate']),
+                             'source': 'us_settlement_and_early_book_history'}
+            stats['imported'] += 1
+        except (HTTPError, URLError, OSError, RuntimeError, ValueError, KeyError, TypeError) as exc:
+            # Transient failures are retried; don't silently treat as NO.
+            queue.append(m)
+            stats['record_errors'] += 1
+            print(f'V3.1 backfill error {slug[:45]}: {type(exc).__name__}: '
+                  f'{str(exc)[:90]}', flush=True)
+            break  # avoid hammering gateway under an outage/rate limit
+    if len(archive) > V31_MAX_ARCHIVE:
+        victims = sorted(archive, key=lambda s: archive[s].get('end') or 0)
+        for s in victims[:len(archive)-V31_MAX_ARCHIVE]:
+            del archive[s]
+    if len(skipped) > 3000:
+        for s in list(skipped)[:len(skipped)-3000]:
+            del skipped[s]
+    stats['archived'] = len(archive)
+    stats['remaining'] = len(queue)
+    return dict(stats)
+
+
+def probability_bucket(p):
+    return min(4, max(0, int(p * 5)))
+
+
+def brier(p, y):
+    return (p - y) ** 2
+
+
+def horizon_bucket(seconds):
+    if seconds <= 0:
+        return None
+    if seconds <= 7 * 86400:
+        return 'week'
+    if seconds <= 45 * 86400:
+        return 'month'
+    return 'long'
+
+
+def calibration_cell(row):
+    return (probability_bucket(row['p']), horizon_bucket(row['end']-row['t']))
+
+
+def beta_bin(train, bucket):
+    rows = [r for r in train if calibration_cell(r) == bucket]
+    if len(rows) < V31_MIN_BIN_TRAIN:
+        return None
+    market_mean = sum(r['p'] for r in rows) / len(rows)
+    yes = sum(r['y'] for r in rows)
+    alpha = .5 + V31_PRIOR_STRENGTH * market_mean + yes
+    beta = .5 + V31_PRIOR_STRENGTH * (1 - market_mean) + len(rows) - yes
+    estimate = alpha / (alpha + beta)
+    var = alpha * beta / ((alpha + beta)**2 * (alpha + beta + 1))
+    # One-sided 95% normal approximation to the Beta posterior.
+    lower = max(0., estimate - 1.645 * math.sqrt(var))
+    return {'estimate': estimate, 'lower': lower, 'n': len(rows)}
+
+
+def historical_models(archive):
+    """Leakage-controlled, event-deduplicated, chronological Brier validation.
+
+    Training uses contracts which *ended* BEFORE the holdout snapshots. No
+    repeats of one slug/event. Calibrations match price band and time to expiry.
+    """
+    models, coverage = {}, {}
+    cats = sorted({r.get('category') for r in archive.values() if isinstance(r, dict)
+                   and isinstance(r.get('category'), str)})
+    for cat in cats:
+        rows = []
+        for slug, r in archive.items():
+            if not isinstance(r, dict) or r.get('category') != cat:
+                continue
+            try:
+                p, t, end = float(r['p']), float(r['t']), float(r['end'])
+                y = r['y']
+            except (ValueError, KeyError, TypeError):
+                continue
+            if y not in (0, 1) or not (0 < p < 1 and t < end):
+                continue
+            rows.append({'slug':slug,'p':p,'t':t,'end':end,'y':int(y),
+                         'event': r.get('event') or slug})
+        rows.sort(key=lambda r: (r['t'], r['slug']))
+        # Mutually-exclusive outcomes in the same event are NOT independent
+        # Bernoulli trials. Keep only one deterministic contract per event.
+        independent, used_events = [], set()
+        for r in rows:
+            if r['event'] in used_events:
+                continue
+            used_events.add(r['event'])
+            independent.append(r)
+        rows = independent
+        coverage[cat] = len(rows)
+        if len(rows) < V31_MIN_TRAIN + V31_MIN_HOLDOUT:
+            continue
+        # Holdout consists of the latest distinct events by quote timestamp.
+        pivot = max(V31_MIN_TRAIN, int(len(rows) * .70))
+        cut_time = rows[pivot]['t'] if pivot < len(rows) else None
+        if cut_time is None:
+            continue
+        holdout = [r for r in rows if r['t'] >= cut_time]
+        holdout_events = {r['event'] for r in holdout}
+        train = [r for r in rows if r['end'] <= cut_time and
+                 r['event'] not in holdout_events]
+        if len(train) < V31_MIN_TRAIN or len(holdout) < V31_MIN_HOLDOUT:
+            continue
+        cells = [(b,h) for b in range(5) for h in ('week','month','long')]
+        calibrations = {c: beta_bin(train,c) for c in cells}
+        scored = [(r, calibrations[calibration_cell(r)]) for r in holdout]
+        scored = [(r, cal) for r, cal in scored if cal]
+        if len(scored) < V31_MIN_HOLDOUT:
+            continue
+        raw_loss = sum(brier(r['p'],r['y']) for r, cal in scored)/len(scored)
+        cal_loss = sum(brier(cal['estimate'],r['y']) for r, cal in scored)/len(scored)
+        gain = raw_loss-cal_loss
+        if gain < V31_HOLDOUT_GAIN:
+            continue
+        qualifying = {}
+        for bucket, cal in calibrations.items():
+            if cal is None:
+                continue
+            sub = [(r,c) for r,c in scored if calibration_cell(r)==bucket]
+            if len(sub) < V31_MIN_BIN_HOLDOUT:
+                continue
+            baseline = sum(brier(r['p'],r['y']) for r,c in sub)/len(sub)
+            corrected = sum(brier(cal['estimate'],r['y']) for r,c in sub)/len(sub)
+            if baseline-corrected < V31_BIN_GAIN:
+                continue
+            qualifying[bucket] = dict(cal, holdout_n=len(sub),
+                                      bucket_brier_gain=round(baseline-corrected, 6))
+        if qualifying:
+            models[cat] = {'buckets': qualifying, 'train_n': len(train),
+                           'holdout_n': len(scored), 'brier_gain': round(gain, 6),
+                           'brier_raw': round(raw_loss, 6),
+                           'brier_calibrated': round(cal_loss, 6)}
+    return models, coverage
+
+
+def v31_signal(slug, market, q, models, args):
+    """Show independent empirical forecast ONLY for validated bucket."""
+    cat = base.category_of(market)
+    model = models.get(cat)
+    if not model:
+        return None
+    mid = (q['bid'] + q['ask']) / 2
+    end = iso_epoch(market.get('endDate'))
+    if end is None:
+        return None  # maturity cannot be matched to historical observations
+    horizon = horizon_bucket(end - base.now_ts())
+    if horizon is None:
+        return None
+    bin_id = (probability_bucket(mid), horizon)
+    b = model['buckets'].get(bin_id)
+    if not b:
+        return None
+    # Fee is not computed from a possibly-wrong fixed rate; configured fee
+    # coefficient/buffer are transparent estimates, not precise exchange fees.
+    approx_fee = base.number(args.fee_theta, 0) * q['ask'] * (1 - q['ask'])
+    est_edge = b['estimate'] - q['ask'] - approx_fee - args.buffer
+    lower_edge = b['lower'] - q['ask'] - approx_fee - args.buffer
+    if lower_edge < args.min_edge:
+        return None
+    return {'slug': slug, 'market': market, 'quote': q, 'estimate': b['estimate'],
+            'lower': b['lower'], 'edge': est_edge, 'lower_edge': lower_edge,
+            'bin_n': b['n'], 'holdout_n': b['holdout_n'],
+            'brier_gain': model['brier_gain'], 'bin_gain': b['bucket_brier_gain']}
+
+
+def quote_with_reason(slug):
+    """Return quote/reason; missing quotes are NOT HTTP errors."""
+    payload = base.request_json('/v1/markets/' + quote(slug,safe='') + '/bbo')
+    data = payload.get('marketData') if isinstance(payload,dict) else None
+    if not isinstance(data,dict):
+        return None,'missing_marketData'
+    if data.get('state') not in (None,'','MARKET_STATE_OPEN'):
+        return None,'market_not_open'
+    b = base.price(data.get('bestBid'))
+    a = base.price(data.get('bestAsk'))
+    if b is None and a is None:
+        return None,'both_sides_missing'
+    if b is None:
+        return None,'bid_missing'
+    if a is None:
+        return None,'ask_missing'
+    if not (0 < a < 1 and 0 <= b <= a):
+        return None,'crossed_or_out_of_range'
+    return {'bid':b,'ask':a,'spread':round(a-b,6),
+            'open_interest':maybe_nonnegative(data.get('openInterest')),
+            'ask_shares':maybe_nonnegative(data.get('askShares')),
+            'bid_shares':maybe_nonnegative(data.get('bidShares')),
+            'ask_depth':maybe_nonnegative(data.get('askDepth')),
+            'bid_depth':maybe_nonnegative(data.get('bidDepth'))},None
+# ---------------- END V3.1 ADDITIONS ----------------
+
 def fmt(value, *, decimals=0):
     return "unavailable" if value is None else f"{value:,.{decimals}f}"
 
@@ -353,38 +691,53 @@ def validated_signal(slug, market, q, models, args):
 
 
 def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=None,
-                  movement=None, diagnostics=None, validated=None, history_count=0):
+                  movement=None, diagnostics=None, validated=None, history_count=0,
+                  v31_stats=None, v31_coverage=None, quote_reasons=None):
     """V3 digest: exact contract IDs, history counts, honest model estimates."""
     book_details = book_details or {}
     movement = movement or {}
     diagnostics = diagnostics or {}
     validated = validated or []
+    v31_stats = v31_stats or {}
+    v31_coverage = v31_coverage or {}
+    quote_reasons = quote_reasons or {}
     settled = sum(isinstance(s, dict) and s.get("result") in (0, 1) for s in samples.values())
     pending = sum(isinstance(s, dict) and s.get("result") is None for s in samples.values())
     top = digest_picks(ranked, quoted, limit=5)
     header = [
-        f"**POLYMARKET US · V3 RESEARCH** ({timestamp})",
+        f"**POLYMARKET US · V3.1 STATISTICAL RESEARCH** ({timestamp})",
         f"Live quotes {len(quoted)}/{_session['candidates']} | unique samples "
         f"{len(samples)} ({settled} settled, {pending} pending) | long-term records {history_count}",
-        f"Validated categories {len(models)} | bad quotes {diagnostics.get('missing',0)} "
+        f"Validated historical categories {len(models)} | unavailable quotes {diagnostics.get('missing',0)} "
         f"| wide spreads {diagnostics.get('wide',0)} | API errors {diagnostics.get('errors',0)}",
+        f"Historical resolved training contracts {v31_stats.get('archived', 0)} | "
+        f"newly imported {v31_stats.get('imported',0)} | queued {v31_stats.get('remaining',0)}",
     ]
+    if quote_reasons:
+        detail = ', '.join(f'{reason}={count}' for reason,count in sorted(
+            quote_reasons.items(), key=lambda item: -item[1])[:4])
+        header.append('Quote diagnostics: ' + detail)
     if validated:
-        header.append("**HOLDOUT-VALIDATED VALUE SIGNALS (NOT GUARANTEED):**")
-        for signal in sorted(validated, key=lambda x:x["edge"], reverse=True)[:2]:
-            label = market_name(signal['market'])[:105]
+        header.append('**HOLDOUT-VALIDATED EMPIRICAL PROBABILITY SIGNALS (NOT GUARANTEED):**')
+        for signal in sorted(validated,key=lambda x:x['lower_edge'],reverse=True)[:2]:
             header.append(
-                f"• **{label}** | `{clean_text(signal['slug'], 90)}`\n"
-                f"  YES ask ${signal['quote']['ask']:.3f} | calibrated P(YES) "
-                f"{signal['estimate']:.1%} (lower {signal['conservative']:.1%})\n"
-                f"  Estimated net edge +${signal['edge']:.3f}/share using configured fee/buffer "
-                f"| bin n={signal['n']} | holdout Brier gain {signal['gain']:.4f}"
+                f"• **{market_name(signal['market'])[:104]}** | "
+                f"`{clean_text(signal['slug'], 85)}`\n"
+                f"  YES ask ${signal['quote']['ask']:.3f} | empirical P(YES) "
+                f"{signal['estimate']:.1%}, conservative bound {signal['lower']:.1%}\n"
+                f"  Estimated advantage after configured fees/buffer "
+                f"+${signal['edge']:.3f}/share (conservative +${signal['lower_edge']:.3f}) "
+                f"| training bin n={signal['bin_n']} / holdout n={signal['holdout_n']} "
+                f"| holdout Brier gain {signal['brier_gain']:.4f}"
             )
     else:
-        header.append("**Validated value signals:** none; no defensible P(YES) estimate yet.")
+        header.append('**Validated probability signals:** none. Historical calibration '
+                      'has not passed chronological out-of-sample checks for these markets.')
     header.append("**Live research watchlist (NOT picks):**")
-    tail = ("Historical quotes are NOT independent resolved outcomes. Estimates only "
-            "appear after holdout validation. Verify terms and real fees. READ-ONLY; NO TRADES.")
+    tail = ("YES bid/ask percentages are exchange prices, NOT independent predictions. "
+            "Backfill uses one early historical quote per resolved contract. "
+            "Statistical probabilities require holdout validation; fees approximate. "
+            "READ-ONLY; NO TRADES.")
     message = "\n".join(header)
     if not top:
         message += "\nNo qualifying live markets this run."
@@ -400,6 +753,7 @@ def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=No
         if end:
             detail += f" ends {end}"
         detail += f"\n   `{clean_text(slug, 110)}` | YES bid ${q['bid']:.3f} / ask ${q['ask']:.3f}"
+        detail += f" (market pricing {q['bid']:.0%}–{q['ask']:.0%}; NOT a model estimate)"
         detail += f" | ask size {fmt(q.get('ask_shares'))}"
         if bl and bl.get("fully_fillable") and bl.get("vwap") is not None:
             detail += f" | 10-share book VWAP ${bl['vwap']:.3f}"
@@ -465,6 +819,10 @@ def scan_once(args):
             "check market eligibility and selection limits"
         )
 
+    v31_stats = backfill_historical(state, now=base.now_ts())
+    v31_models, v31_coverage = historical_models(state.get('v31_archive', {}))
+    print('V3.1 backfill: ' + str(v31_stats) + '; coverage=' + str(v31_coverage)
+          + '; validated categories=' + str(sorted(v31_models)),flush=True)
     samples = state.setdefault("training_samples", {})
     observations = state.setdefault("observations", {})
     settle_count = base.settle_matured_samples(samples, check_limit=15)
@@ -476,18 +834,21 @@ def scan_once(args):
 
     quoted, proposed_updates, notifications, errors = {}, {}, [], []
     diagnostics = {"missing": 0, "wide": 0, "errors": 0}
+    quote_reasons = Counter()
     movements = {}
     book_details = {}
     validated = []
     timestamp = base.now_ts()
     for slug in slugs:
         try:
-            q = fetch_bbo(slug)
+            q, reason = quote_with_reason(slug)
             if q is None:
                 diagnostics["missing"] += 1
+                quote_reasons[reason or 'unknown'] += 1
                 continue
             if q["spread"] > args.max_spread:
                 diagnostics["wide"] += 1
+                quote_reasons['spread_above_limit'] += 1
                 continue
             previous_move = observed_movement(state, slug, q["ask"], timestamp=timestamp)
             if previous_move is not None:
@@ -510,17 +871,18 @@ def scan_once(args):
             )
             # Only raise positive-EV labels when the original out-of-sample
             # validation has passed for this category/price bucket.
-            score = validated_signal(slug, m, q, models, args)
+            score = v31_signal(slug, m, q, v31_models, args)
             if score:
                 validated.append(score)
             value_active = score is not None
             if value_active and not proposed.get("stat_edge_active", False):
                 alerts.append(
-                    f"OUT-OF-SAMPLE-VALIDATED VALUE FLAG: estimated lower-bound "
-                    f"net edge +${score['edge']:.3f}/contract; calibrated YES probability "
-                    f"{score['estimate']:.1%}; lower bound {score['conservative']:.1%}; "
-                    f"training-bin n={score['n']} / holdout Brier gain "
-                    f"{score['gain']:.4f}. NOT a guaranteed profit."
+                    f"HISTORICAL-CALIBRATION VALUE FLAG: conservative estimated "
+                    f"net advantage +${score['lower_edge']:.3f}/contract; "
+                    f"empirical P(YES) {score['estimate']:.1%}; lower "
+                    f"{score['lower']:.1%}; training bin n={score['bin_n']} "
+                    f"and holdout n={score['holdout_n']}, Brier gain "
+                    f"{score['brier_gain']:.4f}. NOT guaranteed."
                 )
             proposed["stat_edge_active"] = value_active
             proposed_updates[slug] = proposed
@@ -563,11 +925,13 @@ def scan_once(args):
             except (ValueError, KeyError, TypeError, HTTPError, URLError,
                     RuntimeError, OSError) as exc:
                 errors.append(f"Book {m['slug'][:35]}: {type(exc).__name__}")
-        digest = market_digest(selected, quoted, samples, models,
+        digest = market_digest(selected, quoted, samples, v31_models,
                                timestamp=base.utc_stamp(), book_details=book_details,
                                movement=movements, diagnostics=diagnostics,
                                validated=validated,
-                               history_count=len(state.get("v3_research_records", {})))
+                               history_count=len(state.get("v3_research_records", {})),
+                               v31_stats=v31_stats, v31_coverage=v31_coverage,
+                               quote_reasons=quote_reasons)
         try:
             if base.post_discord(digest):
                 state["last_digest"] = base.now_ts()
@@ -596,7 +960,10 @@ def scan_once(args):
         f"| Discord messages sent {sent} | 10-share book checks {len(book_details)} "
         f"| no quote {diagnostics['missing']} | wide {diagnostics['wide']} "
         f"| errors {diagnostics['errors']} | scan rotation {cursor}->{state['upgrade_cursor']} "
-        f"| V3 records {len(state.get('v3_research_records', {}))} | validated flags {len(validated)}" +
+        f"| V3 records {len(state.get('v3_research_records', {}))} | validated flags {len(validated)}"
+        f" | V3.1 archived {len(state.get('v31_archive', {}))}"
+        f" | V3.1 validated historical categories {len(v31_models)}"
+        f" | quote diagnostic reasons {dict(quote_reasons)}" +
         (f" | errors: {'; '.join(errors[:5])}" if errors else ""), flush=True
     )
     if args.report_now and digest_failed:
