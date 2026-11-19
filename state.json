@@ -1,5 +1,76 @@
 {
-  "observations": {},
+  "observations": {
+    "tec-mls-winner-2026-11-07-rsl": {
+      "anchor": 0.006,
+      "last_seen": 1795106519.9102952,
+      "last_ask": 0.006,
+      "last_bid": 0.001,
+      "stat_edge_active": false
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
+      "anchor": 0.02,
+      "last_seen": 1795106519.973717,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "usgcc-aliens-12-31-2026": {
+      "anchor": 0.03,
+      "last_seen": 1795106520.0532107,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-deel": {
+      "anchor": 0.02,
+      "last_seen": 1795106520.1527328,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-mls-winner-2026-11-07-vwh": {
+      "anchor": 0.164,
+      "last_seen": 1795106520.1837482,
+      "last_ask": 0.164,
+      "last_bid": 0.157,
+      "stat_edge_active": false
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
+      "anchor": 0.96,
+      "last_seen": 1795106520.3264022,
+      "last_ask": 0.96,
+      "last_bid": 0.95,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-stripe": {
+      "anchor": 0.02,
+      "last_seen": 1795106520.427176,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-mls-winner-2026-11-07-por": {
+      "anchor": 0.018,
+      "last_seen": 1795106520.5642557,
+      "last_ask": 0.018,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
+      "anchor": 0.04,
+      "last_seen": 1795106520.6927388,
+      "last_ask": 0.04,
+      "last_bid": 0.03,
+      "stat_edge_active": false
+    },
+    "ipcc-openai-2027-06-30": {
+      "anchor": 0.42,
+      "last_seen": 1795106520.7939725,
+      "last_ask": 0.42,
+      "last_bid": 0.41,
+      "stat_edge_active": false
+    }
+  },
   "seen_slugs": [
     "aachc-ufc-bantamw-2026-12-31-champ-corsan",
     "aachc-ufc-bantamw-2026-12-31-champ-deifig",
@@ -203,6 +274,97 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795105111.5291708,
-  "training_samples": {}
+  "last_digest": 1795106521.2305233,
+  "training_samples": {
+    "tec-mls-winner-2026-11-07-rsl": {
+      "category": "sports",
+      "p": 0.0035,
+      "first_seen": 1795106519.9102805,
+      "end_ts": 1798838409.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
+      "category": "culture",
+      "p": 0.015,
+      "first_seen": 1795106519.9737039,
+      "end_ts": 1797480000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "usgcc-aliens-12-31-2026": {
+      "category": "politics",
+      "p": 0.025,
+      "first_seen": 1795106520.0532012,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-deel": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795106520.1527236,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-mls-winner-2026-11-07-vwh": {
+      "category": "sports",
+      "p": 0.1605,
+      "first_seen": 1795106520.183739,
+      "end_ts": 1798838409.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
+      "category": "culture",
+      "p": 0.955,
+      "first_seen": 1795106520.3263927,
+      "end_ts": 1797480000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-stripe": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795106520.4271667,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-mls-winner-2026-11-07-por": {
+      "category": "sports",
+      "p": 0.014,
+      "first_seen": 1795106520.5642452,
+      "end_ts": 1796163342.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
+      "category": "culture",
+      "p": 0.035,
+      "first_seen": 1795106520.6927288,
+      "end_ts": 1797480000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-openai-2027-06-30": {
+      "category": "finance",
+      "p": 0.415,
+      "first_seen": 1795106520.7939632,
+      "end_ts": 1815620400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    }
+  }
 }
