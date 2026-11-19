@@ -43,7 +43,7 @@ jobs:
       - name: Scan markets (no trades)
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python3 market_alerts.py --max-pages 2 --max-bbo 6
+        run: python3 market_alerts.py --max-pages 2 --max-bbo 10 --min-volume 0 --max-spread 1 --report-now
 
       - name: Remember previous prices and avoid duplicate alerts
         run: |
