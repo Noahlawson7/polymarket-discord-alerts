@@ -9,14 +9,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795106519.973717,
+      "last_seen": 1795111252.9218624,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795106520.0532107,
+      "last_seen": 1795111251.5540905,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -37,14 +37,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795106520.3264022,
+      "last_seen": 1795111252.1734407,
       "last_ask": 0.96,
       "last_bid": 0.95,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-stripe": {
       "anchor": 0.02,
-      "last_seen": 1795106520.427176,
+      "last_seen": 1795111251.4366226,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -68,6 +68,90 @@
       "last_seen": 1795106520.7939725,
       "last_ask": 0.42,
       "last_bid": 0.41,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-kccon": {
+      "anchor": 0.11,
+      "last_seen": 1795111251.7281024,
+      "last_ask": 0.11,
+      "last_bid": 0.09,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-rippling": {
+      "anchor": 0.02,
+      "last_seen": 1795111251.9469504,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-jortys": {
+      "anchor": 0.06,
+      "last_seen": 1795111252.0673127,
+      "last_ask": 0.06,
+      "last_bid": 0.05,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-ripple-labs": {
+      "anchor": 0.02,
+      "last_seen": 1795111252.3161373,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-joncol": {
+      "anchor": 0.2,
+      "last_seen": 1795111252.4460962,
+      "last_ask": 0.2,
+      "last_bid": 0.19,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-revolut": {
+      "anchor": 0.32,
+      "last_seen": 1795111252.6719015,
+      "last_ask": 0.32,
+      "last_bid": 0.31,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-remote": {
+      "anchor": 0.02,
+      "last_seen": 1795111252.9686947,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-jadpri": {
+      "anchor": 0.02,
+      "last_seen": 1795111253.0928319,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-ramp": {
+      "anchor": 0.03,
+      "last_seen": 1795111253.3400269,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-openai": {
+      "anchor": 0.02,
+      "last_seen": 1795111253.6103957,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-mistral-ai": {
+      "anchor": 0.02,
+      "last_seen": 1795111253.8548841,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-fermen": {
+      "anchor": 0.28,
+      "last_seen": 1795111253.9669948,
+      "last_ask": 0.28,
+      "last_bid": 0.27,
       "stat_edge_active": false
     }
   },
@@ -574,7 +658,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795110428.0007882,
+  "last_digest": 1795111254.616336,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -665,7 +749,229 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-kccon": {
+      "category": "sports",
+      "p": 0.1,
+      "first_seen": 1795111251.7280915,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-rippling": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795111251.946928,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-jortys": {
+      "category": "sports",
+      "p": 0.055,
+      "first_seen": 1795111252.0673034,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-ripple-labs": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795111252.3161297,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-joncol": {
+      "category": "sports",
+      "p": 0.195,
+      "first_seen": 1795111252.4460871,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-revolut": {
+      "category": "finance",
+      "p": 0.315,
+      "first_seen": 1795111252.6718893,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-remote": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795111252.9686866,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-jadpri": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795111253.0928226,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-ramp": {
+      "category": "finance",
+      "p": 0.025,
+      "first_seen": 1795111253.3400173,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-openai": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795111253.6103861,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-mistral-ai": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795111253.8548744,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-fermen": {
+      "category": "sports",
+      "p": 0.275,
+      "first_seen": 1795111253.9669867,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 1
+  "upgrade_cursor": 2,
+  "upgrade_price_history": {
+    "ipcc-2026ipos-stripe": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "usgcc-aliens-12-31-2026": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.03,
+        "bid": 0.02
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-kccon": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.11,
+        "bid": 0.09
+      }
+    ],
+    "ipcc-2026ipos-rippling": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-jortys": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.06,
+        "bid": 0.05
+      }
+    ],
+    "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.96,
+        "bid": 0.95
+      }
+    ],
+    "ipcc-2026ipos-ripple-labs": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-joncol": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.2,
+        "bid": 0.19
+      }
+    ],
+    "ipcc-2026ipos-revolut": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.32,
+        "bid": 0.31
+      }
+    ],
+    "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-remote": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-jadpri": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-ramp": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.03,
+        "bid": 0.02
+      }
+    ],
+    "ipcc-2026ipos-openai": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-mistral-ai": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-fermen": [
+      {
+        "t": 1795111251.213029,
+        "ask": 0.28,
+        "bid": 0.27
+      }
+    ]
+  }
 }
