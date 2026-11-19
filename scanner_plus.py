@@ -150,8 +150,10 @@ def observed_movement(state, slug, current_ask, *, timestamp):
 def rotating_candidates(markets, *, min_volume=0, max_spread=0.08, limit=30):
     """Rotate through more than the first 10 markets across successive scans.
 
-    Volume is used for prioritization *only* when the API supplies it. This
-    is a research discovery strategy, not an edge/probability estimate.
+    Volume is used for prioritization *only* when the API supplies it.
+    Listed-market spreads are NEVER filtered here: they can be stale or
+    incorrectly normalized. Live BBO spread is checked by scan_once().
+    This is research discovery, not an edge/probability estimate.
     """
     groups = {}
     for m in markets:
@@ -160,9 +162,11 @@ def rotating_candidates(markets, *, min_volume=0, max_spread=0.08, limit=30):
         vol = maybe_nonnegative(m.get("volume24hr"))
         if min_volume > 0 and (vol is None or vol < min_volume):
             continue
-        listed_quote = base.list_quote(m)
-        if listed_quote is not None and listed_quote["spread"] > max_spread:
-            continue
+        # Do not filter by quote fields in the market-list response.
+        # Those fields may be stale, missing, or formatted differently from
+        # the live BBO endpoint. In V2 this early spread check silently
+        # removed every market, resulting in "BBO usable: 0/0".
+        # The real spread restriction is enforced after fetch_bbo() below.
         groups.setdefault(base.category_of(m), []).append(m)
     if not groups:
         _session["candidates"] = 0
@@ -170,8 +174,9 @@ def rotating_candidates(markets, *, min_volume=0, max_spread=0.08, limit=30):
 
     def rank(m):
         vol = maybe_nonnegative(m.get("volume24hr"))
-        q = base.list_quote(m)
-        return (vol if vol is not None else -1, -(q["spread"] if q else 1))
+        # Never use listing-level bid/ask data to gate or rank candidates:
+        # use actual BBO responses for all quote-quality decisions.
+        return (vol if vol is not None else -1, str(m.get("slug") or ""))
 
     categories = sorted(groups)
     stride = max(1, (limit + len(categories) - 1) // len(categories))
@@ -326,6 +331,14 @@ def scan_once(args):
                                    max_spread=args.max_spread, limit=args.max_bbo)
     slugs = list(dict.fromkeys([*watch, *(m["slug"] for m in selected)]))
     _session["candidates"] = len(slugs)
+    print(f"Discovery: {len(raw)} listed entries; {len(markets)} eligible; "
+          f"{len(selected)} selected; {len(watch)} watchlist; "
+          f"{len(slugs)} queued for live BBO", flush=True)
+    if not slugs:
+        raise RuntimeError(
+            "Found eligible markets but queued zero BBO checks; "
+            "check market eligibility and selection limits"
+        )
 
     samples = state.setdefault("training_samples", {})
     observations = state.setdefault("observations", {})
