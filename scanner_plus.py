@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Read-only market-quality and longitudinal research upgrade for Polymarket US.
+"""Polymarket US Scanner V3: identifiable contracts + outcome-backed research.
 
-This file runs alongside market_alerts.py in the same GitHub repository.
-It preserves the original model, settlement checks, Discord webhook and state.
-No trade execution. Python standard library only.
+Drop-in replacement for scanner_plus.py, called by the existing GitHub Action.
+Extends market_alerts.py WITHOUT changing its trained model, its strict holdout
+requirements, state schema, webhook, or trade execution (none is provided).
+Uses the public Polymarket US API. Python standard library only.
 
-GitHub Actions command example:
-python3 scanner_upgrade.py --max-pages 5 --max-bbo 30 --min-volume 0 --max-spread 0.08 --report-now
+Example (your workflow command can remain the same):
+python3 scanner_plus.py --max-pages 5 --max-bbo 25 --min-volume 0 --max-spread 0.08 --report-now
 """
 from __future__ import annotations
 
@@ -35,19 +36,77 @@ def maybe_nonnegative(value):
     return f if math.isfinite(f) and f >= 0 else None
 
 
+def clean_text(value, max_length=180):
+    """Sanitize untrusted API labels for Discord and remove duplicate whitespace."""
+    if not isinstance(value, str):
+        return ""
+    value = " ".join(value.replace("`", "'").replace("@", "＠").split())
+    return value[:max_length]
+
+
 def market_name(m):
-    """Prioritize the full market question, not its abbreviated UI title."""
-    for key in ("question", "title"):
-        value = m.get(key)
-        if isinstance(value, str) and value.strip():
-            main = " ".join(value.split())
-            sub = m.get("subtitle")
-            if key == "title" and isinstance(sub, str) and sub.strip():
-                sub = " ".join(sub.split())
-                if sub.lower() != main.lower():
-                    main += " — " + sub
-            return main[:240]
-    return str(m.get("titleShort") or m.get("slug") or "Untitled market")[:240]
+    """Identify the *specific outcome*, not only the umbrella event title.
+
+    Polymarket US markets may have generic event titles with the particular
+    player/company in titleShort, subtitle, side/team metadata, or question.
+    Displaying the market slug separately is mandatory if these fields are not
+    sufficiently descriptive; never guess which player a price refers to.
+    """
+    primary = clean_text(m.get("question")) or clean_text(m.get("title")) or clean_text(m.get("name"))
+    if not primary:
+        primary = clean_text(m.get("titleShort")) or "Unlabeled contract"
+    parts = [primary]
+    for key in ("subtitle", "titleShort", "outcomeLabel", "marketLabel", "selectionName",
+                "participantName", "participant", "title", "name"):
+        detail = clean_text(m.get(key), 90)
+        if detail and detail.casefold() not in primary.casefold() and                 not any(detail.casefold() == p.casefold() for p in parts):
+            # Avoid repeating a second generic event title.
+            if len(parts) < 3:
+                parts.append(detail)
+    sides = m.get("marketSides")
+    if isinstance(sides, list):
+        for side in sides:
+            if not isinstance(side, dict) or side.get("long") is not True:
+                continue
+            team = side.get("team")
+            candidates = [side.get("description"),
+                          team.get("name") if isinstance(team, dict) else None]
+            for raw in candidates:
+                detail = clean_text(raw, 90)
+                if detail and detail.casefold() not in ("yes", "no", "true", "false")                         and not any(detail.casefold() in p.casefold() for p in parts):
+                    if len(parts) < 3:
+                        parts.append(detail)
+    return " — ".join(parts)[:260]
+
+
+def enrich_market(m):
+    """Optional lookup of exact market metadata for display only, no speculation.
+
+    Failure must not interrupt quote scans or data collection. Called for a
+    maximum of five shortlisted markets per digest.
+    """
+    slug = m.get("slug")
+    if not isinstance(slug, str) or not slug:
+        return m
+    try:
+        payload = base.request_json("/v1/market/slug/" + quote(slug, safe=""))
+    except (HTTPError, URLError, OSError, ValueError, TypeError, RuntimeError):
+        return m
+    if not isinstance(payload, dict):
+        return m
+    detail = payload.get("market") or payload.get("data") or payload
+    if not isinstance(detail, dict):
+        return m
+    if detail.get("slug") not in (None, slug):
+        return m
+    # The direct lookup is authoritative for specific labels, while the
+    # listing remains a fallback for absent fields and category data.
+    merged = dict(m)
+    for key in ("question", "title", "titleShort", "subtitle", "name", "marketSides",
+                "outcomeLabel", "marketLabel", "participantName", "selectionName", "endDate"):
+        if detail.get(key):
+            merged[key] = detail[key]
+    return merged
 
 
 def fetch_bbo(slug):
@@ -229,70 +288,136 @@ def digest_picks(selected, quoted, *, limit=5):
     return top
 
 
+def record_research_snapshot(state, slug, market, quote_data, *, timestamp):
+    """Keep one immutable opening snapshot per unique slug and later daily prices.
+
+    Repeated quotes on the SAME event are NOT independent outcome labels and
+    MUST NOT be used as additional model training rows.
+    """
+    records = state.setdefault("v3_research_records", {})
+    row = records.get(slug)
+    if not isinstance(row, dict):
+        row = {"first_seen": timestamp, "first_bid": quote_data["bid"],
+               "first_ask": quote_data["ask"], "category": base.category_of(market),
+               "contract": market_name(market)[:200],
+               "end_date": clean_text(market.get("endDate"), 30), "daily": []}
+        records[slug] = row
+    row["last_seen"] = timestamp
+    row["last_bid"] = quote_data["bid"]
+    row["last_ask"] = quote_data["ask"]
+    # Never overwrite first-seen price. Record at most one mark per UTC day.
+    bucket = int(timestamp // 86400)
+    daily = row.setdefault("daily", [])
+    if not daily or daily[-1].get("day") != bucket:
+        daily.append({"day": bucket, "bid": quote_data["bid"], "ask": quote_data["ask"]})
+    row["daily"] = daily[-30:]
+    # Bound the optional analysis metadata independently of settlement samples.
+    if len(records) > 2000:
+        victims = sorted(records, key=lambda key: base.number(records[key].get("last_seen"), 0))
+        for key in victims[:len(records)-2000]:
+            del records[key]
+
+
+def sync_verified_outcomes(state, samples):
+    """Attach verified resolutions to quote records, never derive from prices."""
+    records = state.get("v3_research_records", {})
+    for slug, sample in samples.items():
+        if not isinstance(sample, dict) or slug not in records:
+            continue
+        result = sample.get("result")
+        if result in (0, 1):
+            records[slug]["verified_result"] = int(result)
+
+
+def validated_signal(slug, market, q, models, args):
+    """Only existing holdout-validated base model is allowed to estimate P(YES)."""
+    model = models.get(base.category_of(market))
+    if not model:
+        return None
+    result = base.statistical_yes_edge(model, q["bid"], q["ask"],
+                                       theta=args.fee_theta, buffer=args.buffer)
+    if not isinstance(result, dict):
+        return None
+    try:
+        estimate, conservative = float(result["estimate"]), float(result["conservative"])
+        edge, n = float(result["edge"]), int(result["n"])
+        gain = float(result["validation"])
+    except (KeyError, TypeError, ValueError, OverflowError):
+        return None
+    if not all(math.isfinite(x) for x in (estimate, conservative, edge, gain)):
+        return None
+    if not (0 <= conservative <= estimate <= 1 and n > 0 and edge >= args.min_edge):
+        return None
+    return {"slug": slug, "market": market, "quote": q, "estimate": estimate,
+            "conservative": conservative, "edge": edge, "n": n, "gain": gain}
+
+
 def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=None,
-                  movement=None, diagnostics=None):
-    """Bounded Discord digest: market detail + actual depth + honest training status."""
+                  movement=None, diagnostics=None, validated=None, history_count=0):
+    """V3 digest: exact contract IDs, history counts, honest model estimates."""
     book_details = book_details or {}
     movement = movement or {}
     diagnostics = diagnostics or {}
-    settled = sum(s.get("result") in (0, 1) for s in samples.values())
-    pending = sum(s.get("result") is None for s in samples.values())
-    best = digest_picks(ranked, quoted)
-    lines = [
-        f"**POLYMARKET US · MARKET RESEARCH** ({timestamp})",
-        f"BBO usable: {len(quoted)}/{_session['candidates']} checked "
-        f"| samples: {len(samples)} ({settled} settled, {pending} pending) "
-        f"| validated categories: {len(models)}",
-        "**Research watchlist — NOT winning picks:**",
+    validated = validated or []
+    settled = sum(isinstance(s, dict) and s.get("result") in (0, 1) for s in samples.values())
+    pending = sum(isinstance(s, dict) and s.get("result") is None for s in samples.values())
+    top = digest_picks(ranked, quoted, limit=5)
+    header = [
+        f"**POLYMARKET US · V3 RESEARCH** ({timestamp})",
+        f"Live quotes {len(quoted)}/{_session['candidates']} | unique samples "
+        f"{len(samples)} ({settled} settled, {pending} pending) | long-term records {history_count}",
+        f"Validated categories {len(models)} | bad quotes {diagnostics.get('missing',0)} "
+        f"| wide spreads {diagnostics.get('wide',0)} | API errors {diagnostics.get('errors',0)}",
     ]
-    if diagnostics:
-        lines.append(f"Filters: {diagnostics.get('wide', 0)} wide spreads; "
-                     f"{diagnostics.get('missing', 0)} invalid/unavailable quotes; "
-                     f"{diagnostics.get('errors', 0)} request errors")
-    tail = ("No model-backed pick unless historical holdout validation passes. "
-            "Figures exclude fees; check market rules. Read-only, NO TRADES.")
-    def format_row(i, m):
-        q = quoted[m["slug"]]
-        name = market_name(m).replace("`", "'").replace("@", "＠")
-        if len(name) > 128:
-            name = name[:127] + "…"
-        v24 = maybe_nonnegative(m.get("volume24hr"))
-        total = maybe_nonnegative(m.get("volume"))
-        end = m.get("endDate")
-        when = f" | ends {end[:10]}" if isinstance(end, str) and len(end) >= 10 else ""
-        bl = book_details.get(m["slug"])
-        details = [f"{i}. **{name}** [{base.category_of(m)}]{when}",
-                   f"   YES ${q['bid']:.3f} bid / ${q['ask']:.3f} ask "
-                   f"(spread ${q['spread']:.3f})",
-                   f"   Ask shares at best: {fmt(q['ask_shares'])} "
-                   f"| OI: {fmt(q['open_interest'])} "
-                   f"| 24h vol: {fmt(v24)} "
-                   f"| total vol: {fmt(total)}"]
-        if bl is not None:
-            if bl["fully_fillable"]:
-                details.append(f"   10-share book VWAP: ${bl['vwap']:.3f} "
-                               f"(visible slippage +${bl['impact']:.3f}/share, fees excluded)")
-            else:
-                details.append(f"   10-share book depth: insufficient "
-                               f"(visible offers {fmt(bl['available'], decimals=1)} shares)")
-        if m["slug"] in movement:
-            mv = movement[m["slug"]]
-            details.append(f"   Ask change vs {mv['minutes']}m ago: "
-                           f"{mv['delta']:+.3f} (price, NOT a probability model)")
-        return "\n".join(details)
-
-    message = "\n".join(lines)
-    displayed = 0
-    for i, m in enumerate(best, 1):
-        row = format_row(i, m)
-        if len(message) + len(row) + len(tail) + 8 > base.MAX_MESSAGE:
+    if validated:
+        header.append("**HOLDOUT-VALIDATED VALUE SIGNALS (NOT GUARANTEED):**")
+        for signal in sorted(validated, key=lambda x:x["edge"], reverse=True)[:2]:
+            label = market_name(signal['market'])[:105]
+            header.append(
+                f"• **{label}** | `{clean_text(signal['slug'], 90)}`\n"
+                f"  YES ask ${signal['quote']['ask']:.3f} | calibrated P(YES) "
+                f"{signal['estimate']:.1%} (lower {signal['conservative']:.1%})\n"
+                f"  Estimated net edge +${signal['edge']:.3f}/share using configured fee/buffer "
+                f"| bin n={signal['n']} | holdout Brier gain {signal['gain']:.4f}"
+            )
+    else:
+        header.append("**Validated value signals:** none; no defensible P(YES) estimate yet.")
+    header.append("**Live research watchlist (NOT picks):**")
+    tail = ("Historical quotes are NOT independent resolved outcomes. Estimates only "
+            "appear after holdout validation. Verify terms and real fees. READ-ONLY; NO TRADES.")
+    message = "\n".join(header)
+    if not top:
+        message += "\nNo qualifying live markets this run."
+    shown = 0
+    for i, m in enumerate(top, 1):
+        slug = m["slug"]
+        q = quoted[slug]
+        item = enrich_market(m)
+        label = market_name(item)[:135]
+        end = clean_text(item.get("endDate"), 10)
+        bl = book_details.get(slug)
+        detail = f"{i}. **{label}** [{base.category_of(m)}]"
+        if end:
+            detail += f" ends {end}"
+        detail += f"\n   `{clean_text(slug, 110)}` | YES bid ${q['bid']:.3f} / ask ${q['ask']:.3f}"
+        detail += f" | ask size {fmt(q.get('ask_shares'))}"
+        if bl and bl.get("fully_fillable") and bl.get("vwap") is not None:
+            detail += f" | 10-share book VWAP ${bl['vwap']:.3f}"
+        elif bl is not None:
+            detail += " | 10-share depth insufficient"
+        else:
+            detail += " | depth not checked"
+        mv = movement.get(slug)
+        if mv is not None:
+            detail += f" | {mv['minutes']}m ask Δ {mv['delta']:+.3f}"
+        if len(message) + len(detail) + len(tail) + 4 > base.MAX_MESSAGE:
             break
-        message += "\n" + row
-        displayed += 1
-    if not best:
-        message += "\nNo eligible quotes. Inspect filters and API errors in Actions."
-    elif displayed < len(best):
-        message += f"\n({len(best) - displayed} additional market(s) omitted to fit Discord)"
+        message += "\n" + detail
+        shown += 1
+    if shown < len(top):
+        note = f"\n({len(top)-shown} more research markets omitted to fit Discord)"
+        if len(message) + len(note) + len(tail) + 3 <= base.MAX_MESSAGE:
+            message += note
     message += "\n" + tail
     return message[:base.MAX_MESSAGE]
 
@@ -353,6 +478,7 @@ def scan_once(args):
     diagnostics = {"missing": 0, "wide": 0, "errors": 0}
     movements = {}
     book_details = {}
+    validated = []
     timestamp = base.now_ts()
     for slug in slugs:
         try:
@@ -370,6 +496,8 @@ def scan_once(args):
             record_price(state, slug, q, timestamp=timestamp)
             m = markets.get(slug, {"slug": slug, "title": slug})
             if slug in markets:
+                record_research_snapshot(state, slug, m, q, timestamp=timestamp)
+            if slug in markets:
                 base.track_sample(samples, m, q)
             setting = watch.get(slug, {})
             # A user-supplied unvalidated fair probability must NOT masquerade
@@ -382,18 +510,17 @@ def scan_once(args):
             )
             # Only raise positive-EV labels when the original out-of-sample
             # validation has passed for this category/price bucket.
-            model = models.get(base.category_of(m))
-            score = base.statistical_yes_edge(
-                model, q["bid"], q["ask"], theta=args.fee_theta, buffer=args.buffer
-            )
-            value_active = bool(score and score["edge"] >= args.min_edge)
+            score = validated_signal(slug, m, q, models, args)
+            if score:
+                validated.append(score)
+            value_active = score is not None
             if value_active and not proposed.get("stat_edge_active", False):
                 alerts.append(
                     f"OUT-OF-SAMPLE-VALIDATED VALUE FLAG: estimated lower-bound "
                     f"net edge +${score['edge']:.3f}/contract; calibrated YES probability "
                     f"{score['estimate']:.1%}; lower bound {score['conservative']:.1%}; "
                     f"training-bin n={score['n']} / holdout Brier gain "
-                    f"{score['validation']:.4f}. NOT a guaranteed profit."
+                    f"{score['gain']:.4f}. NOT a guaranteed profit."
                 )
             proposed["stat_edge_active"] = value_active
             proposed_updates[slug] = proposed
@@ -438,7 +565,9 @@ def scan_once(args):
                 errors.append(f"Book {m['slug'][:35]}: {type(exc).__name__}")
         digest = market_digest(selected, quoted, samples, models,
                                timestamp=base.utc_stamp(), book_details=book_details,
-                               movement=movements, diagnostics=diagnostics)
+                               movement=movements, diagnostics=diagnostics,
+                               validated=validated,
+                               history_count=len(state.get("v3_research_records", {})))
         try:
             if base.post_discord(digest):
                 state["last_digest"] = base.now_ts()
@@ -449,6 +578,7 @@ def scan_once(args):
             errors.append(f"Digest failed: {type(exc).__name__}")
             digest_failed = True
 
+    sync_verified_outcomes(state, samples)
     state["initialized"] = True
     state["seen_slugs"] = sorted(set(state.get("seen_slugs", [])).union(markets))
     state["upgrade_cursor"] = _session["next_cursor"]
@@ -465,7 +595,8 @@ def scan_once(args):
         f"| newly verified {settle_count} | model categories {len(models)} "
         f"| Discord messages sent {sent} | 10-share book checks {len(book_details)} "
         f"| no quote {diagnostics['missing']} | wide {diagnostics['wide']} "
-        f"| errors {diagnostics['errors']} | scan rotation {cursor}->{state['upgrade_cursor']}" +
+        f"| errors {diagnostics['errors']} | scan rotation {cursor}->{state['upgrade_cursor']} "
+        f"| V3 records {len(state.get('v3_research_records', {}))} | validated flags {len(validated)}" +
         (f" | errors: {'; '.join(errors[:5])}" if errors else ""), flush=True
     )
     if args.report_now and digest_failed:
@@ -483,3 +614,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+
