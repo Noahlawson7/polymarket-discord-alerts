@@ -9,21 +9,21 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795111252.9218624,
+      "last_seen": 1795112003.8258915,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795111251.5540905,
+      "last_seen": 1795112001.5989945,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-deel": {
       "anchor": 0.02,
-      "last_seen": 1795106520.1527328,
+      "last_seen": 1795112003.2060163,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795111252.1734407,
+      "last_seen": 1795112003.1674,
       "last_ask": 0.96,
       "last_bid": 0.95,
       "stat_edge_active": false
@@ -58,7 +58,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795106520.6927388,
+      "last_seen": 1795112001.8731682,
       "last_ask": 0.04,
       "last_bid": 0.03,
       "stat_edge_active": false
@@ -142,16 +142,72 @@
     },
     "ipcc-2026ipos-mistral-ai": {
       "anchor": 0.02,
-      "last_seen": 1795111253.8548841,
+      "last_seen": 1795112001.5385141,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "tec-nfl-oroy-2027-02-11-w-fermen": {
       "anchor": 0.28,
-      "last_seen": 1795111253.9669948,
-      "last_ask": 0.28,
-      "last_bid": 0.27,
+      "last_seen": 1795112001.7280147,
+      "last_ask": 0.27,
+      "last_bid": 0.26,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-ledger": {
+      "anchor": 0.09,
+      "last_seen": 1795112001.9720018,
+      "last_ask": 0.09,
+      "last_bid": 0.08,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-glean": {
+      "anchor": 0.03,
+      "last_seen": 1795112002.3267741,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-epic-games": {
+      "anchor": 0.17,
+      "last_seen": 1795112002.6059806,
+      "last_ask": 0.17,
+      "last_bid": 0.16,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-discord": {
+      "anchor": 0.03,
+      "last_seen": 1795112002.898908,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-denbos": {
+      "anchor": 0.09,
+      "last_seen": 1795112003.0403013,
+      "last_ask": 0.09,
+      "last_bid": 0.08,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-databricks": {
+      "anchor": 0.02,
+      "last_seen": 1795112003.544441,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-celonis": {
+      "anchor": 0.02,
+      "last_seen": 1795112003.8898325,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-cartat": {
+      "anchor": 0.14,
+      "last_seen": 1795112004.0421846,
+      "last_ask": 0.14,
+      "last_bid": 0.12,
       "stat_edge_active": false
     }
   },
@@ -658,7 +714,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795111254.616336,
+  "last_digest": 1795112005.4521399,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -857,9 +913,81 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "ipcc-2026ipos-ledger": {
+      "category": "finance",
+      "p": 0.085,
+      "first_seen": 1795112001.9719906,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-glean": {
+      "category": "finance",
+      "p": 0.025,
+      "first_seen": 1795112002.3267617,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-epic-games": {
+      "category": "finance",
+      "p": 0.165,
+      "first_seen": 1795112002.605974,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-discord": {
+      "category": "finance",
+      "p": 0.025,
+      "first_seen": 1795112002.8989003,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-denbos": {
+      "category": "sports",
+      "p": 0.085,
+      "first_seen": 1795112003.040294,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-databricks": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795112003.5444334,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-celonis": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795112003.889826,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-cartat": {
+      "category": "sports",
+      "p": 0.13,
+      "first_seen": 1795112004.042176,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 2,
+  "upgrade_cursor": 3,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -871,6 +999,11 @@
     "usgcc-aliens-12-31-2026": [
       {
         "t": 1795111251.213029,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795112001.2051296,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -901,6 +1034,11 @@
         "t": 1795111251.213029,
         "ask": 0.96,
         "bid": 0.95
+      },
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.96,
+        "bid": 0.95
       }
     ],
     "ipcc-2026ipos-ripple-labs": [
@@ -927,6 +1065,11 @@
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": [
       {
         "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795112001.2051296,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -964,6 +1107,11 @@
         "t": 1795111251.213029,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-fermen": [
@@ -971,7 +1119,354 @@
         "t": 1795111251.213029,
         "ask": 0.28,
         "bid": 0.27
+      },
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.27,
+        "bid": 0.26
+      }
+    ],
+    "ccrc-sptfy-1-artst-glbl-yr-2026-drake": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.04,
+        "bid": 0.03
+      }
+    ],
+    "ipcc-2026ipos-ledger": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.09,
+        "bid": 0.08
+      }
+    ],
+    "ipcc-2026ipos-glean": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.03,
+        "bid": 0.02
+      }
+    ],
+    "ipcc-2026ipos-epic-games": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.17,
+        "bid": 0.16
+      }
+    ],
+    "ipcc-2026ipos-discord": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.03,
+        "bid": 0.02
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-denbos": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.09,
+        "bid": 0.08
+      }
+    ],
+    "ipcc-2026ipos-deel": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-databricks": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-celonis": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-cartat": [
+      {
+        "t": 1795112001.2051296,
+        "ask": 0.14,
+        "bid": 0.12
       }
     ]
+  },
+  "v3_research_records": {
+    "ipcc-2026ipos-mistral-ai": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Mistral AI",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "usgcc-aliens-12-31-2026": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "politics",
+      "contract": "US Confirms That Aliens Exist By \u2014 December 31, 2026",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.02,
+      "last_ask": 0.03
+    },
+    "tec-nfl-oroy-2027-02-11-w-fermen": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.26,
+      "first_ask": 0.27,
+      "category": "sports",
+      "contract": "Pro Football Offensive Rookie of the Year \u2014 Fernando Mendoza",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.26,
+          "ask": 0.27
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.26,
+      "last_ask": 0.27
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.03,
+      "first_ask": 0.04,
+      "category": "culture",
+      "contract": "Spotify Top Global Artist 2026 \u2014 Drake",
+      "end_date": "2026-12-17T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.03,
+          "ask": 0.04
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.03,
+      "last_ask": 0.04
+    },
+    "ipcc-2026ipos-ledger": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.08,
+      "first_ask": 0.09,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Ledger",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.08,
+          "ask": 0.09
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.08,
+      "last_ask": 0.09
+    },
+    "ipcc-2026ipos-glean": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Glean",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.02,
+      "last_ask": 0.03
+    },
+    "ipcc-2026ipos-epic-games": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.16,
+      "first_ask": 0.17,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Epic Games",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.16,
+          "ask": 0.17
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.16,
+      "last_ask": 0.17
+    },
+    "ipcc-2026ipos-discord": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Discord",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.02,
+      "last_ask": 0.03
+    },
+    "tec-nfl-oroy-2027-02-11-w-denbos": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.08,
+      "first_ask": 0.09,
+      "category": "sports",
+      "contract": "Pro Football Offensive Rookie of the Year \u2014 Denzel Boston",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.08,
+          "ask": 0.09
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.08,
+      "last_ask": 0.09
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.95,
+      "first_ask": 0.96,
+      "category": "culture",
+      "contract": "Spotify Top Global Artist 2026 \u2014 Bad Bunny",
+      "end_date": "2026-12-17T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.95,
+          "ask": 0.96
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.95,
+      "last_ask": 0.96
+    },
+    "ipcc-2026ipos-deel": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Deel",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-2026ipos-databricks": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Databricks",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "culture",
+      "contract": "Spotify Top Global Artist 2026 \u2014 Taylor Swift",
+      "end_date": "2026-12-17T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-2026ipos-celonis": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Celonis",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-oroy-2027-02-11-w-cartat": {
+      "first_seen": 1795112001.2051296,
+      "first_bid": 0.12,
+      "first_ask": 0.14,
+      "category": "sports",
+      "contract": "Pro Football Offensive Rookie of the Year \u2014 Carnell Tate",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.12,
+          "ask": 0.14
+        }
+      ],
+      "last_seen": 1795112001.2051296,
+      "last_bid": 0.12,
+      "last_ask": 0.14
+    }
   }
 }
