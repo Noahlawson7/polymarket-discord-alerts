@@ -203,5 +203,6 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 0
+  "last_digest": 1795105111.5291708,
+  "training_samples": {}
 }
