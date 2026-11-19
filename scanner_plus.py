@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Polymarket US Scanner V3.2: faster backfill + conservatively calibrated probabilities.
+"""Polymarket US Scanner V3.2.1: diagnostic backfill + conservatively calibrated probabilities.
 
 Drop-in replacement for scanner_plus.py, called by the existing GitHub Action.
 Extends market_alerts.py WITHOUT changing its trained model, its strict holdout
@@ -320,44 +320,66 @@ def event_group(m):
     return 'q:' + (name or str(m.get('slug'))) + ':' + end
 
 
-def historical_point(payload, m):
-    """Safely choose an EARLY, historic book quote with documented provenance.
+def historical_point_with_reason(payload, m):
+    """Return (safe historical point, rejection reason) using V3.2 criteria.
 
-    End date is not guaranteed to equal actual resolution time; first quote
-    close to listing start is deliberately used. If early-quote provenance is
-    missing, skip instead of manufacturing look-ahead-free training data.
+    This is a diagnostic refactor, not an expansion of eligible historical data.
+    In particular, do not infer prices from settlement or use quotes with
+    uncertain pre-resolution timing.
     """
     if not isinstance(payload, dict) or not isinstance(payload.get('history'), list):
-        return None
+        return None, 'invalid_history_payload'
     start = iso_epoch(m.get('startDate') or m.get('createdAt'))
     end = iso_epoch(m.get('endDate'))
-    if start is None or end is None or end - start < 3 * 86400:
-        return None
-    rows = []
+    if start is None or end is None:
+        return None, 'missing_market_dates'
+    if end - start < 3 * 86400:
+        return None, 'short_market_duration'
     raw_history = payload['history']
+    if not raw_history:
+        return None, 'empty_history'
+    any_complete = False
+    any_early = False
+    any_early_valid = False
+    rows = []
+    latest_ts = 0
+    latest_early = min(start + 7 * 86400, end - 2 * 86400)
     for pt in raw_history:
         if not isinstance(pt, dict):
             continue
         ts = maybe_nonnegative(pt.get('timestamp'))
+        if ts is not None:
+            latest_ts = max(latest_ts, ts)
         a = maybe_nonnegative(pt.get('longPrice'))
         short_ask = maybe_nonnegative(pt.get('shortPrice'))
         if ts is None or a is None or short_ask is None:
             continue
+        any_complete = True
+        if not start - 3600 <= ts <= latest_early:
+            continue
+        any_early = True
         b = 1.0 - short_ask
-        if (start - 3600 <= ts <= min(start + 7 * 86400, end - 2 * 86400)
-                and 0.02 <= b <= a <= 0.98 and a - b <= .10):
-            rows.append((ts, b, a))
-    if not rows:
-        return None
-    # Reject series with no history after the proposed snapshot: may be
-    # snapshots taken AFTER early resolution despite a future 'endDate'.
-    max_ts = max((maybe_nonnegative(x.get('timestamp')) or 0)
-                 for x in raw_history if isinstance(x, dict))
-    ts, b, a = min(rows, key=lambda r: r[0])
-    if max_ts - ts < 86400:
-        return None
+        if not (0.02 <= b <= a <= 0.98 and a - b <= .10):
+            continue
+        any_early_valid = True
+        rows.append((ts,b,a))
+    if not any_complete:
+        return None, 'missing_prices_or_timestamps'
+    if not any_early:
+        return None, 'no_quote_in_early_window'
+    if not any_early_valid:
+        return None, 'early_quote_invalid_or_wide'
+    ts,b,a = min(rows, key=lambda r:r[0])
+    if latest_ts - ts < 86400:
+        return None, 'insufficient_later_history'
     return {'t': int(ts), 'bid': round(b, 6), 'ask': round(a, 6),
-            'p': round((a + b) / 2.0, 6), 'spread': round(a - b, 6)}
+            'p': round((a + b) / 2.0, 6), 'spread': round(a - b, 6)}, None
+
+
+def historical_point(payload, m):
+    """Preserve the V3.2 public return type while exposing detailed diagnostics."""
+    point, _ = historical_point_with_reason(payload, m)
+    return point
 
 
 def backfill_historical(state, *, now, items_per_run=None):
@@ -374,6 +396,21 @@ def backfill_historical(state, *, now, items_per_run=None):
     queue = state.setdefault('v31_queue', [])
     skipped = state.setdefault('v31_failed', {})
     stats = Counter()
+    # V3.2 skipped unclassified early-quote failures permanently. Recheck at
+    # most 20 of those once with fresh metadata, preserving good archive rows.
+    # This migration is idempotent and stays within the normal per-run cap.
+    if not state.get('v321_legacy_recheck_done', False):
+        queued_slugs = {item.get('slug') for item in queue if isinstance(item, dict)}
+        for slug, why in list(skipped.items()):
+            if stats['legacy_requeued'] >= 20 or len(queue) >= V32_MAX_QUEUE:
+                break
+            if (why == 'no_safe_early_quote' and isinstance(slug, str)
+                    and slug not in archive and slug not in queued_slugs):
+                queue.insert(0, {'slug': slug, 'needs_metadata': True, 'attempts': 0})
+                queued_slugs.add(slug)
+                del skipped[slug]
+                stats['legacy_requeued'] += 1
+        state['v321_legacy_recheck_done'] = True
     # Remove malformed/duplicate queue records without losing valid entries.
     known = set(archive) | set(skipped)
     safe_queue = []
@@ -444,6 +481,16 @@ def backfill_historical(state, *, now, items_per_run=None):
         processed += 1
         stats['attempted'] += 1
         try:
+            if m.get('needs_metadata'):
+                metadata = base.request_json('/v1/market/slug/' + quote(slug, safe=''))
+                detail = metadata.get('market') if isinstance(metadata, dict) else None
+                if not isinstance(detail, dict) or detail.get('slug') != slug:
+                    raise ValueError('Cannot verify legacy market metadata')
+                m.update({'category': base.category_of(detail),
+                          'event': event_group(detail),
+                          'startDate': detail.get('startDate') or detail.get('createdAt'),
+                          'endDate': detail.get('endDate'),
+                          'needs_metadata': False})
             settle = base.request_json('/v1/markets/' + quote(slug, safe='') + '/settlement')
             result = resolved_yes(settle)
             if result is None:
@@ -453,10 +500,11 @@ def backfill_historical(state, *, now, items_per_run=None):
             history_url = '/v1/price-history?' + urlencode({
                 'symbol': slug, 'fixedInterval': 'INTERVAL_ALL', 'fidelity': 180})
             history = base.request_json(history_url)
-            point = historical_point(history, m)
+            point, reason = historical_point_with_reason(history, m)
             if point is None:
                 stats['no_safe_history'] += 1
-                skipped[slug] = 'no_safe_early_quote'
+                stats['history_' + reason] += 1
+                skipped[slug] = 'no_safe_early_quote:' + reason
                 continue
             archive[slug] = {'category': m['category'], 'event': m['event'],
                              'p': point['p'], 'ask': point['ask'],
@@ -479,7 +527,7 @@ def backfill_historical(state, *, now, items_per_run=None):
                 m['retry_after'] = now + wait
                 queue.append(m)
                 stats['deferred_retry'] += 1
-            print(f'V3.2 backfill error {slug[:45]}: {type(exc).__name__}: '
+            print(f'V3.2.1 backfill error {slug[:45]}: {type(exc).__name__}: '
                   f'{str(exc)[:90]}', flush=True)
             if status in (429, 500, 502, 503, 504) or isinstance(exc, (URLError, OSError)):
                 state['v32_backoff_until'] = now + min(300, 30 * (2 ** min(attempts, 3)))
@@ -822,7 +870,7 @@ def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=No
     pending = sum(isinstance(s, dict) and s.get("result") is None for s in samples.values())
     top = digest_picks(ranked, quoted, limit=5)
     header = [
-        f"**POLYMARKET US · V3.2 STATISTICAL RESEARCH** ({timestamp})",
+        f"**POLYMARKET US · V3.2.1 STATISTICAL RESEARCH** ({timestamp})",
         f"Live quotes {len(quoted)}/{_session['candidates']} | unique samples "
         f"{len(samples)} ({settled} settled, {pending} pending) | long-term records {history_count}",
         f"Validated categories {len(models)} | incomplete quotes {diagnostics.get('missing',0)} "
@@ -831,6 +879,12 @@ def market_digest(ranked, quoted, samples, models, *, timestamp, book_details=No
         f"new {v31_stats.get('imported',0)}/{v31_stats.get('attempted',0)} attempted | "
         f"queued {v31_stats.get('remaining',0)} | skipped {v31_stats.get('skipped_total',0)}", 
     ]
+    history_reasons = [(k.replace('history_', ''), v) for k, v in v31_stats.items()
+                       if k.startswith('history_') and v]
+    if history_reasons:
+        reason_text = ', '.join(f'{reason}={n}' for reason, n in sorted(
+            history_reasons, key=lambda entry: -entry[1])[:3])
+        header.append('History diagnostics: ' + reason_text)
     if v31_coverage:
         detail_coverage = ', '.join(
             f'{cat}={n}' for cat, n in sorted(v31_coverage.items(),
@@ -943,7 +997,7 @@ def scan_once(args):
 
     v31_stats = backfill_historical(state, now=base.now_ts())
     v31_models, v31_coverage = historical_models(state.get('v31_archive', {}))
-    print('V3.2 backfill: ' + str(v31_stats) + '; coverage=' + str(v31_coverage)
+    print('V3.2.1 backfill: ' + str(v31_stats) + '; coverage=' + str(v31_coverage)
           + '; validated categories=' + str(sorted(v31_models)),flush=True)
     samples = state.setdefault("training_samples", {})
     observations = state.setdefault("observations", {})
@@ -1117,4 +1171,3 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
-
