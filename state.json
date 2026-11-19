@@ -9,14 +9,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795112003.8258915,
+      "last_seen": 1795112058.8288932,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795112001.5989945,
+      "last_seen": 1795112058.8668406,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -58,14 +58,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795112001.8731682,
+      "last_seen": 1795112059.1184227,
       "last_ask": 0.04,
       "last_bid": 0.03,
       "stat_edge_active": false
     },
     "ipcc-openai-2027-06-30": {
       "anchor": 0.42,
-      "last_seen": 1795106520.7939725,
+      "last_seen": 1795112059.266183,
       "last_ask": 0.42,
       "last_bid": 0.41,
       "stat_edge_active": false
@@ -198,16 +198,51 @@
     },
     "ipcc-2026ipos-celonis": {
       "anchor": 0.02,
-      "last_seen": 1795112003.8898325,
+      "last_seen": 1795112058.846233,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "tec-nfl-oroy-2027-02-11-w-cartat": {
       "anchor": 0.14,
-      "last_seen": 1795112004.0421846,
+      "last_seen": 1795112058.8904812,
       "last_ask": 0.14,
       "last_bid": 0.12,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-canva": {
+      "anchor": 0.02,
+      "last_seen": 1795112058.9302468,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-oroy-2027-02-11-w-carbec": {
+      "anchor": 0.02,
+      "last_seen": 1795112058.9477916,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-applied-intuition": {
+      "anchor": 0.02,
+      "last_seen": 1795112059.0640874,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-2026ipos-anduril": {
+      "anchor": 0.02,
+      "last_seen": 1795112059.1997366,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "ipcc-openai-2026-12-31": {
+      "anchor": 0.03,
+      "last_seen": 1795112059.3225389,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     }
   },
@@ -714,7 +749,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795112005.4521399,
+  "last_digest": 1795112060.726825,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -985,9 +1020,54 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "ipcc-2026ipos-canva": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795112058.9302392,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-oroy-2027-02-11-w-carbec": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795112058.947785,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-applied-intuition": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795112059.0640805,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-2026ipos-anduril": {
+      "category": "finance",
+      "p": 0.015,
+      "first_seen": 1795112059.199729,
+      "end_ts": 1799985600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "ipcc-openai-2026-12-31": {
+      "category": "finance",
+      "p": 0.025,
+      "first_seen": 1795112059.322532,
+      "end_ts": 1815620400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 3,
+  "upgrade_cursor": 4,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1195,6 +1275,48 @@
         "ask": 0.14,
         "bid": 0.12
       }
+    ],
+    "ipcc-2026ipos-canva": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-oroy-2027-02-11-w-carbec": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-applied-intuition": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-2026ipos-anduril": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "ipcc-openai-2027-06-30": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.42,
+        "bid": 0.41
+      }
+    ],
+    "ipcc-openai-2026-12-31": [
+      {
+        "t": 1795112058.7720532,
+        "ask": 0.03,
+        "bid": 0.02
+      }
     ]
   },
   "v3_research_records": {
@@ -1230,7 +1352,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795112001.2051296,
+      "last_seen": 1795112058.7720532,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -1266,7 +1388,7 @@
           "ask": 0.04
         }
       ],
-      "last_seen": 1795112001.2051296,
+      "last_seen": 1795112058.7720532,
       "last_bid": 0.03,
       "last_ask": 0.04
     },
@@ -1428,7 +1550,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795112001.2051296,
+      "last_seen": 1795112058.7720532,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -1446,7 +1568,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795112001.2051296,
+      "last_seen": 1795112058.7720532,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -1464,9 +1586,117 @@
           "ask": 0.14
         }
       ],
-      "last_seen": 1795112001.2051296,
+      "last_seen": 1795112058.7720532,
       "last_bid": 0.12,
       "last_ask": 0.14
+    },
+    "ipcc-2026ipos-canva": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Canva",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-oroy-2027-02-11-w-carbec": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Offensive Rookie of the Year \u2014 Carson Beck",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-2026ipos-applied-intuition": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Applied Intuition",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-2026ipos-anduril": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Anduril",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-openai-2027-06-30": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.41,
+      "first_ask": 0.42,
+      "category": "finance",
+      "contract": "OpenAI IPO Officially Confirmed By \u2014 June 30, 2027",
+      "end_date": "2027-07-15T03:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.41,
+          "ask": 0.42
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.41,
+      "last_ask": 0.42
+    },
+    "ipcc-openai-2026-12-31": {
+      "first_seen": 1795112058.7720532,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "finance",
+      "contract": "OpenAI IPO Officially Confirmed By \u2014 December 31, 2026",
+      "end_date": "2027-07-15T03:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795112058.7720532,
+      "last_bid": 0.02,
+      "last_ask": 0.03
     }
   }
 }
