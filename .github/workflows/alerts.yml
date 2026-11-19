@@ -34,7 +34,7 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          FLAGS='--max-pages 5 --max-bbo 25 --min-volume 50 --max-spread 0.08 --digest-hours 6'
+          FLAGS='--max-pages 5 --max-bbo 25 --min-volume 0 --max-spread 0.08 --digest-hours 6'
           if [ "${{ github.event_name }}" = 'workflow_dispatch' ]; then
             python3 scanner_plus.py $FLAGS --report-now
           else
