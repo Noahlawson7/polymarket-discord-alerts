@@ -9,14 +9,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795114770.743149,
+      "last_seen": 1795131497.6125646,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795114770.0495837,
+      "last_seen": 1795131495.934586,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795114769.8009212,
+      "last_seen": 1795131496.8717444,
       "last_ask": 0.96,
       "last_bid": 0.95,
       "stat_edge_active": false
@@ -114,7 +114,7 @@
     },
     "ipcc-2026ipos-remote": {
       "anchor": 0.02,
-      "last_seen": 1795114772.6724088,
+      "last_seen": 1795131495.8182666,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -128,21 +128,21 @@
     },
     "ipcc-2026ipos-ramp": {
       "anchor": 0.03,
-      "last_seen": 1795111253.3400269,
+      "last_seen": 1795131496.2897463,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-openai": {
       "anchor": 0.02,
-      "last_seen": 1795111253.6103957,
+      "last_seen": 1795131496.6343458,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-mistral-ai": {
       "anchor": 0.02,
-      "last_seen": 1795113141.8132622,
+      "last_seen": 1795131496.9937503,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -156,28 +156,28 @@
     },
     "ipcc-2026ipos-ledger": {
       "anchor": 0.09,
-      "last_seen": 1795113141.899886,
+      "last_seen": 1795131497.355981,
       "last_ask": 0.09,
       "last_bid": 0.08,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-glean": {
       "anchor": 0.03,
-      "last_seen": 1795113141.9752893,
+      "last_seen": 1795131497.734276,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-epic-games": {
       "anchor": 0.04,
-      "last_seen": 1795113142.0409365,
-      "last_ask": 0.04,
-      "last_bid": 0.03,
+      "last_seen": 1795131498.0661752,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795113142.096108,
+      "last_seen": 1795131498.444222,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -292,6 +292,13 @@
       "last_seen": 1795114770.6186514,
       "last_ask": 0.47,
       "last_bid": 0.46,
+      "stat_edge_active": false
+    },
+    "tec-nfl-opoy-2027-02-11-w-chrmcc": {
+      "anchor": 0.02,
+      "last_seen": 1795131497.4790134,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
       "stat_edge_active": false
     }
   },
@@ -1180,9 +1187,18 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-opoy-2027-02-11-w-chrmcc": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795131497.4790049,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 8,
+  "upgrade_cursor": 9,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1229,6 +1245,11 @@
       },
       {
         "t": 1795114769.7414715,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1294,6 +1315,11 @@
         "t": 1795114769.7414715,
         "ask": 0.96,
         "bid": 0.95
+      },
+      {
+        "t": 1795131495.580954,
+        "ask": 0.96,
+        "bid": 0.95
       }
     ],
     "ipcc-2026ipos-ripple-labs": [
@@ -1352,6 +1378,11 @@
         "t": 1795114769.7414715,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795131495.580954,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-remote": [
@@ -1362,6 +1393,11 @@
       },
       {
         "t": 1795114769.7414715,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1378,11 +1414,21 @@
         "t": 1795111251.213029,
         "ask": 0.03,
         "bid": 0.02
+      },
+      {
+        "t": 1795131495.580954,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-openai": [
       {
         "t": 1795111251.213029,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1400,6 +1446,11 @@
       },
       {
         "t": 1795113141.7706702,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1453,6 +1504,11 @@
         "t": 1795113141.7706702,
         "ask": 0.09,
         "bid": 0.08
+      },
+      {
+        "t": 1795131495.580954,
+        "ask": 0.09,
+        "bid": 0.08
       }
     ],
     "ipcc-2026ipos-glean": [
@@ -1463,6 +1519,11 @@
       },
       {
         "t": 1795113141.7706702,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1477,6 +1538,11 @@
         "t": 1795113141.7706702,
         "ask": 0.04,
         "bid": 0.03
+      },
+      {
+        "t": 1795131495.580954,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-discord": [
@@ -1487,6 +1553,11 @@
       },
       {
         "t": 1795113141.7706702,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795131495.580954,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1681,6 +1752,13 @@
         "ask": 0.47,
         "bid": 0.46
       }
+    ],
+    "tec-nfl-opoy-2027-02-11-w-chrmcc": [
+      {
+        "t": 1795131495.580954,
+        "ask": 0.02,
+        "bid": 0.01
+      }
     ]
   },
   "v3_research_records": {
@@ -1698,7 +1776,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795113141.7706702,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -1716,7 +1794,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795114769.7414715,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -1770,7 +1848,7 @@
           "ask": 0.09
         }
       ],
-      "last_seen": 1795113141.7706702,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.08,
       "last_ask": 0.09
     },
@@ -1788,7 +1866,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795113141.7706702,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -1806,9 +1884,9 @@
           "ask": 0.17
         }
       ],
-      "last_seen": 1795113141.7706702,
-      "last_bid": 0.03,
-      "last_ask": 0.04
+      "last_seen": 1795131495.580954,
+      "last_bid": 0.02,
+      "last_ask": 0.03
     },
     "ipcc-2026ipos-discord": {
       "first_seen": 1795112001.2051296,
@@ -1824,7 +1902,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795113141.7706702,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -1860,7 +1938,7 @@
           "ask": 0.96
         }
       ],
-      "last_seen": 1795114769.7414715,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.95,
       "last_ask": 0.96
     },
@@ -1914,7 +1992,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795114769.7414715,
+      "last_seen": 1795131495.580954,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2274,7 +2352,61 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795114769.7414715,
+      "last_seen": 1795131495.580954,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "ipcc-2026ipos-ramp": {
+      "first_seen": 1795131495.580954,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 Ramp",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795131495.580954,
+      "last_bid": 0.02,
+      "last_ask": 0.03
+    },
+    "ipcc-2026ipos-openai": {
+      "first_seen": 1795131495.580954,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "finance",
+      "contract": "Which Companies Will Confirm an IPO in 2026 \u2014 OpenAI",
+      "end_date": "2027-01-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795131495.580954,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-opoy-2027-02-11-w-chrmcc": {
+      "first_seen": 1795131495.580954,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Offensive Player of the Year \u2014 Christian McCaffrey",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20776,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795131495.580954,
       "last_bid": 0.01,
       "last_ask": 0.02
     }
@@ -2356,105 +2488,119 @@
       "t": 1762041600,
       "end": 1762797600.0,
       "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-nyg-chi-2025-11-09": {
+      "category": "sports",
+      "event": "q:new york vs. chicago:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762041600,
+      "end": 1762797600.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-jax-hou-2025-11-09": {
+      "category": "sports",
+      "event": "q:jacksonville vs. houston:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762041600,
+      "end": 1762797600.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-cle-nyj-2025-11-09": {
+      "category": "sports",
+      "event": "q:cleveland vs. new york:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762041600,
+      "end": 1762797600.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-buf-mia-2025-11-09": {
+      "category": "sports",
+      "event": "q:buffalo vs. miami:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762041600,
+      "end": 1762797600.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-ne-tb-2025-11-09": {
+      "category": "sports",
+      "event": "q:new england vs. tampa bay:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762041600,
+      "end": 1762797600.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-det-was-2025-11-09": {
+      "category": "sports",
+      "event": "q:detroit vs. washington:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762041600,
+      "end": 1762809900.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-ari-sea-2025-11-09": {
+      "category": "sports",
+      "event": "q:arizona vs. seattle:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762041600,
+      "end": 1762808700.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-lar-sf-2025-11-09": {
+      "category": "sports",
+      "event": "q:los angeles vs. san francisco:2025-11-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762041600,
+      "end": 1762809900.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-nyj-ne-2025-11-13": {
+      "category": "sports",
+      "event": "q:new york vs. new england:2025-11-15",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762473600,
+      "end": 1763169300.0,
+      "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nba-sa-chi-2025-11-10": {
+      "category": "sports",
+      "event": "q:san antonio vs. chicago:2025-11-12",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762646400,
+      "end": 1762909200.0,
+      "source": "us_settlement_and_early_book_history"
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nfl-nyg-chi-2025-11-09",
-      "category": "sports",
-      "event": "q:new york vs. chicago:2025-11-10",
-      "startDate": "2025-11-01T19:00:01Z",
-      "endDate": "2025-11-10T18:00:00Z",
-      "question": "New York vs. Chicago"
-    },
-    {
-      "slug": "aec-nfl-jax-hou-2025-11-09",
-      "category": "sports",
-      "event": "q:jacksonville vs. houston:2025-11-10",
-      "startDate": "2025-11-01T19:00:01Z",
-      "endDate": "2025-11-10T18:00:00Z",
-      "question": "Jacksonville vs. Houston"
-    },
-    {
-      "slug": "aec-nfl-cle-nyj-2025-11-09",
-      "category": "sports",
-      "event": "q:cleveland vs. new york:2025-11-10",
-      "startDate": "2025-11-01T19:00:01Z",
-      "endDate": "2025-11-10T18:00:00Z",
-      "question": "Cleveland vs. New York"
-    },
-    {
-      "slug": "aec-nfl-buf-mia-2025-11-09",
-      "category": "sports",
-      "event": "q:buffalo vs. miami:2025-11-10",
-      "startDate": "2025-11-01T19:00:01Z",
-      "endDate": "2025-11-10T18:00:00Z",
-      "question": "Buffalo vs. Miami"
-    },
-    {
-      "slug": "aec-nfl-ne-tb-2025-11-09",
-      "category": "sports",
-      "event": "q:new england vs. tampa bay:2025-11-10",
-      "startDate": "2025-11-01T19:00:01Z",
-      "endDate": "2025-11-10T18:00:00Z",
-      "question": "New England vs. Tampa Bay"
-    },
-    {
-      "slug": "aec-nfl-det-was-2025-11-09",
-      "category": "sports",
-      "event": "q:detroit vs. washington:2025-11-10",
-      "startDate": "2025-11-01T22:00:00Z",
-      "endDate": "2025-11-10T21:25:00Z",
-      "question": "Detroit vs. Washington"
-    },
-    {
-      "slug": "aec-nfl-ari-sea-2025-11-09",
-      "category": "sports",
-      "event": "q:arizona vs. seattle:2025-11-10",
-      "startDate": "2025-11-01T22:00:00Z",
-      "endDate": "2025-11-10T21:05:00Z",
-      "question": "Arizona vs. Seattle"
-    },
-    {
-      "slug": "aec-nfl-lar-sf-2025-11-09",
-      "category": "sports",
-      "event": "q:los angeles vs. san francisco:2025-11-10",
-      "startDate": "2025-11-01T22:00:00Z",
-      "endDate": "2025-11-10T21:25:00Z",
-      "question": "Los Angeles vs. San Francisco"
-    },
-    {
-      "slug": "aec-nfl-pit-lac-2025-11-09",
-      "category": "sports",
-      "event": "q:pittsburgh vs. los angeles:2025-11-11",
-      "startDate": "2025-11-02T04:00:00Z",
-      "endDate": "2025-11-11T01:20:00Z",
-      "question": "Pittsburgh vs. Los Angeles"
-    },
-    {
-      "slug": "aec-nfl-phi-gb-2025-11-10",
-      "category": "sports",
-      "event": "q:philadelphia vs. green bay:2025-11-12",
-      "startDate": "2025-11-03T02:00:02Z",
-      "endDate": "2025-11-12T01:15:00Z",
-      "question": "Philadelphia vs. Green Bay"
-    },
-    {
-      "slug": "aec-nfl-nyj-ne-2025-11-13",
-      "category": "sports",
-      "event": "q:new york vs. new england:2025-11-15",
-      "startDate": "2025-11-06T02:00:01Z",
-      "endDate": "2025-11-15T01:15:00Z",
-      "question": "New York vs. New England"
-    },
-    {
-      "slug": "aec-nba-sa-chi-2025-11-10",
-      "category": "sports",
-      "event": "q:san antonio vs. chicago:2025-11-12",
-      "startDate": "2025-11-08T17:00:02Z",
-      "endDate": "2025-11-12T01:00:00Z",
-      "question": "San Antonio vs. Chicago"
-    },
     {
       "slug": "aec-nba-ind-gs-2025-11-09",
       "category": "sports",
@@ -3914,6 +4060,906 @@
       "endDate": "2025-12-02T01:20:00Z",
       "question": "Denver vs. Washington",
       "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-buf-pit-2025-11-30",
+      "category": "sports",
+      "event": "q:buffalo vs. pittsburgh:2025-12-01",
+      "startDate": "2025-11-22T23:00:00Z",
+      "endDate": "2025-12-01T21:25:00Z",
+      "question": "Buffalo vs. Pittsburgh",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-lv-lac-2025-11-30",
+      "category": "sports",
+      "event": "q:las vegas vs. los angeles:2025-12-01",
+      "startDate": "2025-11-22T23:00:00Z",
+      "endDate": "2025-12-01T21:25:00Z",
+      "question": "Las Vegas vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lac-lal-2025-11-25",
+      "category": "sports",
+      "event": "q:los angeles vs. los angeles:2025-11-27",
+      "startDate": "2025-11-23T05:00:01Z",
+      "endDate": "2025-11-27T04:00:00Z",
+      "question": "Los Angeles vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-det-bos-2025-11-26",
+      "category": "sports",
+      "event": "q:detroit vs. boston:2025-11-27",
+      "startDate": "2025-11-23T23:00:03Z",
+      "endDate": "2025-11-27T22:00:00Z",
+      "question": "Detroit vs. Boston",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mil-mia-2025-11-26",
+      "category": "sports",
+      "event": "q:milwaukee vs. miami:2025-11-28",
+      "startDate": "2025-11-24T02:00:01Z",
+      "endDate": "2025-11-28T00:30:00Z",
+      "question": "Milwaukee vs. Miami",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mem-no-2025-11-26",
+      "category": "sports",
+      "event": "q:memphis vs. new orleans:2025-11-28",
+      "startDate": "2025-11-24T02:00:01Z",
+      "endDate": "2025-11-28T01:00:00Z",
+      "question": "Memphis vs. New Orleans",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-ny-cha-2025-11-26",
+      "category": "sports",
+      "event": "q:new york vs. charlotte:2025-11-28",
+      "startDate": "2025-11-24T02:00:01Z",
+      "endDate": "2025-11-28T00:00:00Z",
+      "question": "New York vs. Charlotte",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-min-okc-2025-11-26",
+      "category": "sports",
+      "event": "q:minnesota vs. oklahoma city:2025-11-28",
+      "startDate": "2025-11-24T02:00:01Z",
+      "endDate": "2025-11-28T00:30:00Z",
+      "question": "Minnesota vs. Oklahoma City",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-ind-tor-2025-11-26",
+      "category": "sports",
+      "event": "q:indiana vs. toronto:2025-11-28",
+      "startDate": "2025-11-24T02:00:01Z",
+      "endDate": "2025-11-28T00:30:00Z",
+      "question": "Indiana vs. Toronto",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-nyg-ne-2025-12-01",
+      "category": "sports",
+      "event": "q:new york vs. new england:2025-12-03",
+      "startDate": "2025-11-24T02:00:00Z",
+      "endDate": "2025-12-03T01:15:00Z",
+      "question": "New York vs. New England",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-hou-gs-2025-11-26",
+      "category": "sports",
+      "event": "q:houston vs. golden state:2025-11-28",
+      "startDate": "2025-11-24T05:00:01Z",
+      "endDate": "2025-11-28T03:00:00Z",
+      "question": "Houston vs. Golden State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sa-por-2025-11-26",
+      "category": "sports",
+      "event": "q:san antonio vs. portland:2025-11-28",
+      "startDate": "2025-11-24T05:00:01Z",
+      "endDate": "2025-11-28T03:00:00Z",
+      "question": "San Antonio vs. Portland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-pho-sac-2025-11-26",
+      "category": "sports",
+      "event": "q:phoenix vs. sacramento:2025-11-27",
+      "startDate": "2025-11-24T05:00:01Z",
+      "endDate": "2025-11-27T22:00:00Z",
+      "question": "Phoenix vs. Sacramento",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-was-ind-2025-11-28",
+      "category": "sports",
+      "event": "q:washington vs. indiana:2025-11-30",
+      "startDate": "2025-11-26T02:00:02Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Washington vs. Indiana",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mil-ny-2025-11-28",
+      "category": "sports",
+      "event": "q:milwaukee vs. new york:2025-11-30",
+      "startDate": "2025-11-26T02:00:02Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Milwaukee vs. New York",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-phi-bkn-2025-11-28",
+      "category": "sports",
+      "event": "q:philadelphia vs. brooklyn:2025-11-30",
+      "startDate": "2025-11-26T02:00:01Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Philadelphia vs. Brooklyn",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-orl-det-2025-11-28",
+      "category": "sports",
+      "event": "q:orlando vs. detroit:2025-11-30",
+      "startDate": "2025-11-26T02:00:02Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Orlando vs. Detroit",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-chi-cha-2025-11-28",
+      "category": "sports",
+      "event": "q:chicago vs. charlotte:2025-11-30",
+      "startDate": "2025-11-26T02:00:01Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Chicago vs. Charlotte",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-cle-atl-2025-11-28",
+      "category": "sports",
+      "event": "q:cleveland vs. atlanta:2025-11-30",
+      "startDate": "2025-11-26T02:00:01Z",
+      "endDate": "2025-11-30T00:30:00Z",
+      "question": "Cleveland vs. Atlanta",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mem-lac-2025-11-28",
+      "category": "sports",
+      "event": "q:memphis vs. los angeles:2025-11-30",
+      "startDate": "2025-11-26T05:00:01Z",
+      "endDate": "2025-11-30T03:00:00Z",
+      "question": "Memphis vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-pho-okc-2025-11-28",
+      "category": "sports",
+      "event": "q:phoenix vs. oklahoma city:2025-11-30",
+      "startDate": "2025-11-26T05:00:01Z",
+      "endDate": "2025-11-30T02:30:00Z",
+      "question": "Phoenix vs. Oklahoma City",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sac-uta-2025-11-28",
+      "category": "sports",
+      "event": "q:sacramento vs. utah:2025-11-30",
+      "startDate": "2025-11-26T05:00:01Z",
+      "endDate": "2025-11-30T02:30:00Z",
+      "question": "Sacramento vs. Utah",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sa-den-2025-11-28",
+      "category": "sports",
+      "event": "q:san antonio vs. denver:2025-11-30",
+      "startDate": "2025-11-26T05:00:01Z",
+      "endDate": "2025-11-30T02:30:00Z",
+      "question": "San Antonio vs. Denver",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-dal-lal-2025-11-28",
+      "category": "sports",
+      "event": "q:dallas vs. los angeles:2025-11-30",
+      "startDate": "2025-11-26T05:00:01Z",
+      "endDate": "2025-11-30T03:00:00Z",
+      "question": "Dallas vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-tor-cha-2025-11-29",
+      "category": "sports",
+      "event": "q:toronto vs. charlotte:2025-11-30",
+      "startDate": "2025-11-26T23:00:01Z",
+      "endDate": "2025-11-30T23:00:00Z",
+      "question": "Toronto vs. Charlotte",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bos-min-2025-11-29",
+      "category": "sports",
+      "event": "q:boston vs. minnesota:2025-11-30",
+      "startDate": "2025-11-26T23:00:01Z",
+      "endDate": "2025-11-30T22:00:00Z",
+      "question": "Boston vs. Minnesota",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-dal-det-2025-12-04",
+      "category": "sports",
+      "event": "q:dallas vs. detroit:2025-12-06",
+      "startDate": "2025-11-27T02:00:00Z",
+      "endDate": "2025-12-06T01:15:00Z",
+      "question": "Dallas vs. Detroit",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-det-mia-2025-11-29",
+      "category": "sports",
+      "event": "q:detroit vs. miami:2025-12-01",
+      "startDate": "2025-11-27T02:00:02Z",
+      "endDate": "2025-12-01T01:00:00Z",
+      "question": "Detroit vs. Miami",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-chi-ind-2025-11-29",
+      "category": "sports",
+      "event": "q:chicago vs. indiana:2025-12-01",
+      "startDate": "2025-11-27T02:00:02Z",
+      "endDate": "2025-12-01T00:30:00Z",
+      "question": "Chicago vs. Indiana",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-no-gs-2025-11-29",
+      "category": "sports",
+      "event": "q:new orleans vs. golden state:2025-12-01",
+      "startDate": "2025-11-27T02:00:02Z",
+      "endDate": "2025-12-01T01:30:00Z",
+      "question": "New Orleans vs. Golden State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bkn-mil-2025-11-29",
+      "category": "sports",
+      "event": "q:brooklyn vs. milwaukee:2025-12-01",
+      "startDate": "2025-11-27T02:00:02Z",
+      "endDate": "2025-12-01T01:00:00Z",
+      "question": "Brooklyn vs. Milwaukee",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-den-pho-2025-11-29",
+      "category": "sports",
+      "event": "q:denver vs. phoenix:2025-12-01",
+      "startDate": "2025-11-27T02:00:02Z",
+      "endDate": "2025-12-01T02:00:00Z",
+      "question": "Denver vs. Phoenix",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-dal-lac-2025-11-29",
+      "category": "sports",
+      "event": "q:dallas vs. los angeles:2025-12-01",
+      "startDate": "2025-11-27T05:00:01Z",
+      "endDate": "2025-12-01T03:00:00Z",
+      "question": "Dallas vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-hou-uta-2025-11-30",
+      "category": "sports",
+      "event": "q:houston vs. utah:2025-12-01",
+      "startDate": "2025-11-27T20:00:01Z",
+      "endDate": "2025-12-01T20:00:00Z",
+      "question": "Houston vs. Utah",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sa-min-2025-11-30",
+      "category": "sports",
+      "event": "q:san antonio vs. minnesota:2025-12-02",
+      "startDate": "2025-11-28T02:00:01Z",
+      "endDate": "2025-12-02T00:00:00Z",
+      "question": "San Antonio vs. Minnesota",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mem-sac-2025-11-30",
+      "category": "sports",
+      "event": "q:memphis vs. sacramento:2025-12-02",
+      "startDate": "2025-11-28T02:00:01Z",
+      "endDate": "2025-12-02T02:00:00Z",
+      "question": "Memphis vs. Sacramento",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-atl-phi-2025-11-30",
+      "category": "sports",
+      "event": "q:atlanta vs. philadelphia:2025-12-01",
+      "startDate": "2025-11-27T23:00:01Z",
+      "endDate": "2025-12-01T23:00:00Z",
+      "question": "Atlanta vs. Philadelphia",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-okc-por-2025-11-30",
+      "category": "sports",
+      "event": "q:oklahoma city vs. portland:2025-12-01",
+      "startDate": "2025-11-27T23:00:01Z",
+      "endDate": "2025-12-01T23:00:00Z",
+      "question": "Oklahoma City vs. Portland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-tor-ny-2025-11-30",
+      "category": "sports",
+      "event": "q:toronto vs. new york:2025-12-01",
+      "startDate": "2025-11-27T23:00:01Z",
+      "endDate": "2025-12-01T23:00:00Z",
+      "question": "Toronto vs. New York",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bos-cle-2025-11-30",
+      "category": "sports",
+      "event": "q:boston vs. cleveland:2025-12-01",
+      "startDate": "2025-11-27T23:00:01Z",
+      "endDate": "2025-12-01T23:00:00Z",
+      "question": "Boston vs. Cleveland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-no-lal-2025-11-30",
+      "category": "sports",
+      "event": "q:new orleans vs. los angeles:2025-12-02",
+      "startDate": "2025-11-28T05:00:01Z",
+      "endDate": "2025-12-02T02:30:00Z",
+      "question": "New Orleans vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-dal-den-2025-12-01",
+      "category": "sports",
+      "event": "q:dallas vs. denver:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T02:00:00Z",
+      "question": "Dallas vs. Denver",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-atl-det-2025-12-01",
+      "category": "sports",
+      "event": "q:atlanta vs. detroit:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:00:00Z",
+      "question": "Atlanta vs. Detroit",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-hou-uta-2025-12-01",
+      "category": "sports",
+      "event": "q:houston vs. utah:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T02:00:00Z",
+      "question": "Houston vs. Utah",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-cha-bkn-2025-12-01",
+      "category": "sports",
+      "event": "q:charlotte vs. brooklyn:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:30:00Z",
+      "question": "Charlotte vs. Brooklyn",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-chi-orl-2025-12-01",
+      "category": "sports",
+      "event": "q:chicago vs. orlando:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:30:00Z",
+      "question": "Chicago vs. Orlando",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-cle-ind-2025-12-01",
+      "category": "sports",
+      "event": "q:cleveland vs. indiana:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:00:00Z",
+      "question": "Cleveland vs. Indiana",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mil-was-2025-12-01",
+      "category": "sports",
+      "event": "q:milwaukee vs. washington:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:00:00Z",
+      "question": "Milwaukee vs. Washington",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lac-mia-2025-12-01",
+      "category": "sports",
+      "event": "q:los angeles vs. miami:2025-12-03",
+      "startDate": "2025-11-29T02:00:01Z",
+      "endDate": "2025-12-03T00:30:00Z",
+      "question": "Los Angeles vs. Miami",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-pho-lal-2025-12-01",
+      "category": "sports",
+      "event": "q:phoenix vs. los angeles:2025-12-03",
+      "startDate": "2025-11-29T05:00:01Z",
+      "endDate": "2025-12-03T03:00:00Z",
+      "question": "Phoenix vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-cin-buf-2025-12-07",
+      "category": "sports",
+      "event": "q:cincinnati vs. buffalo:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Cincinnati vs. Buffalo",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-sea-atl-2025-12-07",
+      "category": "sports",
+      "event": "q:seattle vs. atlanta:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Seattle vs. Atlanta",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-no-tb-2025-12-07",
+      "category": "sports",
+      "event": "q:new orleans vs. tampa bay:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "New Orleans vs. Tampa Bay",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-ten-cle-2025-12-07",
+      "category": "sports",
+      "event": "q:tennessee vs. cleveland:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Tennessee vs. Cleveland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-mia-nyj-2025-12-07",
+      "category": "sports",
+      "event": "q:miami vs. new york:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Miami vs. New York",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-pit-bal-2025-12-07",
+      "category": "sports",
+      "event": "q:pittsburgh vs. baltimore:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Pittsburgh vs. Baltimore",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-was-min-2025-12-07",
+      "category": "sports",
+      "event": "q:washington vs. minnesota:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Washington vs. Minnesota",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-ind-jax-2025-12-07",
+      "category": "sports",
+      "event": "q:indianapolis vs. jacksonville:2025-12-08",
+      "startDate": "2025-11-29T20:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Indianapolis vs. Jacksonville",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mem-sa-2025-12-02",
+      "category": "sports",
+      "event": "q:memphis vs. san antonio:2025-12-04",
+      "startDate": "2025-11-30T02:00:01Z",
+      "endDate": "2025-12-04T01:00:00Z",
+      "question": "Memphis vs. San Antonio",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-ny-bos-2025-12-02",
+      "category": "sports",
+      "event": "q:new york vs. boston:2025-12-04",
+      "startDate": "2025-11-30T02:00:01Z",
+      "endDate": "2025-12-04T01:00:00Z",
+      "question": "New York vs. Boston",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-por-tor-2025-12-02",
+      "category": "sports",
+      "event": "q:portland vs. toronto:2025-12-04",
+      "startDate": "2025-11-30T02:00:01Z",
+      "endDate": "2025-12-04T00:30:00Z",
+      "question": "Portland vs. Toronto",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-was-phi-2025-12-02",
+      "category": "sports",
+      "event": "q:washington vs. philadelphia:2025-12-04",
+      "startDate": "2025-11-30T02:00:01Z",
+      "endDate": "2025-12-04T00:00:00Z",
+      "question": "Washington vs. Philadelphia",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-min-no-2025-12-02",
+      "category": "sports",
+      "event": "q:minnesota vs. new orleans:2025-12-04",
+      "startDate": "2025-11-30T02:00:01Z",
+      "endDate": "2025-12-04T01:00:00Z",
+      "question": "Minnesota vs. New Orleans",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-hou-kc-2025-12-07",
+      "category": "sports",
+      "event": "q:houston vs. kansas city:2025-12-09",
+      "startDate": "2025-11-30T02:00:00Z",
+      "endDate": "2025-12-09T01:20:00Z",
+      "question": "Houston vs. Kansas City",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-chi-gb-2025-12-07",
+      "category": "sports",
+      "event": "q:chicago vs. green bay:2025-12-08",
+      "startDate": "2025-11-29T23:00:02Z",
+      "endDate": "2025-12-08T21:25:00Z",
+      "question": "Chicago vs. Green Bay",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-den-lv-2025-12-07",
+      "category": "sports",
+      "event": "q:denver vs. las vegas:2025-12-08",
+      "startDate": "2025-11-29T23:00:02Z",
+      "endDate": "2025-12-08T21:05:00Z",
+      "question": "Denver vs. Las Vegas",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-lar-ari-2025-12-07",
+      "category": "sports",
+      "event": "q:los angeles vs. arizona:2025-12-08",
+      "startDate": "2025-11-29T23:00:02Z",
+      "endDate": "2025-12-08T21:25:00Z",
+      "question": "Los Angeles vs. Arizona",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-okc-gs-2025-12-02",
+      "category": "sports",
+      "event": "q:oklahoma city vs. golden state:2025-12-04",
+      "startDate": "2025-11-30T05:00:02Z",
+      "endDate": "2025-12-04T04:00:00Z",
+      "question": "Oklahoma City vs. Golden State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sac-hou-2025-12-03",
+      "category": "sports",
+      "event": "q:sacramento vs. houston:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T01:00:00Z",
+      "question": "Sacramento vs. Houston",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lac-atl-2025-12-03",
+      "category": "sports",
+      "event": "q:los angeles vs. atlanta:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T00:30:00Z",
+      "question": "Los Angeles vs. Atlanta",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-det-mil-2025-12-03",
+      "category": "sports",
+      "event": "q:detroit vs. milwaukee:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T01:00:00Z",
+      "question": "Detroit vs. Milwaukee",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-den-ind-2025-12-03",
+      "category": "sports",
+      "event": "q:denver vs. indiana:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T00:00:00Z",
+      "question": "Denver vs. Indiana",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bkn-chi-2025-12-03",
+      "category": "sports",
+      "event": "q:brooklyn vs. chicago:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T01:00:00Z",
+      "question": "Brooklyn vs. Chicago",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-por-cle-2025-12-03",
+      "category": "sports",
+      "event": "q:portland vs. cleveland:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T00:00:00Z",
+      "question": "Portland vs. Cleveland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sa-orl-2025-12-03",
+      "category": "sports",
+      "event": "q:san antonio vs. orlando:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T00:00:00Z",
+      "question": "San Antonio vs. Orlando",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mia-dal-2025-12-03",
+      "category": "sports",
+      "event": "q:miami vs. dallas:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T01:30:00Z",
+      "question": "Miami vs. Dallas",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-cha-ny-2025-12-03",
+      "category": "sports",
+      "event": "q:charlotte vs. new york:2025-12-05",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-05T00:30:00Z",
+      "question": "Charlotte vs. New York",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-phi-lac-2025-12-08",
+      "category": "sports",
+      "event": "q:philadelphia vs. los angeles:2025-12-10",
+      "startDate": "2025-12-01T02:00:01Z",
+      "endDate": "2025-12-10T01:15:00Z",
+      "question": "Philadelphia vs. Los Angeles",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-min-no-2025-12-04",
+      "category": "sports",
+      "event": "q:minnesota vs. new orleans:2025-12-06",
+      "startDate": "2025-12-02T02:00:01Z",
+      "endDate": "2025-12-06T01:00:00Z",
+      "question": "Minnesota vs. New Orleans",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-gs-phi-2025-12-04",
+      "category": "sports",
+      "event": "q:golden state vs. philadelphia:2025-12-06",
+      "startDate": "2025-12-02T02:00:01Z",
+      "endDate": "2025-12-06T00:00:00Z",
+      "question": "Golden State vs. Philadelphia",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-uta-bkn-2025-12-04",
+      "category": "sports",
+      "event": "q:utah vs. brooklyn:2025-12-06",
+      "startDate": "2025-12-02T02:00:01Z",
+      "endDate": "2025-12-06T00:30:00Z",
+      "question": "Utah vs. Brooklyn",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bos-was-2025-12-04",
+      "category": "sports",
+      "event": "q:boston vs. washington:2025-12-06",
+      "startDate": "2025-12-02T02:00:01Z",
+      "endDate": "2025-12-06T00:00:00Z",
+      "question": "Boston vs. Washington",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lal-tor-2025-12-04",
+      "category": "sports",
+      "event": "q:los angeles vs. toronto:2025-12-06",
+      "startDate": "2025-12-02T02:00:01Z",
+      "endDate": "2025-12-06T00:30:00Z",
+      "question": "Los Angeles vs. Toronto",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-phi-mil-2025-12-05",
+      "category": "sports",
+      "event": "q:philadelphia vs. milwaukee:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Philadelphia vs. Milwaukee",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-ind-chi-2025-12-05",
+      "category": "sports",
+      "event": "q:indiana vs. chicago:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Indiana vs. Chicago",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-pho-hou-2025-12-05",
+      "category": "sports",
+      "event": "q:phoenix vs. houston:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Phoenix vs. Houston",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lal-bos-2025-12-05",
+      "category": "sports",
+      "event": "q:los angeles vs. boston:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:00:00Z",
+      "question": "Los Angeles vs. Boston",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lac-mem-2025-12-05",
+      "category": "sports",
+      "event": "q:los angeles vs. memphis:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Los Angeles vs. Memphis",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-uta-ny-2025-12-05",
+      "category": "sports",
+      "event": "q:utah vs. new york:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:30:00Z",
+      "question": "Utah vs. New York",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sa-cle-2025-12-05",
+      "category": "sports",
+      "event": "q:san antonio vs. cleveland:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:30:00Z",
+      "question": "San Antonio vs. Cleveland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-den-atl-2025-12-05",
+      "category": "sports",
+      "event": "q:denver vs. atlanta:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:30:00Z",
+      "question": "Denver vs. Atlanta",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-por-det-2025-12-05",
+      "category": "sports",
+      "event": "q:portland vs. detroit:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:30:00Z",
+      "question": "Portland vs. Detroit",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mia-orl-2025-12-05",
+      "category": "sports",
+      "event": "q:miami vs. orlando:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:00:00Z",
+      "question": "Miami vs. Orlando",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-cha-tor-2025-12-05",
+      "category": "sports",
+      "event": "q:charlotte vs. toronto:2025-12-07",
+      "startDate": "2025-12-03T02:00:01Z",
+      "endDate": "2025-12-07T00:30:00Z",
+      "question": "Charlotte vs. Toronto",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-dal-okc-2025-12-05",
+      "category": "sports",
+      "event": "q:dallas vs. oklahoma city:2025-12-07",
+      "startDate": "2025-12-03T05:00:01Z",
+      "endDate": "2025-12-07T02:30:00Z",
+      "question": "Dallas vs. Oklahoma City",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-no-bkn-2025-12-06",
+      "category": "sports",
+      "event": "q:new orleans vs. brooklyn:2025-12-07",
+      "startDate": "2025-12-03T23:00:01Z",
+      "endDate": "2025-12-07T22:00:00Z",
+      "question": "New Orleans vs. Brooklyn",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nfl-atl-tb-2025-12-11",
+      "category": "sports",
+      "event": "q:atlanta vs. tampa bay:2025-12-13",
+      "startDate": "2025-12-04T02:00:00Z",
+      "endDate": "2025-12-13T01:15:00Z",
+      "question": "Atlanta vs. Tampa Bay",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-mil-det-2025-12-06",
+      "category": "sports",
+      "event": "q:milwaukee vs. detroit:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T00:30:00Z",
+      "question": "Milwaukee vs. Detroit",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-atl-was-2025-12-06",
+      "category": "sports",
+      "event": "q:atlanta vs. washington:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T00:00:00Z",
+      "question": "Atlanta vs. Washington",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-sac-mia-2025-12-06",
+      "category": "sports",
+      "event": "q:sacramento vs. miami:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T01:00:00Z",
+      "question": "Sacramento vs. Miami",
+      "attempts": 0
     }
   ],
   "v31_failed": {
@@ -3927,10 +4973,12 @@
     "aec-nfl-den-hou-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
     "aec-nfl-ind-pit-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
     "aec-nfl-jax-lv-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-kc-buf-2025-11-02": "no_safe_early_quote:early_spread_above_10c"
+    "aec-nfl-kc-buf-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-pit-lac-2025-11-09": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-phi-gb-2025-11-10": "no_safe_early_quote:early_spread_above_10c"
   },
-  "v31_offset": 200,
-  "v31_last_list": 1795114219.291206,
+  "v31_offset": 300,
+  "v31_last_list": 1795131491.0983713,
   "v321_legacy_recheck_done": true,
   "v322_diagnostic_recheck_done": true
 }
