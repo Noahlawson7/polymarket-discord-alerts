@@ -9,21 +9,21 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795190233.8728049,
+      "last_seen": 1795191965.4247882,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795190232.655316,
+      "last_seen": 1795191962.573243,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-deel": {
       "anchor": 0.02,
-      "last_seen": 1795148296.431302,
+      "last_seen": 1795191962.9336956,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795190232.7806625,
+      "last_seen": 1795191964.7088788,
       "last_ask": 0.96,
       "last_bid": 0.95,
       "stat_edge_active": false
@@ -58,7 +58,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795180452.2024386,
+      "last_seen": 1795191962.8097723,
       "last_ask": 0.04,
       "last_bid": 0.03,
       "stat_edge_active": false
@@ -177,7 +177,7 @@
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795190234.0859725,
+      "last_seen": 1795191962.4134767,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -191,14 +191,14 @@
     },
     "ipcc-2026ipos-databricks": {
       "anchor": 0.02,
-      "last_seen": 1795148296.5222607,
+      "last_seen": 1795191963.4700303,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-celonis": {
       "anchor": 0.02,
-      "last_seen": 1795148296.6179972,
+      "last_seen": 1795191963.8255804,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -212,7 +212,7 @@
     },
     "ipcc-2026ipos-canva": {
       "anchor": 0.02,
-      "last_seen": 1795148296.7055166,
+      "last_seen": 1795191964.3511455,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -226,14 +226,14 @@
     },
     "ipcc-2026ipos-applied-intuition": {
       "anchor": 0.02,
-      "last_seen": 1795148296.901854,
+      "last_seen": 1795191965.1263697,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-anduril": {
       "anchor": 0.02,
-      "last_seen": 1795114222.0134954,
+      "last_seen": 1795191965.6193557,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -387,9 +387,51 @@
     },
     "tec-nfl-nfceast-2027-01-10-w-was": {
       "anchor": 0.18,
-      "last_seen": 1795190234.1078463,
+      "last_seen": 1795191962.742132,
       "last_ask": 0.18,
       "last_bid": 0.17,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfceast-2027-01-10-w-phi": {
+      "anchor": 0.02,
+      "last_seen": 1795191963.143215,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfceast-2027-01-10-w-nyg": {
+      "anchor": 0.55,
+      "last_seen": 1795191963.5815482,
+      "last_ask": 0.55,
+      "last_bid": 0.54,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfceast-2027-01-10-w-dal": {
+      "anchor": 0.27,
+      "last_seen": 1795191964.0141387,
+      "last_ask": 0.27,
+      "last_bid": 0.26,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-tb": {
+      "anchor": 0.02,
+      "last_seen": 1795191964.9192939,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sf": {
+      "anchor": 0.3,
+      "last_seen": 1795191965.2543716,
+      "last_ask": 0.3,
+      "last_bid": 0.29,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sea": {
+      "anchor": 0.08,
+      "last_seen": 1795191965.7383404,
+      "last_ask": 0.08,
+      "last_bid": 0.07,
       "stat_edge_active": false
     }
   },
@@ -902,7 +944,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795190234.7382052,
+  "last_digest": 1795191967.1703026,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -1407,9 +1449,63 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-nfceast-2027-01-10-w-phi": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795191963.1432061,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfceast-2027-01-10-w-nyg": {
+      "category": "sports",
+      "p": 0.545,
+      "first_seen": 1795191963.5815396,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfceast-2027-01-10-w-dal": {
+      "category": "sports",
+      "p": 0.265,
+      "first_seen": 1795191964.0141299,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-tb": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795191964.9192858,
+      "end_ts": 1802664000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sf": {
+      "category": "sports",
+      "p": 0.295,
+      "first_seen": 1795191965.2543635,
+      "end_ts": 1802664000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sea": {
+      "category": "sports",
+      "p": 0.075,
+      "first_seen": 1795191965.7383313,
+      "end_ts": 1802664000.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 12,
+  "upgrade_cursor": 13,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1481,6 +1577,11 @@
       },
       {
         "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795191962.0956464,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1566,6 +1667,11 @@
         "t": 1795190232.5976243,
         "ask": 0.96,
         "bid": 0.95
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.96,
+        "bid": 0.95
       }
     ],
     "ipcc-2026ipos-ripple-labs": [
@@ -1647,6 +1753,11 @@
       },
       {
         "t": 1795190232.5976243,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1793,6 +1904,11 @@
         "t": 1795180450.038912,
         "ask": 0.04,
         "bid": 0.03
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.04,
+        "bid": 0.03
       }
     ],
     "ipcc-2026ipos-ledger": [
@@ -1886,6 +2002,11 @@
         "t": 1795190232.5976243,
         "ask": 0.03,
         "bid": 0.02
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-denbos": [
@@ -1910,6 +2031,11 @@
         "t": 1795148295.7943997,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-databricks": [
@@ -1925,6 +2051,11 @@
       },
       {
         "t": 1795148295.7943997,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1947,6 +2078,11 @@
       },
       {
         "t": 1795148295.7943997,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1973,6 +2109,11 @@
         "t": 1795148295.7943997,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-carbec": [
@@ -1997,6 +2138,11 @@
         "t": 1795148295.7943997,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-anduril": [
@@ -2007,6 +2153,11 @@
       },
       {
         "t": 1795114221.4148102,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795191962.0956464,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2220,6 +2371,53 @@
         "t": 1795190232.5976243,
         "ask": 0.18,
         "bid": 0.17
+      },
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.18,
+        "bid": 0.17
+      }
+    ],
+    "tec-nfl-nfceast-2027-01-10-w-phi": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-nfceast-2027-01-10-w-nyg": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.55,
+        "bid": 0.54
+      }
+    ],
+    "tec-nfl-nfceast-2027-01-10-w-dal": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.27,
+        "bid": 0.26
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-tb": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-sf": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.3,
+        "bid": 0.29
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-sea": [
+      {
+        "t": 1795191962.0956464,
+        "ask": 0.08,
+        "bid": 0.07
       }
     ]
   },
@@ -2266,7 +2464,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795190232.5976243,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2307,7 +2505,7 @@
           "ask": 0.04
         }
       ],
-      "last_seen": 1795180450.038912,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.03,
       "last_ask": 0.04
     },
@@ -2399,7 +2597,7 @@
           "ask": 0.05
         }
       ],
-      "last_seen": 1795190232.5976243,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2440,7 +2638,7 @@
           "ask": 0.96
         }
       ],
-      "last_seen": 1795190232.5976243,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.95,
       "last_ask": 0.96
     },
@@ -2463,7 +2661,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2486,7 +2684,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2509,7 +2707,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795190232.5976243,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2532,7 +2730,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2573,7 +2771,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2614,7 +2812,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2630,9 +2828,14 @@
           "day": 20776,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20777,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795114221.4148102,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3222,9 +3425,117 @@
           "ask": 0.18
         }
       ],
-      "last_seen": 1795190232.5976243,
+      "last_seen": 1795191962.0956464,
       "last_bid": 0.17,
       "last_ask": 0.18
+    },
+    "tec-nfl-nfceast-2027-01-10-w-phi": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "NFC East Division Winner \u2014 11-6-0 \u2014 Philadelphia",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-nfceast-2027-01-10-w-nyg": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.54,
+      "first_ask": 0.55,
+      "category": "sports",
+      "contract": "NFC East Division Winner \u2014 4-13-0 \u2014 New York G",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.54,
+          "ask": 0.55
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.54,
+      "last_ask": 0.55
+    },
+    "tec-nfl-nfceast-2027-01-10-w-dal": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.26,
+      "first_ask": 0.27,
+      "category": "sports",
+      "contract": "NFC East Division Winner \u2014 7-9-1 \u2014 Dallas",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.26,
+          "ask": 0.27
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.26,
+      "last_ask": 0.27
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-tb": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "NFC Champion \u2014 8-9-0 \u2014 Tampa Bay",
+      "end_date": "2027-02-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sf": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.29,
+      "first_ask": 0.3,
+      "category": "sports",
+      "contract": "NFC Champion \u2014 12-5-0 \u2014 San Francisco",
+      "end_date": "2027-02-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.29,
+          "ask": 0.3
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.29,
+      "last_ask": 0.3
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-sea": {
+      "first_seen": 1795191962.0956464,
+      "first_bid": 0.07,
+      "first_ask": 0.08,
+      "category": "sports",
+      "contract": "NFC Champion \u2014 14-3-0 \u2014 Seattle",
+      "end_date": "2027-02-15T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.07,
+          "ask": 0.08
+        }
+      ],
+      "last_seen": 1795191962.0956464,
+      "last_bid": 0.07,
+      "last_ask": 0.08
     }
   },
   "v31_archive": {
@@ -3513,105 +3824,177 @@
       "t": 1762646400,
       "end": 1763389800.0,
       "source": "us_settlement_and_early_book_history"
+    },
+    "aec-nfl-tb-buf-2025-11-16": {
+      "category": "sports",
+      "event": "q:tampa bay vs. buffalo:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-lac-jax-2025-11-16": {
+      "category": "sports",
+      "event": "q:los angeles vs. jacksonville:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-car-atl-2025-11-16": {
+      "category": "sports",
+      "event": "q:carolina vs. atlanta:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-hou-ten-2025-11-16": {
+      "category": "sports",
+      "event": "q:houston vs. tennessee:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-cin-pit-2025-11-16": {
+      "category": "sports",
+      "event": "q:cincinnati vs. pittsburgh:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-gb-nyg-2025-11-16": {
+      "category": "sports",
+      "event": "q:green bay vs. new york:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nfl-chi-min-2025-11-16": {
+      "category": "sports",
+      "event": "q:chicago vs. minnesota:2025-11-17",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762646400,
+      "end": 1763402400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.167,
+      "listed_end_buffer_days": 8.75
+    },
+    "aec-nba-gs-okc-2025-11-11": {
+      "category": "sports",
+      "event": "q:golden state vs. oklahoma city:2025-11-13",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762732800,
+      "end": 1762995600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.042
+    },
+    "aec-nba-tor-bkn-2025-11-11": {
+      "category": "sports",
+      "event": "q:toronto vs. brooklyn:2025-11-13",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1762732800,
+      "end": 1762993800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
+    },
+    "aec-nba-ind-uta-2025-11-11": {
+      "category": "sports",
+      "event": "q:indiana vs. utah:2025-11-13",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762732800,
+      "end": 1762999200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.083
+    },
+    "aec-nba-bos-phi-2025-11-11": {
+      "category": "sports",
+      "event": "q:boston vs. philadelphia:2025-11-13",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762732800,
+      "end": 1762995600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.042
+    },
+    "aec-nba-mem-ny-2025-11-11": {
+      "category": "sports",
+      "event": "q:memphis vs. new york:2025-11-13",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1762732800,
+      "end": 1762993800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nfl-tb-buf-2025-11-16",
-      "category": "sports",
-      "event": "q:tampa bay vs. buffalo:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Tampa Bay vs. Buffalo"
-    },
-    {
-      "slug": "aec-nfl-lac-jax-2025-11-16",
-      "category": "sports",
-      "event": "q:los angeles vs. jacksonville:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Los Angeles vs. Jacksonville"
-    },
-    {
-      "slug": "aec-nfl-car-atl-2025-11-16",
-      "category": "sports",
-      "event": "q:carolina vs. atlanta:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Carolina vs. Atlanta"
-    },
-    {
-      "slug": "aec-nfl-hou-ten-2025-11-16",
-      "category": "sports",
-      "event": "q:houston vs. tennessee:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Houston vs. Tennessee"
-    },
-    {
-      "slug": "aec-nfl-cin-pit-2025-11-16",
-      "category": "sports",
-      "event": "q:cincinnati vs. pittsburgh:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Cincinnati vs. Pittsburgh"
-    },
-    {
-      "slug": "aec-nfl-gb-nyg-2025-11-16",
-      "category": "sports",
-      "event": "q:green bay vs. new york:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Green Bay vs. New York"
-    },
-    {
-      "slug": "aec-nfl-chi-min-2025-11-16",
-      "category": "sports",
-      "event": "q:chicago vs. minnesota:2025-11-17",
-      "startDate": "2025-11-08T20:00:00Z",
-      "endDate": "2025-11-17T18:00:00Z",
-      "question": "Chicago vs. Minnesota"
-    },
-    {
-      "slug": "aec-nba-gs-okc-2025-11-11",
-      "category": "sports",
-      "event": "q:golden state vs. oklahoma city:2025-11-13",
-      "startDate": "2025-11-09T02:00:01Z",
-      "endDate": "2025-11-13T01:00:00Z",
-      "question": "Golden State vs. Oklahoma City"
-    },
-    {
-      "slug": "aec-nba-tor-bkn-2025-11-11",
-      "category": "sports",
-      "event": "q:toronto vs. brooklyn:2025-11-13",
-      "startDate": "2025-11-09T02:00:01Z",
-      "endDate": "2025-11-13T00:30:00Z",
-      "question": "Toronto vs. Brooklyn"
-    },
-    {
-      "slug": "aec-nba-ind-uta-2025-11-11",
-      "category": "sports",
-      "event": "q:indiana vs. utah:2025-11-13",
-      "startDate": "2025-11-09T02:00:01Z",
-      "endDate": "2025-11-13T02:00:00Z",
-      "question": "Indiana vs. Utah"
-    },
-    {
-      "slug": "aec-nba-bos-phi-2025-11-11",
-      "category": "sports",
-      "event": "q:boston vs. philadelphia:2025-11-13",
-      "startDate": "2025-11-09T02:00:01Z",
-      "endDate": "2025-11-13T01:00:00Z",
-      "question": "Boston vs. Philadelphia"
-    },
-    {
-      "slug": "aec-nba-mem-ny-2025-11-11",
-      "category": "sports",
-      "event": "q:memphis vs. new york:2025-11-13",
-      "startDate": "2025-11-09T02:00:01Z",
-      "endDate": "2025-11-13T00:30:00Z",
-      "question": "Memphis vs. New York"
-    },
     {
       "slug": "aec-nfl-kc-den-2025-11-16",
       "category": "sports",
@@ -5683,6 +6066,906 @@
       "endDate": "2025-12-08T01:00:00Z",
       "question": "Sacramento vs. Miami",
       "attempts": 0
+    },
+    {
+      "slug": "aec-nba-gs-cle-2025-12-06",
+      "category": "sports",
+      "event": "q:golden state vs. cleveland:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T00:30:00Z",
+      "question": "Golden State vs. Cleveland",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lac-min-2025-12-06",
+      "category": "sports",
+      "event": "q:los angeles vs. minnesota:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T01:00:00Z",
+      "question": "Los Angeles vs. Minnesota",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-hou-dal-2025-12-06",
+      "category": "sports",
+      "event": "q:houston vs. dallas:2025-12-08",
+      "startDate": "2025-12-04T02:00:01Z",
+      "endDate": "2025-12-08T01:30:00Z",
+      "question": "Houston vs. Dallas",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-ga-ala-2025-12-06",
+      "category": "sports",
+      "event": "q:bulldogs vs. crimson tide:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T21:00:00Z",
+      "question": "Bulldogs vs. Crimson Tide",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-ntx-tulane-2025-12-05",
+      "category": "sports",
+      "event": "q:mean green vs. green wave:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Mean Green vs. Green Wave",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-byu-txtech-2025-12-06",
+      "category": "sports",
+      "event": "q:cougars vs. red raiders:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T17:00:00Z",
+      "question": "Cougars vs. Red Raiders",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-troy-jmad-2025-12-05",
+      "category": "sports",
+      "event": "q:trojans vs. dukes:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T00:00:00Z",
+      "question": "Trojans vs. Dukes",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-duke-vir-2025-12-06",
+      "category": "sports",
+      "event": "q:blue devils vs. cavaliers:2025-12-08",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-08T01:00:00Z",
+      "question": "Blue Devils vs. Cavaliers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-miaoh-wmich-2025-12-06",
+      "category": "sports",
+      "event": "q:redhawks vs. broncos:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T17:00:00Z",
+      "question": "RedHawks vs. Broncos",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-ohiost-ind-2025-12-06",
+      "category": "sports",
+      "event": "q:buckeyes vs. hoosiers:2025-12-08",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-08T01:00:00Z",
+      "question": "Buckeyes vs. Hoosiers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-kenest-jaxst-2025-12-05",
+      "category": "sports",
+      "event": "q:owls vs. gamecocks:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T00:00:00Z",
+      "question": "Owls vs. Gamecocks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cfb-unlv-boise-2025-12-05",
+      "category": "sports",
+      "event": "q:runnin' rebels vs. broncos:2025-12-07",
+      "startDate": "2025-12-04T02:25:01Z",
+      "endDate": "2025-12-07T01:00:00Z",
+      "question": "Runnin' Rebels vs. Broncos",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-orl-ny-2025-12-07",
+      "category": "sports",
+      "event": "q:magic vs. knicks:2025-12-08",
+      "startDate": "2025-12-04T17:00:01Z",
+      "endDate": "2025-12-08T17:00:00Z",
+      "question": "Magic vs. Knicks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-bos-tor-2025-12-07",
+      "category": "sports",
+      "event": "q:celtics vs. raptors:2025-12-08",
+      "startDate": "2025-12-04T23:00:01Z",
+      "endDate": "2025-12-08T20:30:00Z",
+      "question": "Celtics vs. Raptors",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-por-mem-2025-12-07",
+      "category": "sports",
+      "event": "q:trail blazers vs. grizzlies:2025-12-08",
+      "startDate": "2025-12-04T23:00:01Z",
+      "endDate": "2025-12-08T23:00:00Z",
+      "question": "Trail Blazers vs. Grizzlies",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-den-cha-2025-12-07",
+      "category": "sports",
+      "event": "q:nuggets vs. hornets:2025-12-08",
+      "startDate": "2025-12-04T23:00:01Z",
+      "endDate": "2025-12-08T23:00:00Z",
+      "question": "Nuggets vs. Hornets",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-gs-chi-2025-12-07",
+      "category": "sports",
+      "event": "q:warriors vs. bulls:2025-12-09",
+      "startDate": "2025-12-05T02:00:01Z",
+      "endDate": "2025-12-09T00:00:00Z",
+      "question": "Warriors vs. Bulls",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-lal-phi-2025-12-07",
+      "category": "sports",
+      "event": "q:lakers vs. 76ers:2025-12-09",
+      "startDate": "2025-12-05T02:00:01Z",
+      "endDate": "2025-12-09T00:30:00Z",
+      "question": "Lakers vs. 76ers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nba-okc-uta-2025-12-07",
+      "category": "sports",
+      "event": "q:thunder vs. jazz:2025-12-09",
+      "startDate": "2025-12-05T02:00:01Z",
+      "endDate": "2025-12-09T01:00:00Z",
+      "question": "Thunder vs. Jazz",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-stl-ott-2025-12-07",
+      "category": "sports",
+      "event": "q:blues vs. senators:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Blues vs. Senators",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-sj-dal-2025-12-06",
+      "category": "sports",
+      "event": "q:sharks vs. stars:2025-12-06",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-06T20:00:00Z",
+      "question": "Sharks vs. Stars",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-utah-van-2025-12-06",
+      "category": "sports",
+      "event": "q:mammoth vs. canucks:2025-12-06",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-06T21:00:00Z",
+      "question": "Mammoth vs. Canucks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-mon-tor-2025-12-07",
+      "category": "sports",
+      "event": "q:canadiens vs. maple leafs:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Canadiens vs. Maple Leafs",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nsh-car-2025-12-07",
+      "category": "sports",
+      "event": "q:predators vs. hurricanes:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Predators vs. Hurricanes",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-col-nyr-2025-12-06",
+      "category": "sports",
+      "event": "q:avalanche vs. rangers:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T12:30:00Z",
+      "question": "Avalanche vs. Rangers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nj-bos-2025-12-07",
+      "category": "sports",
+      "event": "q:devils vs. bruins:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Devils vs. Bruins",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-utah-cal-2025-12-07",
+      "category": "sports",
+      "event": "q:mammoth vs. flames:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Mammoth vs. Flames",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-buf-wpg-2025-12-06",
+      "category": "sports",
+      "event": "q:sabres vs. jets:2025-12-06",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Sabres vs. Jets",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-chi-lak-2025-12-07",
+      "category": "sports",
+      "event": "q:blackhawks vs. kings:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T21:00:00Z",
+      "question": "Blackhawks vs. Kings",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-las-nj-2025-12-06",
+      "category": "sports",
+      "event": "q:golden knights vs. devils:2025-12-06",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Golden Knights vs. Devils",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-wsh-ana-2025-12-06",
+      "category": "sports",
+      "event": "q:capitals vs. ducks:2025-12-06",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-06T22:00:00Z",
+      "question": "Capitals vs. Ducks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-cbj-fla-2025-12-06",
+      "category": "sports",
+      "event": "q:blue jackets vs. panthers:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T15:30:00Z",
+      "question": "Blue Jackets vs. Panthers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nyi-fla-2025-12-07",
+      "category": "sports",
+      "event": "q:islanders vs. panthers:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T17:00:00Z",
+      "question": "Islanders vs. Panthers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nyi-tb-2025-12-07",
+      "category": "sports",
+      "event": "q:islanders vs. lightning:2025-12-07",
+      "startDate": "2025-12-05T23:00:01Z",
+      "endDate": "2025-12-07T19:00:00Z",
+      "question": "Islanders vs. Lightning",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-sj-car-2025-12-07",
+      "category": "sports",
+      "event": "q:sharks vs. hurricanes:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T17:00:00Z",
+      "question": "Sharks vs. Hurricanes",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-wpg-edm-2025-12-07",
+      "category": "sports",
+      "event": "q:jets vs. oilers:2025-12-07",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-07T22:00:00Z",
+      "question": "Jets vs. Oilers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-lak-utah-2025-12-09",
+      "category": "sports",
+      "event": "q:kings vs. mammoth:2025-12-10",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-10T02:00:00Z",
+      "question": "Kings vs. Mammoth",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-cbj-wsh-2025-12-08",
+      "category": "sports",
+      "event": "q:blue jackets vs. capitals:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T19:00:00Z",
+      "question": "Blue Jackets vs. Capitals",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-buf-cal-2025-12-09",
+      "category": "sports",
+      "event": "q:sabres vs. flames:2025-12-10",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-10T02:00:00Z",
+      "question": "Sabres vs. Flames",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-min-sea-2025-12-09",
+      "category": "sports",
+      "event": "q:wild vs. kraken:2025-12-10",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-10T03:00:00Z",
+      "question": "Wild vs. Kraken",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-det-van-2025-12-09",
+      "category": "sports",
+      "event": "q:red wings vs. canucks:2025-12-10",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-10T03:00:00Z",
+      "question": "Red Wings vs. Canucks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-sj-phi-2025-12-10",
+      "category": "sports",
+      "event": "q:sharks vs. flyers:2025-12-11",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-11T00:00:00Z",
+      "question": "Sharks vs. Flyers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-stl-mon-2025-12-08",
+      "category": "sports",
+      "event": "q:blues vs. canadiens:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T19:00:00Z",
+      "question": "Blues vs. Canadiens",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-pit-dal-2025-12-07",
+      "category": "sports",
+      "event": "q:penguins vs. stars:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T23:00:00Z",
+      "question": "Penguins vs. Stars",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-bryant-brown-2025-12-05",
+      "category": "sports",
+      "event": "q:bryant vs. brown:2025-12-06",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Bryant vs. Brown",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-det-sea-2025-12-07",
+      "category": "sports",
+      "event": "q:red wings vs. kraken:2025-12-07",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-07T22:00:00Z",
+      "question": "Red Wings vs. Kraken",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-samf-vcu-2025-12-05",
+      "category": "sports",
+      "event": "q:samford vs. vcu:2025-12-06",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Samford vs. VCU",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-min-van-2025-12-07",
+      "category": "sports",
+      "event": "q:wild vs. canucks:2025-12-07",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-07T22:00:00Z",
+      "question": "Wild vs. Canucks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-col-phi-2025-12-07",
+      "category": "sports",
+      "event": "q:avalanche vs. flyers:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T18:00:00Z",
+      "question": "Avalanche vs. Flyers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-chi-ana-2025-12-08",
+      "category": "sports",
+      "event": "q:blackhawks vs. ducks:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T20:00:00Z",
+      "question": "Blackhawks vs. Ducks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-tb-tor-2025-12-09",
+      "category": "sports",
+      "event": "q:lightning vs. maple leafs:2025-12-10",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-10T00:30:00Z",
+      "question": "Lightning vs. Maple Leafs",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-las-nyr-2025-12-08",
+      "category": "sports",
+      "event": "q:golden knights vs. rangers:2025-12-08",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-08T19:00:00Z",
+      "question": "Golden Knights vs. Rangers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-ana-pit-2025-12-10",
+      "category": "sports",
+      "event": "q:ducks vs. penguins:2025-12-11",
+      "startDate": "2025-12-05T23:00:02Z",
+      "endDate": "2025-12-11T00:00:00Z",
+      "question": "Ducks vs. Penguins",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-las-nyi-2025-12-10",
+      "category": "sports",
+      "event": "q:golden knights vs. islanders:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T00:00:00Z",
+      "question": "Golden Knights vs. Islanders",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-buf-edm-2025-12-10",
+      "category": "sports",
+      "event": "q:sabres vs. oilers:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T02:00:00Z",
+      "question": "Sabres vs. Oilers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nyr-chi-2025-12-11",
+      "category": "sports",
+      "event": "q:rangers vs. blackhawks:2025-12-12",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-12T00:30:00Z",
+      "question": "Rangers vs. Blackhawks",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-dal-wpg-2025-12-10",
+      "category": "sports",
+      "event": "q:stars vs. jets:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T01:00:00Z",
+      "question": "Stars vs. Jets",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-uk-gnzg-2025-12-05",
+      "category": "sports",
+      "event": "q:kentucky vs. gonzaga:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Kentucky vs. Gonzaga",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-niagra-siena-2025-12-05",
+      "category": "sports",
+      "event": "q:niagara vs. siena:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Niagara vs. Siena",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-fla-utah-2025-12-11",
+      "category": "sports",
+      "event": "q:panthers vs. mammoth:2025-12-12",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-12T02:00:00Z",
+      "question": "Panthers vs. Mammoth",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-fair-manh-2025-12-05",
+      "category": "sports",
+      "event": "q:fairfield vs. manhattan:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Fairfield vs. Manhattan",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-lak-sea-2025-12-11",
+      "category": "sports",
+      "event": "q:kings vs. kraken:2025-12-12",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-12T03:00:00Z",
+      "question": "Kings vs. Kraken",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-nwst-mcnst-2025-12-05",
+      "category": "sports",
+      "event": "q:northwestern state vs. mcneese state:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:30:00Z",
+      "question": "Northwestern State vs. McNeese State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-ott-cbj-2025-12-12",
+      "category": "sports",
+      "event": "q:senators vs. blue jackets:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Senators vs. Blue Jackets",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-uab-drake-2025-12-05",
+      "category": "sports",
+      "event": "q:uab vs. drake:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:30:00Z",
+      "question": "UAB vs. Drake",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-mon-pit-2025-12-12",
+      "category": "sports",
+      "event": "q:canadiens vs. penguins:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Canadiens vs. Penguins",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-sd-sjst-2025-12-05",
+      "category": "sports",
+      "event": "q:san diego vs. san jose state:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T22:00:00Z",
+      "question": "San Diego vs. San Jose State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-iowast-pur-2025-12-06",
+      "category": "sports",
+      "event": "q:iowa state vs. purdue:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Iowa State vs. Purdue",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-mrcy-lafay-2025-12-05",
+      "category": "sports",
+      "event": "q:mercyhurst vs. lafayette:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Mercyhurst vs. Lafayette",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-nj-ott-2025-12-10",
+      "category": "sports",
+      "event": "q:devils vs. senators:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T00:00:00Z",
+      "question": "Devils vs. Senators",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-quin-iona-2025-12-05",
+      "category": "sports",
+      "event": "q:quinnipiac vs. iona:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Quinnipiac vs. Iona",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-cans-stpete-2025-12-05",
+      "category": "sports",
+      "event": "q:canisius vs. saint peter's:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Canisius vs. Saint Peter's",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-tb-mon-2025-12-10",
+      "category": "sports",
+      "event": "q:lightning vs. canadiens:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T00:00:00Z",
+      "question": "Lightning vs. Canadiens",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-bos-stl-2025-12-10",
+      "category": "sports",
+      "event": "q:bruins vs. blues:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T01:00:00Z",
+      "question": "Bruins vs. Blues",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-det-cal-2025-12-11",
+      "category": "sports",
+      "event": "q:red wings vs. flames:2025-12-12",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-12T01:30:00Z",
+      "question": "Red Wings vs. Flames",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-car-wsh-2025-12-12",
+      "category": "sports",
+      "event": "q:hurricanes vs. capitals:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Hurricanes vs. Capitals",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-njit-hpnt-2025-12-05",
+      "category": "sports",
+      "event": "q:njit vs. high point:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "NJIT vs. High Point",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-cin-xav-2025-12-05",
+      "category": "sports",
+      "event": "q:cincinnati vs. xavier:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:30:00Z",
+      "question": "Cincinnati vs. Xavier",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-txamc-uconn-2025-12-05",
+      "category": "sports",
+      "event": "q:east texas a&m vs. connecticut:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:30:00Z",
+      "question": "East Texas A&M vs. Connecticut",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-nd-tcu-2025-12-05",
+      "category": "sports",
+      "event": "q:notre dame vs. tcu:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T20:00:00Z",
+      "question": "Notre Dame vs. TCU",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-las-phi-2025-12-12",
+      "category": "sports",
+      "event": "q:golden knights vs. flyers:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Golden Knights vs. Flyers",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-monm-gtech-2025-12-06",
+      "category": "sports",
+      "event": "q:monmouth vs. georgia tech:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Monmouth vs. Georgia Tech",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-tb-nj-2025-12-12",
+      "category": "sports",
+      "event": "q:lightning vs. devils:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Lightning vs. Devils",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-cbj-car-2025-12-10",
+      "category": "sports",
+      "event": "q:blue jackets vs. hurricanes:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T00:30:00Z",
+      "question": "Blue Jackets vs. Hurricanes",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-soumis-mia-2025-12-06",
+      "category": "sports",
+      "event": "q:southern miss vs. miami:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Southern Miss vs. Miami",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-sala-etnst-2025-12-05",
+      "category": "sports",
+      "event": "q:south alabama vs. east tennessee state:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "South Alabama vs. East Tennessee State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-mstm-marist-2025-12-05",
+      "category": "sports",
+      "event": "q:mount st. mary's vs. marist:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "Mount St. Mary's vs. Marist",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-scarst-bcook-2025-12-05",
+      "category": "sports",
+      "event": "q:south carolina state vs. bethune-cookman:2025-12-06",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-06T19:00:00Z",
+      "question": "South Carolina State vs. Bethune-Cookman",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-col-nsh-2025-12-10",
+      "category": "sports",
+      "event": "q:avalanche vs. predators:2025-12-11",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-11T02:30:00Z",
+      "question": "Avalanche vs. Predators",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-sj-tor-2025-12-12",
+      "category": "sports",
+      "event": "q:sharks vs. maple leafs:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Sharks vs. Maple Leafs",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-day-vir-2025-12-06",
+      "category": "sports",
+      "event": "q:dayton vs. virginia:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Dayton vs. Virginia",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-nhvn-boscol-2025-12-06",
+      "category": "sports",
+      "event": "q:new haven vs. boston college:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "New Haven vs. Boston College",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-duke-mst-2025-12-06",
+      "category": "sports",
+      "event": "q:duke vs. michigan state:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Duke vs. Michigan State",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-nhl-ana-nyi-2025-12-12",
+      "category": "sports",
+      "event": "q:ducks vs. islanders:2025-12-13",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-13T00:00:00Z",
+      "question": "Ducks vs. Islanders",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-umbc-buck-2025-12-06",
+      "category": "sports",
+      "event": "q:umbc vs. bucknell:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "UMBC vs. Bucknell",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-holy-fordm-2025-12-06",
+      "category": "sports",
+      "event": "q:holy cross vs. fordham:2025-12-07",
+      "startDate": "2025-12-05T23:00:04Z",
+      "endDate": "2025-12-07T14:00:00Z",
+      "question": "Holy Cross vs. Fordham",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-ri-prov-2025-12-06",
+      "category": "sports",
+      "event": "q:rhode island vs. providence:2025-12-07",
+      "startDate": "2025-12-05T23:00:03Z",
+      "endDate": "2025-12-07T12:00:00Z",
+      "question": "Rhode Island vs. Providence",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-old-rich-2025-12-06",
+      "category": "sports",
+      "event": "q:old dominion vs. richmond:2025-12-07",
+      "startDate": "2025-12-05T23:00:04Z",
+      "endDate": "2025-12-07T12:30:00Z",
+      "question": "Old Dominion vs. Richmond",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-harvrd-furman-2025-12-06",
+      "category": "sports",
+      "event": "q:harvard vs. furman:2025-12-07",
+      "startDate": "2025-12-05T23:00:04Z",
+      "endDate": "2025-12-07T14:00:00Z",
+      "question": "Harvard vs. Furman",
+      "attempts": 0
+    },
+    {
+      "slug": "aec-cbb-mdes-amercn-2025-12-06",
+      "category": "sports",
+      "event": "q:maryland eastern shore vs. american:2025-12-07",
+      "startDate": "2025-12-05T23:00:04Z",
+      "endDate": "2025-12-07T14:00:00Z",
+      "question": "Maryland Eastern Shore vs. American",
+      "attempts": 0
     }
   ],
   "v31_failed": {
@@ -5715,14 +6998,14 @@
     "aec-nfl-car-gb-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
     "aec-nfl-lac-ten-2025-11-02": "no_safe_early_quote:early_spread_above_10c"
   },
-  "v31_offset": 300,
-  "v31_last_list": 1795131491.0983713,
+  "v31_offset": 400,
+  "v31_last_list": 1795191956.3025706,
   "v321_legacy_recheck_done": true,
   "v322_diagnostic_recheck_done": true,
   "v33_recovery_recheck_done": true,
   "v33_discovery_lanes": [
     {
-      "offset": 300,
+      "offset": 400,
       "exhausted": false
     },
     {
@@ -5737,5 +7020,6 @@
       "offset": 2500,
       "exhausted": false
     }
-  ]
+  ],
+  "v33_next_lane": 1
 }
