@@ -9,14 +9,14 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795180450.7258203,
+      "last_seen": 1795190233.8728049,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795180450.441811,
+      "last_seen": 1795190232.655316,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795148296.8609989,
+      "last_seen": 1795190232.7806625,
       "last_ask": 0.96,
       "last_bid": 0.95,
       "stat_edge_active": false
@@ -114,7 +114,7 @@
     },
     "ipcc-2026ipos-remote": {
       "anchor": 0.02,
-      "last_seen": 1795180453.015815,
+      "last_seen": 1795190232.6366096,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -128,21 +128,21 @@
     },
     "ipcc-2026ipos-ramp": {
       "anchor": 0.03,
-      "last_seen": 1795131496.2897463,
+      "last_seen": 1795190232.7358623,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-openai": {
       "anchor": 0.02,
-      "last_seen": 1795131496.6343458,
+      "last_seen": 1795190232.799728,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-mistral-ai": {
       "anchor": 0.02,
-      "last_seen": 1795131496.9937503,
+      "last_seen": 1795190233.835719,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -155,31 +155,31 @@
       "stat_edge_active": false
     },
     "ipcc-2026ipos-ledger": {
-      "anchor": 0.09,
-      "last_seen": 1795131497.355981,
-      "last_ask": 0.09,
-      "last_bid": 0.08,
+      "anchor": 0.03,
+      "last_seen": 1795190233.8947384,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-glean": {
       "anchor": 0.03,
-      "last_seen": 1795131497.734276,
+      "last_seen": 1795190233.9617782,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-epic-games": {
       "anchor": 0.04,
-      "last_seen": 1795131498.0661752,
+      "last_seen": 1795190234.0254683,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795148296.3006568,
-      "last_ask": 0.05,
-      "last_bid": 0.04,
+      "last_seen": 1795190234.0859725,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     },
     "tec-nfl-oroy-2027-02-11-w-denbos": {
@@ -338,9 +338,58 @@
     },
     "tec-nfl-nfcsouth-2027-01-10-w-no": {
       "anchor": 0.09,
-      "last_seen": 1795180453.1315932,
+      "last_seen": 1795190232.6779807,
       "last_ask": 0.09,
       "last_bid": 0.08,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-car": {
+      "anchor": 0.41,
+      "last_seen": 1795190232.758055,
+      "last_ask": 0.41,
+      "last_bid": 0.4,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-atl": {
+      "anchor": 0.12,
+      "last_seen": 1795190232.8161764,
+      "last_ask": 0.12,
+      "last_bid": 0.11,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-min": {
+      "anchor": 0.39,
+      "last_seen": 1795190233.8528643,
+      "last_ask": 0.39,
+      "last_bid": 0.38,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": {
+      "anchor": 0.03,
+      "last_seen": 1795190233.9211497,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-det": {
+      "anchor": 0.27,
+      "last_seen": 1795190233.9802892,
+      "last_ask": 0.27,
+      "last_bid": 0.26,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": {
+      "anchor": 0.33,
+      "last_seen": 1795190234.0439649,
+      "last_ask": 0.33,
+      "last_bid": 0.32,
+      "stat_edge_active": false
+    },
+    "tec-nfl-nfceast-2027-01-10-w-was": {
+      "anchor": 0.18,
+      "last_seen": 1795190234.1078463,
+      "last_ask": 0.18,
+      "last_bid": 0.17,
       "stat_edge_active": false
     }
   },
@@ -457,6 +506,8 @@
     "arankc-atp-2026-12-31-no1-valvac",
     "arankc-wta-2026-12-31-no1-elisvi",
     "arankc-wta-2026-12-31-no1-ivajov",
+    "arankc-wta-2026-12-31-no1-madkey",
+    "arankc-wta-2026-12-31-no1-naoosa",
     "arankc-wta-2026-12-31-no1-vicmbo",
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun",
     "ccrc-sptfy-1-artst-glbl-yr-2026-beyonc",
@@ -851,7 +902,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795180454.8617392,
+  "last_digest": 1795190234.7382052,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -1293,9 +1344,72 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-car": {
+      "category": "sports",
+      "p": 0.405,
+      "first_seen": 1795190232.758011,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-atl": {
+      "category": "sports",
+      "p": 0.115,
+      "first_seen": 1795190232.8161678,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-min": {
+      "category": "sports",
+      "p": 0.385,
+      "first_seen": 1795190233.8528547,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": {
+      "category": "sports",
+      "p": 0.025,
+      "first_seen": 1795190233.9211411,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-det": {
+      "category": "sports",
+      "p": 0.265,
+      "first_seen": 1795190233.9802814,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": {
+      "category": "sports",
+      "p": 0.325,
+      "first_seen": 1795190234.043957,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-nfceast-2027-01-10-w-was": {
+      "category": "sports",
+      "p": 0.175,
+      "first_seen": 1795190234.1078238,
+      "end_ts": 1800849600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 11,
+  "upgrade_cursor": 12,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1362,6 +1476,11 @@
       },
       {
         "t": 1795180450.038912,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795190232.5976243,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1442,6 +1561,11 @@
         "t": 1795148295.7943997,
         "ask": 0.96,
         "bid": 0.95
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.96,
+        "bid": 0.95
       }
     ],
     "ipcc-2026ipos-ripple-labs": [
@@ -1520,6 +1644,11 @@
         "t": 1795180450.038912,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-remote": [
@@ -1542,6 +1671,11 @@
         "t": 1795180450.038912,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-jadpri": [
@@ -1561,6 +1695,11 @@
         "t": 1795131495.580954,
         "ask": 0.03,
         "bid": 0.02
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-openai": [
@@ -1571,6 +1710,11 @@
       },
       {
         "t": 1795131495.580954,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795190232.5976243,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1593,6 +1737,11 @@
       },
       {
         "t": 1795131495.580954,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795190232.5976243,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1661,6 +1810,11 @@
         "t": 1795131495.580954,
         "ask": 0.09,
         "bid": 0.08
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-glean": [
@@ -1678,6 +1832,11 @@
         "t": 1795131495.580954,
         "ask": 0.03,
         "bid": 0.02
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-epic-games": [
@@ -1693,6 +1852,11 @@
       },
       {
         "t": 1795131495.580954,
+        "ask": 0.03,
+        "bid": 0.02
+      },
+      {
+        "t": 1795190232.5976243,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -1717,6 +1881,11 @@
         "t": 1795148295.7943997,
         "ask": 0.05,
         "bid": 0.04
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-denbos": [
@@ -1997,6 +2166,60 @@
         "t": 1795180450.038912,
         "ask": 0.09,
         "bid": 0.08
+      },
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.09,
+        "bid": 0.08
+      }
+    ],
+    "tec-nfl-nfcsouth-2027-01-10-w-car": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.41,
+        "bid": 0.4
+      }
+    ],
+    "tec-nfl-nfcsouth-2027-01-10-w-atl": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.12,
+        "bid": 0.11
+      }
+    ],
+    "tec-nfl-nfcnorth-2027-01-10-w-min": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.39,
+        "bid": 0.38
+      }
+    ],
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.03,
+        "bid": 0.02
+      }
+    ],
+    "tec-nfl-nfcnorth-2027-01-10-w-det": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.27,
+        "bid": 0.26
+      }
+    ],
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.33,
+        "bid": 0.32
+      }
+    ],
+    "tec-nfl-nfceast-2027-01-10-w-was": [
+      {
+        "t": 1795190232.5976243,
+        "ask": 0.18,
+        "bid": 0.17
       }
     ]
   },
@@ -2013,9 +2236,14 @@
           "day": 20776,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20777,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795131495.580954,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2038,7 +2266,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795180450.038912,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2095,11 +2323,16 @@
           "day": 20776,
           "bid": 0.08,
           "ask": 0.09
+        },
+        {
+          "day": 20777,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795131495.580954,
-      "last_bid": 0.08,
-      "last_ask": 0.09
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.02,
+      "last_ask": 0.03
     },
     "ipcc-2026ipos-glean": {
       "first_seen": 1795112001.2051296,
@@ -2113,9 +2346,14 @@
           "day": 20776,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20777,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795131495.580954,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2131,9 +2369,14 @@
           "day": 20776,
           "bid": 0.16,
           "ask": 0.17
+        },
+        {
+          "day": 20777,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795131495.580954,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2156,9 +2399,9 @@
           "ask": 0.05
         }
       ],
-      "last_seen": 1795148295.7943997,
-      "last_bid": 0.04,
-      "last_ask": 0.05
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.02,
+      "last_ask": 0.03
     },
     "tec-nfl-oroy-2027-02-11-w-denbos": {
       "first_seen": 1795112001.2051296,
@@ -2197,7 +2440,7 @@
           "ask": 0.96
         }
       ],
-      "last_seen": 1795148295.7943997,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.95,
       "last_ask": 0.96
     },
@@ -2266,7 +2509,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795180450.038912,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2681,7 +2924,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795180450.038912,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2697,9 +2940,14 @@
           "day": 20776,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20777,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795131495.580954,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2715,9 +2963,14 @@
           "day": 20776,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20777,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795131495.580954,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2843,9 +3096,135 @@
           "ask": 0.09
         }
       ],
-      "last_seen": 1795180450.038912,
+      "last_seen": 1795190232.5976243,
       "last_bid": 0.08,
       "last_ask": 0.09
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-car": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.4,
+      "first_ask": 0.41,
+      "category": "sports",
+      "contract": "NFC South Division Winner \u2014 8-9-0 \u2014 Carolina",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.4,
+          "ask": 0.41
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.4,
+      "last_ask": 0.41
+    },
+    "tec-nfl-nfcsouth-2027-01-10-w-atl": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.11,
+      "first_ask": 0.12,
+      "category": "sports",
+      "contract": "NFC South Division Winner \u2014 8-9-0 \u2014 Atlanta",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.11,
+          "ask": 0.12
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.11,
+      "last_ask": 0.12
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-min": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.38,
+      "first_ask": 0.39,
+      "category": "sports",
+      "contract": "NFC North Division Winner \u2014 9-8-0 \u2014 Minnesota",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.38,
+          "ask": 0.39
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.38,
+      "last_ask": 0.39
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.02,
+      "first_ask": 0.03,
+      "category": "sports",
+      "contract": "NFC North Division Winner \u2014 9-7-1 \u2014 Green Bay",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.02,
+          "ask": 0.03
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.02,
+      "last_ask": 0.03
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-det": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.26,
+      "first_ask": 0.27,
+      "category": "sports",
+      "contract": "NFC North Division Winner \u2014 9-8-0 \u2014 Detroit",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.26,
+          "ask": 0.27
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.26,
+      "last_ask": 0.27
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.32,
+      "first_ask": 0.33,
+      "category": "sports",
+      "contract": "NFC North Division Winner \u2014 11-6-0 \u2014 Chicago",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.32,
+          "ask": 0.33
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.32,
+      "last_ask": 0.33
+    },
+    "tec-nfl-nfceast-2027-01-10-w-was": {
+      "first_seen": 1795190232.5976243,
+      "first_bid": 0.17,
+      "first_ask": 0.18,
+      "category": "sports",
+      "contract": "NFC East Division Winner \u2014 5-12-0 \u2014 Washington",
+      "end_date": "2027-01-25T04:00:00Z",
+      "daily": [
+        {
+          "day": 20777,
+          "bid": 0.17,
+          "ask": 0.18
+        }
+      ],
+      "last_seen": 1795190232.5976243,
+      "last_bid": 0.17,
+      "last_ask": 0.18
     }
   },
   "v31_archive": {
@@ -5308,18 +5687,6 @@
   ],
   "v31_failed": {
     "aec-nfl-bal-mia-2025-10-30": "no_safe_early_quote:short_market_duration",
-    "aec-nfl-lac-ten-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-car-gb-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-atl-ne-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-no-lar-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-chi-cin-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-sf-nyg-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-den-hou-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-ind-pit-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-jax-lv-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-kc-buf-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-pit-lac-2025-11-09": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nfl-phi-gb-2025-11-10": "no_safe_early_quote:early_spread_above_10c",
     "aec-nba-ind-gs-2025-11-09": "no_safe_early_quote:short_market_duration",
     "aec-nba-min-sac-2025-11-09": "no_safe_early_quote:short_market_duration",
     "aec-nba-hou-mil-2025-11-09": "no_safe_early_quote:short_market_duration",
@@ -5334,10 +5701,41 @@
     "aec-nba-tor-phi-2025-11-08": "no_safe_early_quote:short_market_duration",
     "aec-nba-por-mia-2025-11-08": "no_safe_early_quote:short_market_duration",
     "aec-nba-no-sa-2025-11-08": "no_safe_early_quote:short_market_duration",
-    "aec-nba-okc-mem-2025-11-09": "no_safe_early_quote:short_market_duration"
+    "aec-nba-okc-mem-2025-11-09": "no_safe_early_quote:short_market_duration",
+    "aec-nfl-phi-gb-2025-11-10": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-pit-lac-2025-11-09": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-kc-buf-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-jax-lv-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-ind-pit-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-den-hou-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-sf-nyg-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-chi-cin-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-no-lar-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-atl-ne-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-car-gb-2025-11-02": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nfl-lac-ten-2025-11-02": "no_safe_early_quote:early_spread_above_10c"
   },
   "v31_offset": 300,
   "v31_last_list": 1795131491.0983713,
   "v321_legacy_recheck_done": true,
-  "v322_diagnostic_recheck_done": true
+  "v322_diagnostic_recheck_done": true,
+  "v33_recovery_recheck_done": true,
+  "v33_discovery_lanes": [
+    {
+      "offset": 300,
+      "exhausted": false
+    },
+    {
+      "offset": 400,
+      "exhausted": false
+    },
+    {
+      "offset": 1200,
+      "exhausted": false
+    },
+    {
+      "offset": 2500,
+      "exhausted": false
+    }
+  ]
 }
