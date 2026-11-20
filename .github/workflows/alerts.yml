@@ -30,6 +30,12 @@ jobs:
           test -n "$DISCORD_WEBHOOK_URL" || { echo 'DISCORD_WEBHOOK_URL secret missing'; exit 1; }
           python3 -m py_compile market_alerts.py scanner_plus.py
 
+      - name: Apply V3.4 scanner upgrade
+        run: |
+          python3 upgrade_v34.py
+          python3 -m py_compile market_alerts.py scanner_plus.py
+          python3 test_v33.py
+
       - name: Scan markets (research only, NO trades)
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
