@@ -9,21 +9,21 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795314020.13921,
+      "last_seen": 1795341438.4742212,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795314019.878749,
+      "last_seen": 1795341437.7236485,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-deel": {
       "anchor": 0.02,
-      "last_seen": 1795281861.1631224,
+      "last_seen": 1795341439.15028,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -37,9 +37,9 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795299352.0733235,
-      "last_ask": 0.96,
-      "last_bid": 0.95,
+      "last_seen": 1795341438.056823,
+      "last_ask": 0.97,
+      "last_bid": 0.96,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-stripe": {
@@ -128,21 +128,21 @@
     },
     "ipcc-2026ipos-ramp": {
       "anchor": 0.03,
-      "last_seen": 1795314022.4696572,
+      "last_seen": 1795341437.6501522,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-openai": {
       "anchor": 0.02,
-      "last_seen": 1795255382.8662841,
+      "last_seen": 1795341437.9307883,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-mistral-ai": {
       "anchor": 0.02,
-      "last_seen": 1795281859.0887198,
+      "last_seen": 1795341438.1325445,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -156,28 +156,28 @@
     },
     "ipcc-2026ipos-ledger": {
       "anchor": 0.03,
-      "last_seen": 1795281859.6315374,
+      "last_seen": 1795341438.3328269,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-glean": {
       "anchor": 0.03,
-      "last_seen": 1795281860.0331562,
+      "last_seen": 1795341438.5485008,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-epic-games": {
       "anchor": 0.04,
-      "last_seen": 1795281860.4183846,
+      "last_seen": 1795341438.752932,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795281860.824857,
+      "last_seen": 1795341438.9529228,
       "last_ask": 0.04,
       "last_bid": 0.03,
       "stat_edge_active": false
@@ -548,9 +548,9 @@
     },
     "tec-nfl-mvp-2027-02-11-w-bropur": {
       "anchor": 0.15,
-      "last_seen": 1795314022.5795593,
-      "last_ask": 0.15,
-      "last_bid": 0.14,
+      "last_seen": 1795341437.7877762,
+      "last_ask": 0.16,
+      "last_bid": 0.15,
       "stat_edge_active": false
     }
   },
@@ -1063,7 +1063,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795314023.957694,
+  "last_digest": 1795341441.4021668,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -1777,7 +1777,7 @@
       "settled_at": 0
     }
   },
-  "upgrade_cursor": 21,
+  "upgrade_cursor": 22,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1798,11 +1798,6 @@
     ],
     "usgcc-aliens-12-31-2026": [
       {
-        "t": 1795227899.3442535,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
         "t": 1795255380.27413,
         "ask": 0.02,
         "bid": 0.01
@@ -1819,6 +1814,11 @@
       },
       {
         "t": 1795314019.5577142,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1851,11 +1851,6 @@
     ],
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": [
       {
-        "t": 1795227899.3442535,
-        "ask": 0.96,
-        "bid": 0.95
-      },
-      {
         "t": 1795255380.27413,
         "ask": 0.96,
         "bid": 0.95
@@ -1869,6 +1864,11 @@
         "t": 1795299350.520969,
         "ask": 0.96,
         "bid": 0.95
+      },
+      {
+        "t": 1795341437.5210423,
+        "ask": 0.97,
+        "bid": 0.96
       }
     ],
     "ipcc-2026ipos-ripple-labs": [
@@ -1917,6 +1917,11 @@
         "t": 1795314019.5577142,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-remote": [
@@ -1948,21 +1953,21 @@
         "t": 1795314019.5577142,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-openai": [
       {
-        "t": 1795190232.5976243,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
-        "t": 1795194151.9486768,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
         "t": 1795255380.27413,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1975,6 +1980,11 @@
       },
       {
         "t": 1795281858.8097444,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2018,40 +2028,45 @@
         "t": 1795281858.8097444,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795341437.5210423,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-glean": [
       {
-        "t": 1795209247.8793347,
+        "t": 1795281858.8097444,
         "ask": 0.03,
         "bid": 0.02
       },
       {
-        "t": 1795281858.8097444,
+        "t": 1795341437.5210423,
         "ask": 0.03,
         "bid": 0.02
       }
     ],
     "ipcc-2026ipos-epic-games": [
       {
-        "t": 1795209247.8793347,
+        "t": 1795281858.8097444,
         "ask": 0.03,
         "bid": 0.02
       },
       {
-        "t": 1795281858.8097444,
+        "t": 1795341437.5210423,
         "ask": 0.03,
         "bid": 0.02
       }
     ],
     "ipcc-2026ipos-discord": [
       {
-        "t": 1795209247.8793347,
-        "ask": 0.03,
-        "bid": 0.02
+        "t": 1795281858.8097444,
+        "ask": 0.04,
+        "bid": 0.03
       },
       {
-        "t": 1795281858.8097444,
+        "t": 1795341437.5210423,
         "ask": 0.04,
         "bid": 0.03
       }
@@ -2065,12 +2080,12 @@
     ],
     "ipcc-2026ipos-deel": [
       {
-        "t": 1795209247.8793347,
+        "t": 1795281858.8097444,
         "ask": 0.02,
         "bid": 0.01
       },
       {
-        "t": 1795281858.8097444,
+        "t": 1795341437.5210423,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2509,6 +2524,11 @@
         "t": 1795314019.5577142,
         "ask": 0.15,
         "bid": 0.14
+      },
+      {
+        "t": 1795341437.5210423,
+        "ask": 0.16,
+        "bid": 0.15
       }
     ]
   },
@@ -2535,9 +2555,14 @@
           "day": 20778,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20779,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2570,7 +2595,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795314019.5577142,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2647,9 +2672,14 @@
           "day": 20778,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20779,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2675,9 +2705,14 @@
           "day": 20778,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20779,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2703,9 +2738,14 @@
           "day": 20778,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20779,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2731,9 +2771,14 @@
           "day": 20778,
           "bid": 0.03,
           "ask": 0.04
+        },
+        {
+          "day": 20779,
+          "bid": 0.03,
+          "ask": 0.04
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.03,
       "last_ask": 0.04
     },
@@ -2777,11 +2822,16 @@
           "day": 20778,
           "bid": 0.95,
           "ask": 0.96
+        },
+        {
+          "day": 20779,
+          "bid": 0.96,
+          "ask": 0.97
         }
       ],
-      "last_seen": 1795299350.520969,
-      "last_bid": 0.95,
-      "last_ask": 0.96
+      "last_seen": 1795341437.5210423,
+      "last_bid": 0.96,
+      "last_ask": 0.97
     },
     "ipcc-2026ipos-deel": {
       "first_seen": 1795112001.2051296,
@@ -2805,9 +2855,14 @@
           "day": 20778,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20779,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795281858.8097444,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2868,7 +2923,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795314019.5577142,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3421,7 +3476,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795314019.5577142,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3447,9 +3502,14 @@
           "day": 20778,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20779,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795255380.27413,
+      "last_seen": 1795341437.5210423,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -4120,9 +4180,9 @@
           "ask": 0.15
         }
       ],
-      "last_seen": 1795314019.5577142,
-      "last_bid": 0.14,
-      "last_ask": 0.15
+      "last_seen": 1795341437.5210423,
+      "last_bid": 0.15,
+      "last_ask": 0.16
     }
   },
   "v31_archive": {
@@ -5321,117 +5381,163 @@
       "observation_method": "initial_window",
       "delay_days": 3.167,
       "listed_end_buffer_days": 5.75
+    },
+    "aec-nba-ny-orl-2025-11-22": {
+      "category": "sports",
+      "event": "q:new york vs. orlando:2025-11-23",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1763596800,
+      "end": 1763935200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 3.917
+    },
+    "aec-nba-mem-dal-2025-11-22": {
+      "category": "sports",
+      "event": "q:memphis vs. dallas:2025-11-24",
+      "p": 0.4905,
+      "ask": 0.5,
+      "bid": 0.481,
+      "y": 1,
+      "t": 1763769600,
+      "end": 1763947800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.062
+    },
+    "aec-nba-det-mil-2025-11-22": {
+      "category": "sports",
+      "event": "q:detroit vs. milwaukee:2025-11-24",
+      "p": 0.7605,
+      "ask": 0.77,
+      "bid": 0.751,
+      "y": 1,
+      "t": 1763769600,
+      "end": 1763946000.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.042
+    },
+    "aec-nba-was-chi-2025-11-22": {
+      "category": "sports",
+      "event": "q:washington vs. chicago:2025-11-24",
+      "p": 0.14,
+      "ask": 0.149,
+      "bid": 0.131,
+      "y": 0,
+      "t": 1763769600,
+      "end": 1763946000.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.042
+    },
+    "aec-nba-atl-no-2025-11-22": {
+      "category": "sports",
+      "event": "q:atlanta vs. new orleans:2025-11-24",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1763683200,
+      "end": 1763942400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.0
+    },
+    "aec-nfl-cin-bal-2025-11-27": {
+      "category": "sports",
+      "event": "q:cincinnati vs. baltimore:2025-11-29",
+      "p": 0.26,
+      "ask": 0.27,
+      "bid": 0.25,
+      "y": 1,
+      "t": 1763942400,
+      "end": 1764379200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 3.917,
+      "listed_end_buffer_days": 5.056
+    },
+    "aec-nfl-kc-dal-2025-11-27": {
+      "category": "sports",
+      "event": "q:kansas city vs. dallas:2025-11-28",
+      "p": 0.61,
+      "ask": 0.62,
+      "bid": 0.6,
+      "y": 0,
+      "t": 1763942400,
+      "end": 1764365400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 4.042,
+      "listed_end_buffer_days": 4.896
+    },
+    "aec-nba-sac-den-2025-11-22": {
+      "category": "sports",
+      "event": "q:sacramento vs. denver:2025-11-24",
+      "p": 0.17,
+      "ask": 0.179,
+      "bid": 0.161,
+      "y": 1,
+      "t": 1763769600,
+      "end": 1763953200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.792,
+      "listed_end_buffer_days": 2.125
+    },
+    "aec-nfl-chi-phi-2025-11-28": {
+      "category": "sports",
+      "event": "q:chicago vs. philadelphia:2025-11-29",
+      "p": 0.26,
+      "ask": 0.27,
+      "bid": 0.25,
+      "y": 1,
+      "t": 1763942400,
+      "end": 1764446400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 3.167,
+      "listed_end_buffer_days": 5.833
+    },
+    "aec-nba-sa-pho-2025-11-23": {
+      "category": "sports",
+      "event": "q:san antonio vs. phoenix:2025-11-25",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1763769600,
+      "end": 1764032400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.042
+    },
+    "aec-nba-lal-uta-2025-11-23": {
+      "category": "sports",
+      "event": "q:los angeles vs. utah:2025-11-25",
+      "p": 0.7885,
+      "ask": 0.796,
+      "bid": 0.781,
+      "y": 1,
+      "t": 1763856000,
+      "end": 1764032400.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.042
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nba-ny-orl-2025-11-22",
-      "category": "sports",
-      "event": "q:new york vs. orlando:2025-11-23",
-      "startDate": "2025-11-19T23:00:01Z",
-      "endDate": "2025-11-23T22:00:00Z",
-      "question": "New York vs. Orlando",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-mem-dal-2025-11-22",
-      "category": "sports",
-      "event": "q:memphis vs. dallas:2025-11-24",
-      "startDate": "2025-11-20T02:00:01Z",
-      "endDate": "2025-11-24T01:30:00Z",
-      "question": "Memphis vs. Dallas",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-det-mil-2025-11-22",
-      "category": "sports",
-      "event": "q:detroit vs. milwaukee:2025-11-24",
-      "startDate": "2025-11-20T02:00:01Z",
-      "endDate": "2025-11-24T01:00:00Z",
-      "question": "Detroit vs. Milwaukee",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-was-chi-2025-11-22",
-      "category": "sports",
-      "event": "q:washington vs. chicago:2025-11-24",
-      "startDate": "2025-11-20T02:00:01Z",
-      "endDate": "2025-11-24T01:00:00Z",
-      "question": "Washington vs. Chicago",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-atl-no-2025-11-22",
-      "category": "sports",
-      "event": "q:atlanta vs. new orleans:2025-11-24",
-      "startDate": "2025-11-20T02:00:01Z",
-      "endDate": "2025-11-24T00:00:00Z",
-      "question": "Atlanta vs. New Orleans",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nfl-cin-bal-2025-11-27",
-      "category": "sports",
-      "event": "q:cincinnati vs. baltimore:2025-11-29",
-      "startDate": "2025-11-20T02:00:00Z",
-      "endDate": "2025-11-29T01:20:00Z",
-      "question": "Cincinnati vs. Baltimore",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nfl-kc-dal-2025-11-27",
-      "category": "sports",
-      "event": "q:kansas city vs. dallas:2025-11-28",
-      "startDate": "2025-11-19T23:00:00Z",
-      "endDate": "2025-11-28T21:30:00Z",
-      "question": "Kansas City vs. Dallas",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-sac-den-2025-11-22",
-      "category": "sports",
-      "event": "q:sacramento vs. denver:2025-11-24",
-      "startDate": "2025-11-20T05:00:03Z",
-      "endDate": "2025-11-24T03:00:00Z",
-      "question": "Sacramento vs. Denver",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nfl-chi-phi-2025-11-28",
-      "category": "sports",
-      "event": "q:chicago vs. philadelphia:2025-11-29",
-      "startDate": "2025-11-20T20:00:00Z",
-      "endDate": "2025-11-29T20:00:00Z",
-      "question": "Chicago vs. Philadelphia",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-mia-phi-2025-11-23",
-      "category": "sports",
-      "event": "q:miami vs. philadelphia:2025-11-24",
-      "startDate": "2025-11-20T20:00:01Z",
-      "endDate": "2025-11-24T18:00:00Z",
-      "question": "Miami vs. Philadelphia",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-sa-pho-2025-11-23",
-      "category": "sports",
-      "event": "q:san antonio vs. phoenix:2025-11-25",
-      "startDate": "2025-11-21T02:00:01Z",
-      "endDate": "2025-11-25T01:00:00Z",
-      "question": "San Antonio vs. Phoenix",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-lal-uta-2025-11-23",
-      "category": "sports",
-      "event": "q:los angeles vs. utah:2025-11-25",
-      "startDate": "2025-11-21T02:00:01Z",
-      "endDate": "2025-11-25T01:00:00Z",
-      "question": "Los Angeles vs. Utah",
-      "attempts": 0
-    },
     {
       "slug": "aec-nba-por-okc-2025-11-23",
       "category": "sports",
@@ -8438,7 +8544,8 @@
     "aec-nba-min-pho-2025-11-21": "no_safe_early_quote:early_spread_above_10c",
     "aec-nba-ind-cle-2025-11-21": "no_safe_early_quote:insufficient_later_history",
     "aec-nba-was-tor-2025-11-21": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nba-lac-cha-2025-11-22": "no_safe_early_quote:early_spread_above_10c"
+    "aec-nba-lac-cha-2025-11-22": "no_safe_early_quote:early_spread_above_10c",
+    "aec-nba-mia-phi-2025-11-23": "no_safe_early_quote:early_spread_above_10c"
   },
   "v31_offset": 400,
   "v31_last_list": 1795314015.1351101,
