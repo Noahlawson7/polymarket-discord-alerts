@@ -9,21 +9,21 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": {
       "anchor": 0.02,
-      "last_seen": 1795403782.876884,
+      "last_seen": 1795439580.4681747,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795403782.246976,
+      "last_seen": 1795439578.4102798,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-deel": {
       "anchor": 0.02,
-      "last_seen": 1795369315.1723466,
+      "last_seen": 1795439579.2700996,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795403782.4029317,
+      "last_seen": 1795439579.8273602,
       "last_ask": 0.98,
       "last_bid": 0.97,
       "stat_edge_active": false
@@ -58,7 +58,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795403783.9405973,
+      "last_seen": 1795439578.2585964,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -170,16 +170,16 @@
     },
     "ipcc-2026ipos-epic-games": {
       "anchor": 0.04,
-      "last_seen": 1795403784.0134013,
+      "last_seen": 1795439578.2938306,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795341438.9529228,
+      "last_seen": 1795439578.798997,
       "last_ask": 0.04,
-      "last_bid": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     },
     "tec-nfl-oroy-2027-02-11-w-denbos": {
@@ -191,14 +191,14 @@
     },
     "ipcc-2026ipos-databricks": {
       "anchor": 0.02,
-      "last_seen": 1795369315.6881235,
+      "last_seen": 1795439579.6434107,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-celonis": {
       "anchor": 0.02,
-      "last_seen": 1795369316.2841733,
+      "last_seen": 1795439579.9459596,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -212,7 +212,7 @@
     },
     "ipcc-2026ipos-canva": {
       "anchor": 0.02,
-      "last_seen": 1795369316.8101583,
+      "last_seen": 1795439580.282339,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -226,9 +226,9 @@
     },
     "ipcc-2026ipos-applied-intuition": {
       "anchor": 0.02,
-      "last_seen": 1795369317.5311801,
-      "last_ask": 0.02,
-      "last_bid": 0.01,
+      "last_seen": 1795439580.9441946,
+      "last_ask": 0.03,
+      "last_bid": 0.02,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-anduril": {
@@ -605,6 +605,34 @@
     "tec-nfl-droy-2027-02-11-w-akhmes": {
       "anchor": 0.02,
       "last_seen": 1795403783.6192286,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-dpoy-2027-02-11-w-xavmck": {
+      "anchor": 0.02,
+      "last_seen": 1795439578.9206986,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-dpoy-2027-02-11-w-wiland": {
+      "anchor": 0.57,
+      "last_seen": 1795439579.770724,
+      "last_ask": 0.57,
+      "last_bid": 0.56,
+      "stat_edge_active": false
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tremcd": {
+      "anchor": 0.02,
+      "last_seen": 1795439580.0538085,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tjwatt": {
+      "anchor": 0.02,
+      "last_seen": 1795439581.0519218,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -1119,7 +1147,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795403785.2188263,
+  "last_digest": 1795439582.2862647,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -1903,9 +1931,45 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-dpoy-2027-02-11-w-xavmck": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795439578.9206896,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-dpoy-2027-02-11-w-wiland": {
+      "category": "sports",
+      "p": 0.565,
+      "first_seen": 1795439579.7707155,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tremcd": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795439580.053801,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tjwatt": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795439581.051914,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 25,
+  "upgrade_cursor": 26,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -1921,11 +1985,6 @@
     ],
     "usgcc-aliens-12-31-2026": [
       {
-        "t": 1795341437.5210423,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
         "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
@@ -1937,6 +1996,11 @@
       },
       {
         "t": 1795403782.0206528,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795439578.2111416,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -1969,17 +2033,17 @@
     ],
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": [
       {
-        "t": 1795341437.5210423,
-        "ask": 0.97,
-        "bid": 0.96
-      },
-      {
         "t": 1795369314.913449,
         "ask": 0.97,
         "bid": 0.96
       },
       {
         "t": 1795403782.0206528,
+        "ask": 0.98,
+        "bid": 0.97
+      },
+      {
+        "t": 1795439578.2111416,
         "ask": 0.98,
         "bid": 0.97
       }
@@ -2017,11 +2081,6 @@
     ],
     "ccrc-sptfy-1-artst-glbl-yr-2026-tayswi": [
       {
-        "t": 1795341437.5210423,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
         "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
@@ -2033,6 +2092,11 @@
       },
       {
         "t": 1795403782.0206528,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795439578.2111416,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2114,6 +2178,11 @@
         "t": 1795403782.0206528,
         "ask": 0.03,
         "bid": 0.02
+      },
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-ledger": [
@@ -2142,26 +2211,21 @@
     ],
     "ipcc-2026ipos-epic-games": [
       {
-        "t": 1795341437.5210423,
+        "t": 1795403782.0206528,
         "ask": 0.03,
         "bid": 0.02
       },
       {
-        "t": 1795403782.0206528,
+        "t": 1795439578.2111416,
         "ask": 0.03,
         "bid": 0.02
       }
     ],
     "ipcc-2026ipos-discord": [
       {
-        "t": 1795281858.8097444,
+        "t": 1795439578.2111416,
         "ask": 0.04,
-        "bid": 0.03
-      },
-      {
-        "t": 1795341437.5210423,
-        "ask": 0.04,
-        "bid": 0.03
+        "bid": 0.02
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-denbos": [
@@ -2173,12 +2237,12 @@
     ],
     "ipcc-2026ipos-deel": [
       {
-        "t": 1795341437.5210423,
+        "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
       },
       {
-        "t": 1795369314.913449,
+        "t": 1795439578.2111416,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2188,16 +2252,21 @@
         "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-celonis": [
       {
-        "t": 1795299350.520969,
+        "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
       },
       {
-        "t": 1795369314.913449,
+        "t": 1795439578.2111416,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2211,12 +2280,12 @@
     ],
     "ipcc-2026ipos-canva": [
       {
-        "t": 1795299350.520969,
+        "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
       },
       {
-        "t": 1795369314.913449,
+        "t": 1795439578.2111416,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2230,14 +2299,14 @@
     ],
     "ipcc-2026ipos-applied-intuition": [
       {
-        "t": 1795299350.520969,
+        "t": 1795369314.913449,
         "ask": 0.02,
         "bid": 0.01
       },
       {
-        "t": 1795369314.913449,
-        "ask": 0.02,
-        "bid": 0.01
+        "t": 1795439578.2111416,
+        "ask": 0.03,
+        "bid": 0.02
       }
     ],
     "ipcc-2026ipos-anduril": [
@@ -2674,6 +2743,34 @@
         "ask": 0.02,
         "bid": 0.01
       }
+    ],
+    "tec-nfl-dpoy-2027-02-11-w-xavmck": [
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-dpoy-2027-02-11-w-wiland": [
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.57,
+        "bid": 0.56
+      }
+    ],
+    "tec-nfl-dpoy-2027-02-11-w-tremcd": [
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-dpoy-2027-02-11-w-tjwatt": [
+      {
+        "t": 1795439578.2111416,
+        "ask": 0.02,
+        "bid": 0.01
+      }
     ]
   },
   "v3_research_records": {
@@ -2749,7 +2846,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795403782.0206528,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -2805,7 +2902,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795403782.0206528,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2919,7 +3016,7 @@
           "ask": 0.03
         }
       ],
-      "last_seen": 1795403782.0206528,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -2950,10 +3047,15 @@
           "day": 20779,
           "bid": 0.03,
           "ask": 0.04
+        },
+        {
+          "day": 20780,
+          "bid": 0.02,
+          "ask": 0.04
         }
       ],
-      "last_seen": 1795341437.5210423,
-      "last_bid": 0.03,
+      "last_seen": 1795439578.2111416,
+      "last_bid": 0.02,
       "last_ask": 0.04
     },
     "tec-nfl-oroy-2027-02-11-w-denbos": {
@@ -3008,7 +3110,7 @@
           "ask": 0.98
         }
       ],
-      "last_seen": 1795403782.0206528,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.97,
       "last_ask": 0.98
     },
@@ -3039,9 +3141,14 @@
           "day": 20779,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795369314.913449,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3072,9 +3179,14 @@
           "day": 20779,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795369314.913449,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3112,7 +3224,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795403782.0206528,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3143,9 +3255,14 @@
           "day": 20779,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795369314.913449,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3194,9 +3311,14 @@
           "day": 20779,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795369314.913449,
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3245,11 +3367,16 @@
           "day": 20779,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20780,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795369314.913449,
-      "last_bid": 0.01,
-      "last_ask": 0.02
+      "last_seen": 1795439578.2111416,
+      "last_bid": 0.02,
+      "last_ask": 0.03
     },
     "ipcc-2026ipos-anduril": {
       "first_seen": 1795112058.7720532,
@@ -4564,6 +4691,78 @@
         }
       ],
       "last_seen": 1795403782.0206528,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-dpoy-2027-02-11-w-xavmck": {
+      "first_seen": 1795439578.2111416,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Defensive Player of the Year \u2014 Xavier McKinney",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795439578.2111416,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-dpoy-2027-02-11-w-wiland": {
+      "first_seen": 1795439578.2111416,
+      "first_bid": 0.56,
+      "first_ask": 0.57,
+      "category": "sports",
+      "contract": "Pro Football Defensive Player of the Year \u2014 Will Anderson Jr.",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20780,
+          "bid": 0.56,
+          "ask": 0.57
+        }
+      ],
+      "last_seen": 1795439578.2111416,
+      "last_bid": 0.56,
+      "last_ask": 0.57
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tremcd": {
+      "first_seen": 1795439578.2111416,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Defensive Player of the Year \u2014 Trent McDuffie",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795439578.2111416,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-dpoy-2027-02-11-w-tjwatt": {
+      "first_seen": 1795439578.2111416,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Defensive Player of the Year \u2014 T.J. Watt",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20780,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795439578.2111416,
       "last_bid": 0.01,
       "last_ask": 0.02
     }
@@ -6282,117 +6481,163 @@
       "observation_method": "initial_window",
       "delay_days": 0.917,
       "listed_end_buffer_days": 8.052
+    },
+    "aec-nba-hou-gs-2025-11-26": {
+      "category": "sports",
+      "event": "q:houston vs. golden state:2025-11-28",
+      "p": 0.4295,
+      "ask": 0.439,
+      "bid": 0.42,
+      "y": 1,
+      "t": 1764115200,
+      "end": 1764298800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.792,
+      "listed_end_buffer_days": 2.125
+    },
+    "aec-nba-sa-por-2025-11-26": {
+      "category": "sports",
+      "event": "q:san antonio vs. portland:2025-11-28",
+      "p": 0.4905,
+      "ask": 0.5,
+      "bid": 0.481,
+      "y": 1,
+      "t": 1764115200,
+      "end": 1764298800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.792,
+      "listed_end_buffer_days": 2.125
+    },
+    "aec-nba-was-ind-2025-11-28": {
+      "category": "sports",
+      "event": "q:washington vs. indiana:2025-11-30",
+      "p": 0.3,
+      "ask": 0.31,
+      "bid": 0.29,
+      "y": 0,
+      "t": 1764201600,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
+    },
+    "aec-nba-mil-ny-2025-11-28": {
+      "category": "sports",
+      "event": "q:milwaukee vs. new york:2025-11-30",
+      "p": 0.285,
+      "ask": 0.29,
+      "bid": 0.28,
+      "y": 0,
+      "t": 1764288000,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.021
+    },
+    "aec-nba-phi-bkn-2025-11-28": {
+      "category": "sports",
+      "event": "q:philadelphia vs. brooklyn:2025-11-30",
+      "p": 0.72,
+      "ask": 0.73,
+      "bid": 0.71,
+      "y": 1,
+      "t": 1764201600,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
+    },
+    "aec-nba-orl-det-2025-11-28": {
+      "category": "sports",
+      "event": "q:orlando vs. detroit:2025-11-30",
+      "p": 0.42,
+      "ask": 0.43,
+      "bid": 0.41,
+      "y": 1,
+      "t": 1764201600,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
+    },
+    "aec-nba-chi-cha-2025-11-28": {
+      "category": "sports",
+      "event": "q:chicago vs. charlotte:2025-11-30",
+      "p": 0.5845,
+      "ask": 0.589,
+      "bid": 0.58,
+      "y": 0,
+      "t": 1764288000,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.917,
+      "listed_end_buffer_days": 2.021
+    },
+    "aec-nba-cle-atl-2025-11-28": {
+      "category": "sports",
+      "event": "q:cleveland vs. atlanta:2025-11-30",
+      "p": 0.655,
+      "ask": 0.67,
+      "bid": 0.64,
+      "y": 0,
+      "t": 1764201600,
+      "end": 1764462600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.917,
+      "listed_end_buffer_days": 3.021
+    },
+    "aec-nba-mem-lac-2025-11-28": {
+      "category": "sports",
+      "event": "q:memphis vs. los angeles:2025-11-30",
+      "p": 0.2955,
+      "ask": 0.3,
+      "bid": 0.291,
+      "y": 1,
+      "t": 1764288000,
+      "end": 1764471600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 1.792,
+      "listed_end_buffer_days": 2.125
+    },
+    "aec-nba-pho-okc-2025-11-28": {
+      "category": "sports",
+      "event": "q:phoenix vs. oklahoma city:2025-11-30",
+      "p": 0.09,
+      "ask": 0.1,
+      "bid": 0.08,
+      "y": 0,
+      "t": 1764201600,
+      "end": 1764469800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.792,
+      "listed_end_buffer_days": 3.104
+    },
+    "aec-nba-sac-uta-2025-11-28": {
+      "category": "sports",
+      "event": "q:sacramento vs. utah:2025-11-30",
+      "p": 0.49,
+      "ask": 0.5,
+      "bid": 0.48,
+      "y": 0,
+      "t": 1764201600,
+      "end": 1764469800.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.792,
+      "listed_end_buffer_days": 3.104
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nba-hou-gs-2025-11-26",
-      "category": "sports",
-      "event": "q:houston vs. golden state:2025-11-28",
-      "startDate": "2025-11-24T05:00:01Z",
-      "endDate": "2025-11-28T03:00:00Z",
-      "question": "Houston vs. Golden State",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-sa-por-2025-11-26",
-      "category": "sports",
-      "event": "q:san antonio vs. portland:2025-11-28",
-      "startDate": "2025-11-24T05:00:01Z",
-      "endDate": "2025-11-28T03:00:00Z",
-      "question": "San Antonio vs. Portland",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-pho-sac-2025-11-26",
-      "category": "sports",
-      "event": "q:phoenix vs. sacramento:2025-11-27",
-      "startDate": "2025-11-24T05:00:01Z",
-      "endDate": "2025-11-27T22:00:00Z",
-      "question": "Phoenix vs. Sacramento",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-was-ind-2025-11-28",
-      "category": "sports",
-      "event": "q:washington vs. indiana:2025-11-30",
-      "startDate": "2025-11-26T02:00:02Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Washington vs. Indiana",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-mil-ny-2025-11-28",
-      "category": "sports",
-      "event": "q:milwaukee vs. new york:2025-11-30",
-      "startDate": "2025-11-26T02:00:02Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Milwaukee vs. New York",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-phi-bkn-2025-11-28",
-      "category": "sports",
-      "event": "q:philadelphia vs. brooklyn:2025-11-30",
-      "startDate": "2025-11-26T02:00:01Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Philadelphia vs. Brooklyn",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-orl-det-2025-11-28",
-      "category": "sports",
-      "event": "q:orlando vs. detroit:2025-11-30",
-      "startDate": "2025-11-26T02:00:02Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Orlando vs. Detroit",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-chi-cha-2025-11-28",
-      "category": "sports",
-      "event": "q:chicago vs. charlotte:2025-11-30",
-      "startDate": "2025-11-26T02:00:01Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Chicago vs. Charlotte",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-cle-atl-2025-11-28",
-      "category": "sports",
-      "event": "q:cleveland vs. atlanta:2025-11-30",
-      "startDate": "2025-11-26T02:00:01Z",
-      "endDate": "2025-11-30T00:30:00Z",
-      "question": "Cleveland vs. Atlanta",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-mem-lac-2025-11-28",
-      "category": "sports",
-      "event": "q:memphis vs. los angeles:2025-11-30",
-      "startDate": "2025-11-26T05:00:01Z",
-      "endDate": "2025-11-30T03:00:00Z",
-      "question": "Memphis vs. Los Angeles",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-pho-okc-2025-11-28",
-      "category": "sports",
-      "event": "q:phoenix vs. oklahoma city:2025-11-30",
-      "startDate": "2025-11-26T05:00:01Z",
-      "endDate": "2025-11-30T02:30:00Z",
-      "question": "Phoenix vs. Oklahoma City",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nba-sac-uta-2025-11-28",
-      "category": "sports",
-      "event": "q:sacramento vs. utah:2025-11-30",
-      "startDate": "2025-11-26T05:00:01Z",
-      "endDate": "2025-11-30T02:30:00Z",
-      "question": "Sacramento vs. Utah",
-      "attempts": 0
-    },
     {
       "slug": "aec-nba-sa-den-2025-11-28",
       "category": "sports",
@@ -8978,7 +9223,8 @@
     "aec-nba-det-ind-2025-11-24": "no_safe_early_quote:insufficient_later_history",
     "aec-nba-atl-was-2025-11-25": "no_safe_early_quote:insufficient_later_history",
     "aec-nba-det-bos-2025-11-26": "no_safe_early_quote:early_spread_above_10c",
-    "aec-nba-ny-cha-2025-11-26": "no_safe_early_quote:insufficient_later_history"
+    "aec-nba-ny-cha-2025-11-26": "no_safe_early_quote:insufficient_later_history",
+    "aec-nba-pho-sac-2025-11-26": "no_safe_early_quote:early_spread_above_10c"
   },
   "v31_offset": 400,
   "v31_last_list": 1795314015.1351101,
