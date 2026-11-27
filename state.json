@@ -9,7 +9,7 @@
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795735369.55046,
+      "last_seen": 1795756413.3733084,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -23,7 +23,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795735369.7368422,
+      "last_seen": 1795756414.1310549,
       "last_ask": 0.99,
       "last_bid": 0.98,
       "stat_edge_active": false
@@ -37,7 +37,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795735372.0144935,
+      "last_seen": 1795756413.2245452,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -121,14 +121,14 @@
     },
     "ipcc-2026ipos-discord": {
       "anchor": 0.03,
-      "last_seen": 1795735372.144059,
+      "last_seen": 1795756413.303125,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-databricks": {
       "anchor": 0.02,
-      "last_seen": 1795668981.6527443,
+      "last_seen": 1795756413.7894068,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -142,14 +142,14 @@
     },
     "ipcc-2026ipos-canva": {
       "anchor": 0.02,
-      "last_seen": 1795668982.5735202,
+      "last_seen": 1795756414.202852,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-applied-intuition": {
       "anchor": 0.02,
-      "last_seen": 1795668983.3323662,
+      "last_seen": 1795756414.617023,
       "last_ask": 0.03,
       "last_bid": 0.02,
       "stat_edge_active": false
@@ -180,20 +180,6 @@
       "last_seen": 1795481776.58308,
       "last_ask": 0.03,
       "last_bid": 0.02,
-      "stat_edge_active": false
-    },
-    "tec-nfl-opoy-2027-02-11-w-chrmcc": {
-      "anchor": 0.02,
-      "last_seen": 1795131497.4790134,
-      "last_ask": 0.02,
-      "last_bid": 0.01,
-      "stat_edge_active": false
-    },
-    "tec-nfl-opoy-2027-02-11-w-bijrob": {
-      "anchor": 0.02,
-      "last_seen": 1795148296.8299732,
-      "last_ask": 0.02,
-      "last_bid": 0.01,
       "stat_edge_active": false
     },
     "tec-nfl-nfcwest-2027-01-10-w-sf": {
@@ -555,7 +541,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-sabcar": {
       "anchor": 0.02,
-      "last_seen": 1795735370.8810992,
+      "last_seen": 1795756414.7596967,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -635,6 +621,20 @@
       "last_seen": 1795735371.5347843,
       "last_ask": 0.02,
       "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-coty-2027-02-11-w-dancam": {
+      "anchor": 0.02,
+      "last_seen": 1795756414.481465,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-coty-2027-02-11-w-benjoh": {
+      "anchor": 0.07,
+      "last_seen": 1795756414.8930116,
+      "last_ask": 0.07,
+      "last_bid": 0.06,
       "stat_edge_active": false
     }
   },
@@ -2113,9 +2113,27 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-coty-2027-02-11-w-dancam": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795756414.4814546,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-coty-2027-02-11-w-benjoh": {
+      "category": "sports",
+      "p": 0.065,
+      "first_seen": 1795756414.8930027,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 35,
+  "upgrade_cursor": 36,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -2126,17 +2144,17 @@
     ],
     "usgcc-aliens-12-31-2026": [
       {
-        "t": 1795668981.4049284,
-        "ask": 0.03,
-        "bid": 0.02
-      },
-      {
         "t": 1795704480.5712943,
         "ask": 0.03,
         "bid": 0.02
       },
       {
         "t": 1795735369.2529879,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795756413.1563802,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2169,12 +2187,12 @@
     ],
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": [
       {
-        "t": 1795668981.4049284,
-        "ask": 0.98,
-        "bid": 0.97
+        "t": 1795735369.2529879,
+        "ask": 0.99,
+        "bid": 0.98
       },
       {
-        "t": 1795735369.2529879,
+        "t": 1795756413.1563802,
         "ask": 0.99,
         "bid": 0.98
       }
@@ -2269,6 +2287,11 @@
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-2026ipos-ledger": [
@@ -2302,6 +2325,11 @@
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "tec-nfl-oroy-2027-02-11-w-denbos": [
@@ -2325,12 +2353,7 @@
     ],
     "ipcc-2026ipos-databricks": [
       {
-        "t": 1795647724.3136032,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
-        "t": 1795668981.4049284,
+        "t": 1795756413.1563802,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2356,7 +2379,7 @@
     ],
     "ipcc-2026ipos-canva": [
       {
-        "t": 1795668981.4049284,
+        "t": 1795756413.1563802,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2370,7 +2393,7 @@
     ],
     "ipcc-2026ipos-applied-intuition": [
       {
-        "t": 1795668981.4049284,
+        "t": 1795756413.1563802,
         "ask": 0.03,
         "bid": 0.02
       }
@@ -2876,6 +2899,11 @@
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
+      },
+      {
+        "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "tec-nfl-dpoy-2027-02-11-w-grerou": [
@@ -2963,6 +2991,20 @@
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
+      }
+    ],
+    "tec-nfl-coty-2027-02-11-w-dancam": [
+      {
+        "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-coty-2027-02-11-w-benjoh": [
+      {
+        "t": 1795756413.1563802,
+        "ask": 0.07,
+        "bid": 0.06
       }
     ]
   },
@@ -3062,9 +3104,14 @@
           "day": 20783,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795735369.2529879,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3133,9 +3180,14 @@
           "day": 20783,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795735369.2529879,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3325,9 +3377,14 @@
           "day": 20783,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795735369.2529879,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3396,9 +3453,14 @@
           "day": 20783,
           "bid": 0.97,
           "ask": 0.98
+        },
+        {
+          "day": 20784,
+          "bid": 0.98,
+          "ask": 0.99
         }
       ],
-      "last_seen": 1795735369.2529879,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.98,
       "last_ask": 0.99
     },
@@ -3487,9 +3549,14 @@
           "day": 20783,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795668981.4049284,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3639,9 +3706,14 @@
           "day": 20783,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795668981.4049284,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3710,9 +3782,14 @@
           "day": 20783,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20784,
+          "bid": 0.02,
+          "ask": 0.03
         }
       ],
-      "last_seen": 1795668981.4049284,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.02,
       "last_ask": 0.03
     },
@@ -5303,9 +5380,14 @@
           "day": 20783,
           "bid": 0.01,
           "ask": 0.02
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795735369.2529879,
+      "last_seen": 1795756413.1563802,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -5511,6 +5593,42 @@
       "last_seen": 1795735369.2529879,
       "last_bid": 0.01,
       "last_ask": 0.02
+    },
+    "tec-nfl-coty-2027-02-11-w-dancam": {
+      "first_seen": 1795756413.1563802,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Coach of the Year \u2014 Dan Campbell",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795756413.1563802,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-coty-2027-02-11-w-benjoh": {
+      "first_seen": 1795756413.1563802,
+      "first_bid": 0.06,
+      "first_ask": 0.07,
+      "category": "sports",
+      "contract": "Pro Football Coach of the Year \u2014 Ben Johnson",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.06,
+          "ask": 0.07
+        }
+      ],
+      "last_seen": 1795756413.1563802,
+      "last_bid": 0.06,
+      "last_ask": 0.07
     }
   },
   "v31_archive": {
@@ -8319,117 +8437,79 @@
       "observation_method": "initial_window",
       "delay_days": 1.917,
       "listed_end_buffer_days": 2.042
+    },
+    "aec-nhl-lak-utah-2025-12-09": {
+      "category": "sports",
+      "event": "q:kings vs. mammoth:2025-12-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1764979200,
+      "end": 1765332000.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 4.083
+    },
+    "aec-nhl-buf-cal-2025-12-09": {
+      "category": "sports",
+      "event": "q:sabres vs. flames:2025-12-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1764979200,
+      "end": 1765332000.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 4.083
+    },
+    "aec-nhl-min-sea-2025-12-09": {
+      "category": "sports",
+      "event": "q:wild vs. kraken:2025-12-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1764979200,
+      "end": 1765335600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 4.125
+    },
+    "aec-nhl-det-van-2025-12-09": {
+      "category": "sports",
+      "event": "q:red wings vs. canucks:2025-12-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1764979200,
+      "end": 1765335600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 4.125
+    },
+    "aec-nhl-sj-phi-2025-12-10": {
+      "category": "sports",
+      "event": "q:sharks vs. flyers:2025-12-11",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1764979200,
+      "end": 1765411200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 5.0
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nhl-wsh-ana-2025-12-06",
-      "category": "sports",
-      "event": "q:capitals vs. ducks:2025-12-06",
-      "startDate": "2025-12-05T23:00:01Z",
-      "endDate": "2025-12-06T22:00:00Z",
-      "question": "Capitals vs. Ducks",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-cbj-fla-2025-12-06",
-      "category": "sports",
-      "event": "q:blue jackets vs. panthers:2025-12-07",
-      "startDate": "2025-12-05T23:00:01Z",
-      "endDate": "2025-12-07T15:30:00Z",
-      "question": "Blue Jackets vs. Panthers",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-nyi-fla-2025-12-07",
-      "category": "sports",
-      "event": "q:islanders vs. panthers:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T17:00:00Z",
-      "question": "Islanders vs. Panthers",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-nyi-tb-2025-12-07",
-      "category": "sports",
-      "event": "q:islanders vs. lightning:2025-12-07",
-      "startDate": "2025-12-05T23:00:01Z",
-      "endDate": "2025-12-07T19:00:00Z",
-      "question": "Islanders vs. Lightning",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-sj-car-2025-12-07",
-      "category": "sports",
-      "event": "q:sharks vs. hurricanes:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T17:00:00Z",
-      "question": "Sharks vs. Hurricanes",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-wpg-edm-2025-12-07",
-      "category": "sports",
-      "event": "q:jets vs. oilers:2025-12-07",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-07T22:00:00Z",
-      "question": "Jets vs. Oilers",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-lak-utah-2025-12-09",
-      "category": "sports",
-      "event": "q:kings vs. mammoth:2025-12-10",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-10T02:00:00Z",
-      "question": "Kings vs. Mammoth",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-cbj-wsh-2025-12-08",
-      "category": "sports",
-      "event": "q:blue jackets vs. capitals:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T19:00:00Z",
-      "question": "Blue Jackets vs. Capitals",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-buf-cal-2025-12-09",
-      "category": "sports",
-      "event": "q:sabres vs. flames:2025-12-10",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-10T02:00:00Z",
-      "question": "Sabres vs. Flames",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-min-sea-2025-12-09",
-      "category": "sports",
-      "event": "q:wild vs. kraken:2025-12-10",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-10T03:00:00Z",
-      "question": "Wild vs. Kraken",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-det-van-2025-12-09",
-      "category": "sports",
-      "event": "q:red wings vs. canucks:2025-12-10",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-10T03:00:00Z",
-      "question": "Red Wings vs. Canucks",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-sj-phi-2025-12-10",
-      "category": "sports",
-      "event": "q:sharks vs. flyers:2025-12-11",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-11T00:00:00Z",
-      "question": "Sharks vs. Flyers",
-      "attempts": 0
-    },
     {
       "slug": "aec-nhl-stl-mon-2025-12-08",
       "category": "sports",
@@ -10877,7 +10957,14 @@
     "aec-nhl-utah-cal-2025-12-07": "no_safe_early_quote:short_market_duration",
     "aec-nhl-buf-wpg-2025-12-06": "no_safe_early_quote:short_market_duration",
     "aec-nhl-chi-lak-2025-12-07": "no_safe_early_quote:short_market_duration",
-    "aec-nhl-las-nj-2025-12-06": "no_safe_early_quote:short_market_duration"
+    "aec-nhl-las-nj-2025-12-06": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-wsh-ana-2025-12-06": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-cbj-fla-2025-12-06": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-nyi-fla-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-nyi-tb-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-sj-car-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-wpg-edm-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-cbj-wsh-2025-12-08": "no_safe_early_quote:short_market_duration"
   },
   "v31_offset": 400,
   "v31_last_list": 1795578984.6059334,
