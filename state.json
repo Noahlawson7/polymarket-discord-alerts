@@ -9,7 +9,7 @@
     },
     "usgcc-aliens-12-31-2026": {
       "anchor": 0.03,
-      "last_seen": 1795756413.3733084,
+      "last_seen": 1795792266.174154,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -23,7 +23,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-badbun": {
       "anchor": 0.96,
-      "last_seen": 1795756414.1310549,
+      "last_seen": 1795792268.903657,
       "last_ask": 0.99,
       "last_bid": 0.98,
       "stat_edge_active": false
@@ -37,16 +37,16 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-drake": {
       "anchor": 0.04,
-      "last_seen": 1795756413.2245452,
+      "last_seen": 1795792267.311108,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-openai-2027-06-30": {
       "anchor": 0.47,
-      "last_seen": 1795668984.0135734,
-      "last_ask": 0.47,
-      "last_bid": 0.46,
+      "last_seen": 1795792266.4980025,
+      "last_ask": 0.44,
+      "last_bid": 0.43,
       "stat_edge_active": false
     },
     "ipcc-2026ipos-rippling": {
@@ -163,9 +163,9 @@
     },
     "ipcc-openai-2026-12-31": {
       "anchor": 0.03,
-      "last_seen": 1795704480.631503,
-      "last_ask": 0.03,
-      "last_bid": 0.02,
+      "last_seen": 1795792266.9367943,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
       "stat_edge_active": false
     },
     "ipcc-openai-2026-11-30": {
@@ -180,34 +180,6 @@
       "last_seen": 1795481776.58308,
       "last_ask": 0.03,
       "last_bid": 0.02,
-      "stat_edge_active": false
-    },
-    "tec-nfl-nfcwest-2027-01-10-w-sf": {
-      "anchor": 0.86,
-      "last_seen": 1795180451.2920694,
-      "last_ask": 0.86,
-      "last_bid": 0.85,
-      "stat_edge_active": false
-    },
-    "tec-nfl-nfcwest-2027-01-10-w-sea": {
-      "anchor": 0.08,
-      "last_seen": 1795180451.6601467,
-      "last_ask": 0.08,
-      "last_bid": 0.07,
-      "stat_edge_active": false
-    },
-    "tec-nfl-nfcwest-2027-01-10-w-lar": {
-      "anchor": 0.06,
-      "last_seen": 1795180452.0586438,
-      "last_ask": 0.06,
-      "last_bid": 0.05,
-      "stat_edge_active": false
-    },
-    "tec-nfl-nfcsouth-2027-01-10-w-tb": {
-      "anchor": 0.38,
-      "last_seen": 1795180452.8039074,
-      "last_ask": 0.38,
-      "last_bid": 0.37,
       "stat_edge_active": false
     },
     "tec-nfl-nfcsouth-2027-01-10-w-no": {
@@ -541,7 +513,7 @@
     },
     "ccrc-sptfy-1-artst-glbl-yr-2026-sabcar": {
       "anchor": 0.02,
-      "last_seen": 1795756414.7596967,
+      "last_seen": 1795792265.841809,
       "last_ask": 0.02,
       "last_bid": 0.01,
       "stat_edge_active": false
@@ -632,9 +604,37 @@
     },
     "tec-nfl-coty-2027-02-11-w-benjoh": {
       "anchor": 0.07,
-      "last_seen": 1795756414.8930116,
+      "last_seen": 1795792266.227434,
       "last_ask": 0.07,
       "last_bid": 0.06,
+      "stat_edge_active": false
+    },
+    "tec-nfl-coty-2027-02-11-w-andrei": {
+      "anchor": 0.02,
+      "last_seen": 1795792266.6059003,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-coty-2027-02-11-w-aargle": {
+      "anchor": 0.02,
+      "last_seen": 1795792267.1284232,
+      "last_ask": 0.02,
+      "last_bid": 0.01,
+      "stat_edge_active": false
+    },
+    "tec-nfl-champ-2027-02-14-w-seasea": {
+      "anchor": 0.04,
+      "last_seen": 1795792268.8181324,
+      "last_ask": 0.04,
+      "last_bid": 0.03,
+      "stat_edge_active": false
+    },
+    "tec-nfl-champ-2027-02-14-w-saners": {
+      "anchor": 0.2,
+      "last_seen": 1795792269.0625522,
+      "last_ask": 0.2,
+      "last_bid": 0.19,
       "stat_edge_active": false
     }
   },
@@ -751,6 +751,7 @@
     "arankc-atp-2026-12-31-no1-valvac",
     "arankc-wta-2026-12-31-no1-elisvi",
     "arankc-wta-2026-12-31-no1-ivajov",
+    "arankc-wta-2026-12-31-no1-jaspao",
     "arankc-wta-2026-12-31-no1-jespeg",
     "arankc-wta-2026-12-31-no1-leyfer",
     "arankc-wta-2026-12-31-no1-madkey",
@@ -1149,7 +1150,7 @@
     "usgcc-aliens-12-31-2026"
   ],
   "initialized": true,
-  "last_digest": 1795735373.6797152,
+  "last_digest": 1795792270.2617674,
   "training_samples": {
     "tec-mls-winner-2026-11-07-rsl": {
       "category": "sports",
@@ -2131,9 +2132,45 @@
       "result": null,
       "last_check": 0,
       "settled_at": 0
+    },
+    "tec-nfl-coty-2027-02-11-w-andrei": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795792266.6058927,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-coty-2027-02-11-w-aargle": {
+      "category": "sports",
+      "p": 0.015,
+      "first_seen": 1795792267.1284144,
+      "end_ts": 1803614400.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-champ-2027-02-14-w-seasea": {
+      "category": "sports",
+      "p": 0.035,
+      "first_seen": 1795792268.8181255,
+      "end_ts": 1803873600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
+    },
+    "tec-nfl-champ-2027-02-14-w-saners": {
+      "category": "sports",
+      "p": 0.195,
+      "first_seen": 1795792269.062544,
+      "end_ts": 1803873600.0,
+      "result": null,
+      "last_check": 0,
+      "settled_at": 0
     }
   },
-  "upgrade_cursor": 36,
+  "upgrade_cursor": 37,
   "upgrade_price_history": {
     "ipcc-2026ipos-stripe": [
       {
@@ -2144,17 +2181,17 @@
     ],
     "usgcc-aliens-12-31-2026": [
       {
-        "t": 1795704480.5712943,
-        "ask": 0.03,
-        "bid": 0.02
-      },
-      {
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
       },
       {
         "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795792265.6711106,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2193,6 +2230,11 @@
       },
       {
         "t": 1795756413.1563802,
+        "ask": 0.99,
+        "bid": 0.98
+      },
+      {
+        "t": 1795792265.6711106,
         "ask": 0.99,
         "bid": 0.98
       }
@@ -2290,6 +2332,11 @@
       },
       {
         "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795792265.6711106,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -2407,21 +2454,16 @@
     ],
     "ipcc-openai-2027-06-30": [
       {
-        "t": 1795668981.4049284,
-        "ask": 0.47,
-        "bid": 0.46
+        "t": 1795792265.6711106,
+        "ask": 0.44,
+        "bid": 0.43
       }
     ],
     "ipcc-openai-2026-12-31": [
       {
-        "t": 1795668981.4049284,
-        "ask": 0.03,
-        "bid": 0.02
-      },
-      {
-        "t": 1795704480.5712943,
-        "ask": 0.03,
-        "bid": 0.02
+        "t": 1795792265.6711106,
+        "ask": 0.02,
+        "bid": 0.01
       }
     ],
     "ipcc-openai-2026-11-30": [
@@ -2891,17 +2933,17 @@
     ],
     "ccrc-sptfy-1-artst-glbl-yr-2026-sabcar": [
       {
-        "t": 1795704480.5712943,
-        "ask": 0.02,
-        "bid": 0.01
-      },
-      {
         "t": 1795735369.2529879,
         "ask": 0.02,
         "bid": 0.01
       },
       {
         "t": 1795756413.1563802,
+        "ask": 0.02,
+        "bid": 0.01
+      },
+      {
+        "t": 1795792265.6711106,
         "ask": 0.02,
         "bid": 0.01
       }
@@ -3005,6 +3047,39 @@
         "t": 1795756413.1563802,
         "ask": 0.07,
         "bid": 0.06
+      },
+      {
+        "t": 1795792265.6711106,
+        "ask": 0.07,
+        "bid": 0.06
+      }
+    ],
+    "tec-nfl-coty-2027-02-11-w-andrei": [
+      {
+        "t": 1795792265.6711106,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-coty-2027-02-11-w-aargle": [
+      {
+        "t": 1795792265.6711106,
+        "ask": 0.02,
+        "bid": 0.01
+      }
+    ],
+    "tec-nfl-champ-2027-02-14-w-seasea": [
+      {
+        "t": 1795792265.6711106,
+        "ask": 0.04,
+        "bid": 0.03
+      }
+    ],
+    "tec-nfl-champ-2027-02-14-w-saners": [
+      {
+        "t": 1795792265.6711106,
+        "ask": 0.2,
+        "bid": 0.19
       }
     ]
   },
@@ -3111,7 +3186,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795756413.1563802,
+      "last_seen": 1795792265.6711106,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3187,7 +3262,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795756413.1563802,
+      "last_seen": 1795792265.6711106,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -3460,7 +3535,7 @@
           "ask": 0.99
         }
       ],
-      "last_seen": 1795756413.1563802,
+      "last_seen": 1795792265.6711106,
       "last_bid": 0.98,
       "last_ask": 0.99
     },
@@ -3873,11 +3948,16 @@
           "day": 20783,
           "bid": 0.46,
           "ask": 0.47
+        },
+        {
+          "day": 20784,
+          "bid": 0.43,
+          "ask": 0.44
         }
       ],
-      "last_seen": 1795668981.4049284,
-      "last_bid": 0.46,
-      "last_ask": 0.47
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.43,
+      "last_ask": 0.44
     },
     "ipcc-openai-2026-12-31": {
       "first_seen": 1795112058.7720532,
@@ -3921,11 +4001,16 @@
           "day": 20783,
           "bid": 0.02,
           "ask": 0.03
+        },
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
         }
       ],
-      "last_seen": 1795704480.5712943,
-      "last_bid": 0.02,
-      "last_ask": 0.03
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.01,
+      "last_ask": 0.02
     },
     "ipcc-openai-2026-11-30": {
       "first_seen": 1795112609.6884031,
@@ -5387,7 +5472,7 @@
           "ask": 0.02
         }
       ],
-      "last_seen": 1795756413.1563802,
+      "last_seen": 1795792265.6711106,
       "last_bid": 0.01,
       "last_ask": 0.02
     },
@@ -5626,9 +5711,81 @@
           "ask": 0.07
         }
       ],
-      "last_seen": 1795756413.1563802,
+      "last_seen": 1795792265.6711106,
       "last_bid": 0.06,
       "last_ask": 0.07
+    },
+    "tec-nfl-coty-2027-02-11-w-andrei": {
+      "first_seen": 1795792265.6711106,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Coach of the Year \u2014 Andy Reid",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-coty-2027-02-11-w-aargle": {
+      "first_seen": 1795792265.6711106,
+      "first_bid": 0.01,
+      "first_ask": 0.02,
+      "category": "sports",
+      "contract": "Pro Football Coach of the Year \u2014 Aaron Glenn",
+      "end_date": "2027-02-26T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.01,
+          "ask": 0.02
+        }
+      ],
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.01,
+      "last_ask": 0.02
+    },
+    "tec-nfl-champ-2027-02-14-w-seasea": {
+      "first_seen": 1795792265.6711106,
+      "first_bid": 0.03,
+      "first_ask": 0.04,
+      "category": "sports",
+      "contract": "Pro Football Champion 2027 \u2014 14-3-0 \u2014 Seattle",
+      "end_date": "2027-03-01T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.03,
+          "ask": 0.04
+        }
+      ],
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.03,
+      "last_ask": 0.04
+    },
+    "tec-nfl-champ-2027-02-14-w-saners": {
+      "first_seen": 1795792265.6711106,
+      "first_bid": 0.19,
+      "first_ask": 0.2,
+      "category": "sports",
+      "contract": "Pro Football Champion 2027 \u2014 12-5-0 \u2014 San Francisco",
+      "end_date": "2027-03-01T04:00:00Z",
+      "daily": [
+        {
+          "day": 20784,
+          "bid": 0.19,
+          "ask": 0.2
+        }
+      ],
+      "last_seen": 1795792265.6711106,
+      "last_bid": 0.19,
+      "last_ask": 0.2
     }
   },
   "v31_archive": {
@@ -8507,117 +8664,51 @@
       "observation_method": "initial_window",
       "delay_days": 0.042,
       "listed_end_buffer_days": 5.0
+    },
+    "aec-nhl-tb-tor-2025-12-09": {
+      "category": "sports",
+      "event": "q:lightning vs. maple leafs:2025-12-10",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1764979200,
+      "end": 1765326600.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 4.021
+    },
+    "aec-nhl-ana-pit-2025-12-10": {
+      "category": "sports",
+      "event": "q:ducks vs. penguins:2025-12-11",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 1,
+      "t": 1764979200,
+      "end": 1765411200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 5.0
+    },
+    "aec-nhl-las-nyi-2025-12-10": {
+      "category": "sports",
+      "event": "q:golden knights vs. islanders:2025-12-11",
+      "p": 0.5,
+      "ask": 0.5,
+      "bid": 0.5,
+      "y": 0,
+      "t": 1764979200,
+      "end": 1765411200.0,
+      "source": "us_settlement_and_early_book_history",
+      "observation_method": "initial_window",
+      "delay_days": 0.042,
+      "listed_end_buffer_days": 5.0
     }
   },
   "v31_queue": [
-    {
-      "slug": "aec-nhl-stl-mon-2025-12-08",
-      "category": "sports",
-      "event": "q:blues vs. canadiens:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T19:00:00Z",
-      "question": "Blues vs. Canadiens",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-pit-dal-2025-12-07",
-      "category": "sports",
-      "event": "q:penguins vs. stars:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T23:00:00Z",
-      "question": "Penguins vs. Stars",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-cbb-bryant-brown-2025-12-05",
-      "category": "sports",
-      "event": "q:bryant vs. brown:2025-12-06",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-06T19:00:00Z",
-      "question": "Bryant vs. Brown",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-det-sea-2025-12-07",
-      "category": "sports",
-      "event": "q:red wings vs. kraken:2025-12-07",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-07T22:00:00Z",
-      "question": "Red Wings vs. Kraken",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-cbb-samf-vcu-2025-12-05",
-      "category": "sports",
-      "event": "q:samford vs. vcu:2025-12-06",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-06T19:00:00Z",
-      "question": "Samford vs. VCU",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-min-van-2025-12-07",
-      "category": "sports",
-      "event": "q:wild vs. canucks:2025-12-07",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-07T22:00:00Z",
-      "question": "Wild vs. Canucks",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-col-phi-2025-12-07",
-      "category": "sports",
-      "event": "q:avalanche vs. flyers:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T18:00:00Z",
-      "question": "Avalanche vs. Flyers",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-chi-ana-2025-12-08",
-      "category": "sports",
-      "event": "q:blackhawks vs. ducks:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T20:00:00Z",
-      "question": "Blackhawks vs. Ducks",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-tb-tor-2025-12-09",
-      "category": "sports",
-      "event": "q:lightning vs. maple leafs:2025-12-10",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-10T00:30:00Z",
-      "question": "Lightning vs. Maple Leafs",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-las-nyr-2025-12-08",
-      "category": "sports",
-      "event": "q:golden knights vs. rangers:2025-12-08",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-08T19:00:00Z",
-      "question": "Golden Knights vs. Rangers",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-ana-pit-2025-12-10",
-      "category": "sports",
-      "event": "q:ducks vs. penguins:2025-12-11",
-      "startDate": "2025-12-05T23:00:02Z",
-      "endDate": "2025-12-11T00:00:00Z",
-      "question": "Ducks vs. Penguins",
-      "attempts": 0
-    },
-    {
-      "slug": "aec-nhl-las-nyi-2025-12-10",
-      "category": "sports",
-      "event": "q:golden knights vs. islanders:2025-12-11",
-      "startDate": "2025-12-05T23:00:03Z",
-      "endDate": "2025-12-11T00:00:00Z",
-      "question": "Golden Knights vs. Islanders",
-      "attempts": 0
-    },
     {
       "slug": "aec-nhl-buf-edm-2025-12-10",
       "category": "sports",
@@ -10964,7 +11055,16 @@
     "aec-nhl-nyi-tb-2025-12-07": "no_safe_early_quote:short_market_duration",
     "aec-nhl-sj-car-2025-12-07": "no_safe_early_quote:short_market_duration",
     "aec-nhl-wpg-edm-2025-12-07": "no_safe_early_quote:short_market_duration",
-    "aec-nhl-cbj-wsh-2025-12-08": "no_safe_early_quote:short_market_duration"
+    "aec-nhl-cbj-wsh-2025-12-08": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-stl-mon-2025-12-08": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-pit-dal-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-cbb-bryant-brown-2025-12-05": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-det-sea-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-cbb-samf-vcu-2025-12-05": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-min-van-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-col-phi-2025-12-07": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-chi-ana-2025-12-08": "no_safe_early_quote:short_market_duration",
+    "aec-nhl-las-nyr-2025-12-08": "no_safe_early_quote:short_market_duration"
   },
   "v31_offset": 400,
   "v31_last_list": 1795578984.6059334,
